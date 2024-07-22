@@ -89,6 +89,7 @@ There don't exist this syntax. Such as `This is really___very__important text.`.
 The order of the em and strong tags might be reversed depending on the Markdown processor you're using.
 
 ## Blockquotes
+### Blockquotes with Single Line
 To create a blockquote, add a > in front of a paragraph.
 
     > Dorothy followed her through many of the beautiful rooms in her castle.
@@ -96,3 +97,32 @@ To create a blockquote, add a > in front of a paragraph.
 The rendered output looks like this:
 
 > Dorothy followed her through many of the beautiful rooms in her castle.
+
+### Blockquotes with Multiple Paragraphs
+
+Blockquotes can contain multiple paragraphs. Add a > on the blank lines between the paragraphs.
+
+    > Dorothy followed her through many of the beautiful rooms in her castle.
+    >
+    > The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+    
+The rendered output looks like this:
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+
+
+### Nested Blockquotes
+Blockquotes can be nested. Add a >> in front of the paragraph you want to nest.
+    
+    > Dorothy followed her through many of the beautiful rooms in her castle.
+    >
+    >> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+
+The rendered output looks like this:
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+>> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+
