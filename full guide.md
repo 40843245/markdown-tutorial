@@ -68,3 +68,19 @@ There don't exist this syntax. Such as `Love__is__bold`.
 | `Italicized text is the *cat's meow*.` | `Italicized text is the <em>cat's meow</em>.`	| Italicized text is the <em>cat's meow</em>. |
 | `Italicized text is the _cat's meow_.`	| `Italicized text is the <em>cat's meow</em>.`	| Italicized text is the <em>cat's meow</em>. | 
 | `A*cat*meow` | `A<em>cat</em>meow` | A*cat*meow
+
+#### **NOTES**
+There don't exist this syntax. Such as `A_cat_meow`.
+
+### Bold and Italic
+
+| Markdown | HTML |	Rendered Output |
+| -------- | ---- | --------------- |
+| `This text is ***really important***.` | `This text is <em><strong>really important</strong></em>.` | This text is <em><strong>really important</strong></em>.|
+| `This text is ___really important___.` | `This text is <em><strong>really important</strong></em>.` |	This text is <em><strong>really important</strong></em> |
+| `This text is __*really important*__.`	| `This text is <em><strong>really important</strong></em>.`	| This text is <em><strong>really important</strong></em> |
+| `This text is **_really important_**.` | `This text is <em><strong>really important</strong></em>.` | This text is <em><strong>really important</strong></em> |
+| `This is really***very***important text.`	| `This is really<em><strong>very</strong></em>important text.`	| This text is <em><strong>really important</strong></em> |
+
+#### **NOTES**
+There don't exist this syntax. Such as `This is really___very__important text.`.
