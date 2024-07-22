@@ -298,3 +298,14 @@ The rendered output looks like this:
 > <em>please sit down</em>. 
 > Kary, are you able to <strong>stand alone</strong>?
 > I'm okay.<br> I'm good at standing on one foot.<br><br>
+
+#### **NOTES**
+For compatibility, put blank lines before and after blockquotes.
+
+Don't do this
+
+```
+Without blank lines, this might not look right.
+> This is a blockquote
+Don't do this!
+```
