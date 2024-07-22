@@ -42,4 +42,16 @@ To create a line break or new line (in html `<br>`), end a line with two or more
 | Markdown | HTML | Rendered Output |
 | -------- | ---- | --------------- |
 | This is the first line.  <br> And this is the second line. |	`<p>This is the first line.<br> And this is the second line.</p>`	 | <p>This is the first line.<br> And this is the second line.</p> |
-And this is the second line.
+
+### **NOTES**
+Unlike C, one can ***NOT*** `\` to break a new line.
+
+See the example on [Line Break Best Practices](https://www.markdownguide.org/basic-syntax/#line-break-best-practices)
+
+## Bold
+
+| Markdown | HTML | Rendered Output |
+| -------- | ----- | -------------- |
+| `I just love **bold text**`. |	`I just love <strong>bold text</strong>`.	| I just love <strong>bold text</strong> |
+| `I just love __bold text__.` | `I just love <strong>bold text</strong>.` | I just love <strong>bold text</strong>. |
+| `Love**is**bold`	| `Love<strong>is</strong>` | Love<strong>is</strong> |
