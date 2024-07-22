@@ -54,5 +54,5 @@ See the example on [Line Break Best Practices](https://www.markdownguide.org/bas
 | -------- | ----- | -------------- |
 | `I just love **bold text**`. |	`I just love <strong>bold text</strong>`.	| I just love <strong>bold text</strong> |
 | `I just love __bold text__.` | `I just love <strong>bold text</strong>.` | I just love <strong>bold text</strong>. |
-| `Love**is**bold`	| `Love<strong>is</strong>` | Love<strong>is</strong> |
+| `Love**is**bold`	| `Love<strong>is</strong>` | Love**is**bold |
 
