@@ -214,22 +214,21 @@ The rendered output looks like this:
 >>> it's all for to say to an unwell person.
 >>>> it's not a big deal AE what she's got a point.
 
-+ Example 4:
++ Example 4: 4-level nested blockquotes in reversed order.
 
-      > in the following week,
-      >> ouch ouch are you okay?
-      >>> stepping into the gap between the train and the platform...
-      >>>> why are you always so careless?
-      >>> I wasn't paying attention because the train was about to leave once we get over there
-      >> we need to get it treat.
-      > sorry to trouble you.
+      >>>> in the following week,
+      >>> ouch ouch are you okay?
+      >> stepping into the gap between the train and the platform...
+      > why are you always so careless?
 
 The rendered output looks like this:
 
-> in the following week,
->> ouch ouch are you okay?
->>> stepping into the gap between the train and the platform...
->>>> why are you always so careless?
+>>>> in the following week,
+>>> ouch ouch are you okay?
+>> stepping into the gap between the train and the platform...
+> why are you always so careless?
+
+
 >>> I wasn't paying attention because the train was about to leave once we get over there
 >> we need to get it treat.
 > sorry to trouble you.
