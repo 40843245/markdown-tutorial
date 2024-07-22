@@ -19,7 +19,7 @@ While heading 6 has the smallest text among these headings.
 
 | Markdown | HTML | Rendered Output |
 | -------- | ---- | --------------- |
-| Heading level 1 \n ===============	| `<h1>Heading level 1</h1>` | <h1>Heading level 1</h1> |
+| Heading level 1 <br> ===============	| `<h1>Heading level 1</h1>` | <h1>Heading level 1</h1> |
 
 
 Heading level 2
