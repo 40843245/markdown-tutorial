@@ -26,4 +26,10 @@ While heading 6 has the smallest text among these headings.
 + Don't forget to put one space between `#` and the first word.
 + `#` must be consecutive. For example, `## Heading 2` and `# # Heading 2` are **NOT** equivalent.
 
+## Paragraphs
+To create paragraphs, use a blank line to separate one or more lines of text.
+
+| Markdown | HTML | Rendered Output |
+| -------- | ---- | --------------- |
+| I really like using Markdown. <br> <br> I think I'll use it to format all of my documents from now on.	| `<p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>` | <p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>
   
