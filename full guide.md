@@ -24,6 +24,6 @@ While heading 6 has the smallest text among these headings.
 
 ### **NOTES**
 + Don't forget to put one space between `#` and the first word.
-+ They differ from `## Heading 2` and `# # Heading 2`
++ `#` must be consecutive. For example, `## Heading 2` and `# # Heading 2` are **NOT** equivalent.
 
   
