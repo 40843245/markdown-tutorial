@@ -812,7 +812,7 @@ The rendered output looks like this:
 **The Cauchy-Schwarz Inequality**
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
-+ or 
+The syntax of content in math expression is similar to that in `Microsoft Word`, `LaTex`.
 
 ## Appreciation
 (Magical Girls of Amazing Rainbow【Anime】)[https://www.youtube.com/watch?v=swkJz-DhuDw]
@@ -834,5 +834,9 @@ will provides some element as example. I take some of transcript in this video, 
   - [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
   - [GFM (Github Flaverod Markdown)](https://github.github.com/gfm/)
   - [Writing mathematical expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
+
   
 + For some special case and controversial case , see [GFM](https://github.github.com/gfm/).
+
+### Furthur reference
+[mathjax](https://www.mathjax.org/)
