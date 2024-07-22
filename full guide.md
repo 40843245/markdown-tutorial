@@ -56,3 +56,5 @@ See the example on [Line Break Best Practices](https://www.markdownguide.org/bas
 | `I just love __bold text__.` | `I just love <strong>bold text</strong>.` | I just love <strong>bold text</strong>. |
 | `Love**is**bold`	| `Love<strong>is</strong>` | Love**is**bold |
 
+### **NOTES**
+There don't exist this syntax. Such as `Love__is__bold`.
