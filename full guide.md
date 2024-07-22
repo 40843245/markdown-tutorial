@@ -128,6 +128,10 @@ The rendered output looks like this:
 
 ### Multiple Nested Blockquotes
 
+Let's dig in with several examples.
+
++ Example 1
+
     > I'm so excited. 
     > I didn't sleep well last night.
     >> We're going bird watching the camping.
@@ -145,3 +149,53 @@ The rendered output looks like this:
 >>> so don't just play around. 
 > Please take it seriously.
 > We have to spend 3 weeks looking for birds.
+
++ Example 2
+
+      > hey you young lady, can I have your seat?
+      > why?
+      >> why you say?
+      > can you see this maternity badge here?
+      >>> maternity badge?
+      > it's a beige to prove that the holder of the beige is pregnant.
+      >>>> yes as you can see I'm pregnant.
+      > it's tiring to stand still for the baby.
+      >>>>> give.
+      > give up your seat.
+      >>>>>> I know that pregnant women have a hard time
+      > (O.S. but her tone can she be nicer )
+      >>>>>>> but Midori is sitting
+      > because she has a headache
+      >>>>>>>>> hey dck she's still young a little pant
+      > you would be a problem
+      >>>>>>>>>> but it's a matter of life or death of my child
+      > can you understand hold up now
+      >>>>>>>>>>> you're too much are
+      > Other poeple says: they arguing can't they do this elsewhere
+      >>>>>>>>>>> gosh thanks to this keys
+      > I'm attracting so much attention
+
+The rendered output looks like this:
+
+> hey you young lady, can I have your seat?
+> why?
+>> why you say?
+> can you see this maternity badge here?
+>>> maternity badge?
+> it's a beige to prove that the holder of the beige is pregnant.
+>>>> yes as you can see I'm pregnant.
+> it's tiring to stand still for the baby.
+>>>>> give.
+> give up your seat.
+>>>>>> I know that pregnant women have a hard time
+> (O.S. but her tone can she be nicer )
+>>>>>>> but Midori is sitting
+> because she has a headache
+>>>>>>>>> hey dck she's still young a little pant
+> you would be a problem
+>>>>>>>>>> but it's a matter of life or death of my child
+> can you understand hold up now
+>>>>>>>>>>> you're too much are
+> Other poeple says: they arguing can't they do this elsewhere
+>>>>>>>>>>> gosh thanks to this keys
+> I'm attracting so much attention
