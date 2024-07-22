@@ -1,6 +1,6 @@
 # markdown tutorial
-## Text
-### Heading 
+## [Text](https://www.markdownguide.org/basic-syntax/#paragraphs-1)
+### [Heading](https://www.markdownguide.org/basic-syntax/#paragraphs-1)
 There are six different types of headings, from heading 1 to heading 6. 
 
 Heading 1 has the biggest text among these headings. 
@@ -27,7 +27,7 @@ While heading 6 has the smallest text among these headings.
 + Don't forget to put one space between `#` and the first word.
 + `#` must be consecutive. For example, `## Heading 2` and `# # Heading 2` are **NOT** equivalent.
 
-### Paragraphs
+### [Paragraphs](https://www.markdownguide.org/basic-syntax/#paragraphs-1)
 To create paragraphs, use a blank line to separate one or more lines of text.
 
 | Markdown | HTML | Rendered Output |
@@ -37,7 +37,7 @@ To create paragraphs, use a blank line to separate one or more lines of text.
 #### **NOTES**
 Unless the paragraph is in a list, don’t indent paragraphs with spaces or tabs.
 
-### Line Breaks
+### [Line Breaks](https://www.markdownguide.org/basic-syntax/#line-breaks)
 To create a line break or new line (in html `<br>`), end a line with two or more spaces, and then type return.
 
 | Markdown | HTML | Rendered Output |
@@ -49,8 +49,8 @@ Unlike C, one can ***NOT*** `\` to break a new line.
 
 See the example on [Line Break Best Practices](https://www.markdownguide.org/basic-syntax/#line-break-best-practices)
 
-## Emphasis of text
-### Bold
+## [Emphasis of text](https://www.markdownguide.org/basic-syntax/#emphasis)
+### [Bold](https://www.markdownguide.org/basic-syntax/#bold)
 
 | Markdown | HTML | Rendered Output |
 | -------- | ----- | -------------- |
@@ -61,7 +61,7 @@ See the example on [Line Break Best Practices](https://www.markdownguide.org/bas
 #### **NOTES**
 There don't exist this syntax. Such as `Love__is__bold`.
 
-### Italic
+### [Italic](https://www.markdownguide.org/basic-syntax/#bold-and-italic)
 
 | Markdown | HTML | Rendered Output |
 | -------- | ---- | --------------- |
@@ -72,7 +72,7 @@ There don't exist this syntax. Such as `Love__is__bold`.
 #### **NOTES**
 There don't exist this syntax. Such as `A_cat_meow`.
 
-### Bold and Italic
+### [Bold and Italic](https://www.markdownguide.org/basic-syntax/#bold-and-italic)
 
 | Markdown | HTML |	Rendered Output |
 | -------- | ---- | --------------- |
@@ -88,8 +88,8 @@ There don't exist this syntax. Such as `This is really___very__important text.`.
 #### **NOTES** 
 The order of the em and strong tags might be reversed depending on the Markdown processor you're using.
 
-## Blockquotes
-### Blockquotes with Single Line
+## [Blockquotes](https://www.markdownguide.org/basic-syntax/#blockquotes-1)
+### [Blockquotes with Single Line](https://www.markdownguide.org/basic-syntax/#blockquotes-1)
 To create a blockquote, add a > in front of a paragraph.
 
     > Dorothy followed her through many of the beautiful rooms in her castle.
@@ -98,7 +98,7 @@ The rendered output looks like this:
 
 > Dorothy followed her through many of the beautiful rooms in her castle.
 
-### Blockquotes with Multiple Paragraphs
+### [Blockquotes with Multiple Paragraphs](https://www.markdownguide.org/basic-syntax/#nested-blockquotes)
 
 Blockquotes can contain multiple paragraphs. Add a > on the blank lines between the paragraphs.
 
@@ -113,7 +113,7 @@ The rendered output looks like this:
 > The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
 
 
-### Nested Blockquotes
+### [Nested Blockquotes](https://www.markdownguide.org/basic-syntax/#nested-blockquotes)
 Blockquotes can be nested. Add a >> in front of the paragraph you want to nest.
     
     > Dorothy followed her through many of the beautiful rooms in her castle.
@@ -238,7 +238,7 @@ The rendered output looks like this:
       >>>> so you need to be more careful.
       >>> huh those are the kids from last week.
       >> they're here again.
-      > how dare they?
+      > how dare they embrace me last time?
 
 The rendered output looks like this:
 
@@ -249,15 +249,32 @@ The rendered output looks like this:
 >>>> so you need to be more careful.
 >>> huh those are the kids from last week
 >> they're here again
-> how dare they
+> how dare they embrace me last time?
+
+### [Blockquotes with Other Elements](https://www.markdownguide.org/basic-syntax/#blockquotes-with-other-elements)
+
+    > #### The quarterly results look great!
+    >
+    > - Revenue was off the chart.
+    > - Profits were higher than ever.
+    >
+    >  *Everything* is going according to **plan**.
+
+The rendered output looks like this:
+
+> #### The quarterly results look great!
+>
+> - Revenue was off the chart.
+> - Profits were higher than ever.
+>
+>  *Everything* is going according to **plan**.
 
 
-embrace me last time hey you
-guys stand up and give me your
-seat but K is injured I'm sorry could
-you ask someone else for the seat aari
-just BR her ankle what prano do they
-know each other unbelievable how can she
+> hey you guys stand up and give me your seat.
+> but Kary is injured.
+> I'm sorry. could you ask someone else for the seat?
+> just BR her ankle what prank
+> do they know each other unbelievable how can she
 demand seed from an injured girl what uh
 I'm fine come on please sit down Carrie
 are you able to steal I'm okay I'm good
