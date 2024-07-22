@@ -354,3 +354,13 @@ To denote a word or phrase as code, enclose it in backticks (`).
 | Markdown | HTML | Rendered Output |
 | -------- | ---- | --------------- |
 | ```At the command prompt, type `nano` ```.|	`At the command prompt, type <code>nano</code> .`	| At the command prompt, type <code>nano</code> .
+
+### **Extra Info**
+For Escaping Backticks on Code, see [Escaping Backticks on Code](https://www.markdownguide.org/basic-syntax/#escaping-backticks).
+
+### [Code Blocks](https://www.markdownguide.org/basic-syntax/#code-blocks)
+
+To create code blocks, either 
+
++ indent every line of the block by at least four spaces or one tab. Or
++ use "```".
