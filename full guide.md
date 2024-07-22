@@ -229,14 +229,29 @@ The rendered output looks like this:
 > why are you always so careless?
 
 
->>> I wasn't paying attention because the train was about to leave once we get over there
++ Example 5: concatenation of 4-level nested blockquotes in non-reversed order and that in reversed order.
+  
+      > I wasn't paying attention because the train was about to leave once we get over there
+      >> we need to get it treat.
+      >>> sorry to trouble you.
+      >>>> we still have two more weeks left for bird watching,
+      >>>> so you need to be more careful.
+      >>> huh those are the kids from last week.
+      >> they're here again.
+      > how dare they?
+
+The rendered output looks like this:
+
+> I wasn't paying attention because the train was about to leave once we get over there
 >> we need to get it treat.
-> sorry to trouble you.
+>>> sorry to trouble you.
+>>>> we still have two more weeks left for bird watching,
+>>>> so you need to be more careful.
+>>> huh those are the kids from last week
+>> they're here again
+> how dare they
 
 
-> we still have two more weeks left for bird watching,
-> so you need to be more careful. huh those are the kids from last
-week they're here again how dare they
 embrace me last time hey you
 guys stand up and give me your
 seat but K is injured I'm sorry could
