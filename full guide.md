@@ -253,6 +253,10 @@ The rendered output looks like this:
 
 ### [Blockquotes with Other Elements](https://www.markdownguide.org/basic-syntax/#blockquotes-with-other-elements)
 
+Let's dig in with several examples.
+
++ Example 1:
+
     > #### The quarterly results look great!
     >
     > - Revenue was off the chart.
@@ -269,14 +273,28 @@ The rendered output looks like this:
 >
 >  *Everything* is going according to **plan**.
 
++ Example 2:
+  
+      > # hey you guys stand up and give me your seat.
+      > but ***Kary*** is injured.
+      > I'm sorry. could you ask ___someone___ else for the seat?
+      > just BR her ankle what 'prank'.
+      > Other people says: do they know each other? `unbelievable`, how can she demand that seen from an ```injured girl```?
+      > I'm fine.
+      > come on.
+      > <em>please sit down</em>. 
+      > Kary, are you able to <strong>stand alone</strong>?
+      > I'm okay.<br> I'm good at standing on one foot.
 
-> hey you guys stand up and give me your seat.
-> but Kary is injured.
-> I'm sorry. could you ask someone else for the seat?
-> just BR her ankle what prank
-> do they know each other unbelievable how can she
-demand seed from an injured girl what uh
-I'm fine come on please sit down Carrie
-are you able to steal I'm okay I'm good
-at standing on one foot the swaying
+The rendered output looks like this:
 
+> # hey you guys stand up and give me your seat.
+> but ***Kary*** is injured.
+> I'm sorry. could you ask ___someone___ else for the seat?
+> just BR her ankle what 'prank'.
+> Other people says: do they know each other? `unbelievable`, how can she demand that seen from an ```injured girl```?
+> I'm fine.
+> come on.
+> <em>please sit down</em>. 
+> Kary, are you able to <strong>stand alone</strong>?
+> I'm okay.<br> I'm good at standing on one foot.
