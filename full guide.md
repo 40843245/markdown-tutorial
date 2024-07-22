@@ -317,8 +317,11 @@ See [example in Ordered Lists](https://www.markdownguide.org/basic-syntax/#order
 ### **NOTES**
 
 ```
-`CommonMark` and a few other lightweight markup languages let you use a parenthesis ()) as a delimiter (e.g., 1) First item), 
-
-but not all Markdown applications support this, so it isn’t a great option from a compatibility perspective. For compatibility, use periods only.
+CommonMark and a few other lightweight markup languages let you use a parenthesis ()) as a delimiter (e.g., 1) First item), 
+but not all Markdown applications support this,
+so it isn’t a great option from a compatibility perspective. For compatibility, use periods only.
 ```
+
+### [Unordered Lists](https://www.markdownguide.org/basic-syntax/#unordered-lists)
+See [example in Unordered Lists](https://www.markdownguide.org/basic-syntax/#unordered-lists)
 
