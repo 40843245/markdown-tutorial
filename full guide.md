@@ -399,3 +399,138 @@ The rendered output looks like this:
 [Links](https://www.markdownguide.org/basic-syntax/#links)
 
 ### [URLs and Email Addresses](https://www.markdownguide.org/basic-syntax/#urls-and-email-addresses)
+
+There are a faster way to turn a URL or email address into a link, enclose it in angle brackets.
+
++ Example 1:
+
+```<https://www.markdownguide.org>```
+
+The rendered output looks like this:
+
+<https://www.markdownguide.org>
+
++ Example 2:
+
+```<fake@example.com>```
+
+The rendered output looks like this:
+
+<fake@example.com>
+
+### [Formatting Links](https://www.markdownguide.org/basic-syntax/#formatting-links)
+To emphasize links, add asterisks before and after the brackets and parentheses. To denote links as code, add backticks in the brackets.
+
++ Example 1:
+
+```I love supporting the **[EFF](https://eff.org)**.```
+
+The rendered output looks like this:
+
+I love supporting the **[EFF](https://eff.org)**.
+
++ Example 2:
+
+```This is the *[Markdown Guide](https://www.markdownguide.org)*.```
+
+The rendered output looks like this:
+
+This is the *[Markdown Guide](https://www.markdownguide.org)*.
+
++ Example 3:
+
+```See the section on [`code`](#code).```
+
+The rendered output looks like this:
+
+See the section on [`code`](#code).
+
+### [Reference-style Links](https://www.markdownguide.org/basic-syntax/#reference-style-links)
+See [Reference-style Links](https://www.markdownguide.org/basic-syntax/#reference-style-links)
+
+## Table
+In markdown, a table must satisfy these requirements.
+
++ In each row, it is required:
+  + the first `|` then consecutive space.
+  + consecutive space then last `|`.
+
+
++ In the second row, it is required:
+  + there are exactly same number of `|` in second row than that in first row. (Remember that `three or more asterisks (***), dashes (---), or underscores (___) on a line by themselves.` means `Horizontal Rules` in markdown?)
+    
+  + in second row, each `|` must be separated by one of more spaces, one or more `-`, one of more spaces, in sequential order. (For fully understand, see following example `Example 1`).
+
+In markdown, a table has these features:
+
++ in table, they will take effect:
+  + tag in markup language (such as html5) (if the tag is valid and its syntax is correct)
+  + markdown language (if the tag is valid and its syntax is correct)
+
+Here are some examples.
+
++ Example 1:
+
+```
+| Generated component	| Created at | Destroyed at |
+| ------------------- | ---------- | ------------ |
+| SingletonComponent | Application#onCreate()	| Application destroyed |
+| ActivityRetainedComponent	| Activity#onCreate()	| Activity#onDestroy() |
+| ViewModelComponent	| ViewModel created	| ViewModel destroyed |
+| ActivityComponent	| Activity#onCreate()	| Activity#onDestroy() |
+| FragmentComponent	| Fragment#onAttach()	| Fragment#onDestroy() |
+| ViewComponent	| View#super() | View destroyed |
+| ViewWithFragmentComponent	| View#super() | View destroyed |
+| ServiceComponent | Service#onCreate()	| Service#onDestroy() |
+```
+
+The rendered output looks like this:
+
+| Generated component	| Created at | Destroyed at |
+| ------------------- | ---------- | ------------ |
+| SingletonComponent | Application#onCreate()	| Application destroyed |
+| ActivityRetainedComponent	| Activity#onCreate()	| Activity#onDestroy() |
+| ViewModelComponent	| ViewModel created	| ViewModel destroyed |
+| ActivityComponent	| Activity#onCreate()	| Activity#onDestroy() |
+| FragmentComponent	| Fragment#onAttach()	| Fragment#onDestroy() |
+| ViewComponent	| View#super() | View destroyed |
+| ViewWithFragmentComponent	| View#super() | View destroyed |
+| ServiceComponent | Service#onCreate()	| Service#onDestroy() |
+
++ Example 2:
+  
+```
+| Markdown	| HTML | Rendered Output |
+| --------- | ---- | --------------- |
+| # Heading level 1 | `<h1>Heading level 1</h1>` |	<h1>Heading level 1</h1> | 
+| ## Heading level 2	| `<h2>Heading level 2</h2>` | <h2>Heading level 2</h2>	| 
+| ### Heading level 3	| `<h3>Heading level 3</h3>` | <h3>Heading level 3</h3>	| 
+| #### Heading level 4	| `<h4>Heading level 4</h4>` | <h4>Heading level 4</h4> |
+| ##### Heading level 5	| `<h5>Heading level 5</h5>` | <h5>Heading level 5</h5> |
+| ###### Heading level 6 | `<h6>Heading level 6</h6>`	| <h6>Heading level 6</h6> |
+```
+
+The rendered output looks like this:
+
+| Markdown	| HTML | Rendered Output |
+| --------- | ---- | --------------- |
+| # Heading level 1 | `<h1>Heading level 1</h1>` |	<h1>Heading level 1</h1> | 
+| ## Heading level 2	| `<h2>Heading level 2</h2>` | <h2>Heading level 2</h2>	| 
+| ### Heading level 3	| `<h3>Heading level 3</h3>` | <h3>Heading level 3</h3>	| 
+| #### Heading level 4	| `<h4>Heading level 4</h4>` | <h4>Heading level 4</h4> |
+| ##### Heading level 5	| `<h5>Heading level 5</h5>` | <h5>Heading level 5</h5> |
+| ###### Heading level 6 | `<h6>Heading level 6</h6>`	| <h6>Heading level 6</h6> |
+
++ Example 3:
+
+```
+| Markdown | HTML | Rendered Output |
+| -------- | ---- | --------------- |
+| ```At the command prompt, type `nano` ```.|	`At the command prompt, type <code>nano</code> .`	| At the command prompt, type <code>nano</code> .
+```
+
+The rendered output looks like this:
+
+| Markdown | HTML | Rendered Output |
+| -------- | ---- | --------------- |
+| ```At the command prompt, type `nano` ```.|	`At the command prompt, type <code>nano</code> .`	| At the command prompt, type <code>nano</code> .
