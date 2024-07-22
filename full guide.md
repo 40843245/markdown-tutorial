@@ -373,7 +373,7 @@ For compatibility, put blank lines before and after horizontal rules.
 
 ## [Links](https://www.markdownguide.org/basic-syntax/#links)
 
-> [Links](https://www.markdownguide.org/basic-syntax/#links)
+```[Links](https://www.markdownguide.org/basic-syntax/#links)```
 
 The rendered output looks like this:
 
