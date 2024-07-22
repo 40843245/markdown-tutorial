@@ -101,6 +101,20 @@ There don't exist this syntax. Such as `This is really___very__important text.`.
 #### **NOTES** 
 The order of the em and strong tags might be reversed depending on the Markdown processor you're using.
 
+### [Subscript](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#styling-text)
+Due to the feature of markdown.
+
++ some markdown language support some html (a kind of markup language) in some platform or app.
+
+In Github, one can use `<sub>` tag along with `</sub>`.
+
+### [Superscript](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#styling-text)
+Due to the feature of markdown.
+
++ some markdown language support some html (a kind of markup language) in some platform or app.
+
+In Github, one can use `<sup>` tag along with `</sup>`.
+
 ### Underline
 I put this subsection under last of this section. Since the implementation of underline text in markdown are complicate and rough.
 
@@ -484,7 +498,8 @@ In markdown, a table must satisfy these requirements.
 + In the second row, it is required:
   + there are exactly same number of `|` in second row than that in first row. (Remember that `three or more asterisks (***), dashes (---), or underscores (___) on a line by themselves.` means `Horizontal Rules` in markdown?)
     
-  + in second row, each `|` must be separated by one of more spaces, one or more `-`, one of more spaces, in sequential order. (For fully understand, see following example `Example 1`).
+  + in second row, each `|` must be separated by one of more spaces, one or more `-`, one of more spaces, in sequential order. (For fully understand, see following example `Example 1`). **NOTES** However, at some platform, one can align the table according to second row. About align the table at Github, see [align the table at Github](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables)
+  
 
 In markdown, a table has these features:
 
@@ -620,6 +635,19 @@ Many Markdown applications allow you to use HTML tags in Markdown-formatted text
 
 For more details, see [HTML](https://www.markdownguide.org/basic-syntax/#html)
 
+## Comment 
+Like html tag, may use ```<!-- This content will not appear in the rendered Markdown -->```
+
+
+```
+<!-- This content will not appear in the rendered Markdown -->
+```
+
+This paragraph will not be shown.
+
+<!-- This content will not appear in the rendered Markdown -->
+
+
 ## TOC
 
 ```
@@ -729,6 +757,62 @@ GitHub support Emoji.
 
 [List of emoji in Github](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md).
 
+## [mathematical expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
+### Way 1: inline expression
+
+```
+You can either surround the expression with dollar symbols ($), or start the expression with $` and end it with `$. The latter syntax is useful when the expression you are writing contains characters that overlap with markdown syntax.
+```
+
++ Example 1:
+
+```
+This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
+```
+
+The rendered output looks like this:
+
+This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
+
++ Example 2:
+
+```
+This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
+```
+
+The rendered output looks like this:
+
+This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
+
+### Way 2: block
+
+To add a math expression as a block, either 
+
++ start a new line and delimit the expression with two dollar symbols $$
++ or start with a code block that start with the word `math` (i.e. ` ```math ``` `).
+
++ Example 1:
+
+```
+**The Cauchy-Schwarz Inequality**
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+```
+
+or 
+
+```
+**The Cauchy-Schwarz Inequality**
+
+\`\`\`math
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+```
+
+The rendered output looks like this:
+
+**The Cauchy-Schwarz Inequality**
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+
++ or 
 
 ## Appreciation
 (Magical Girls of Amazing Rainbow【Anime】)[https://www.youtube.com/watch?v=swkJz-DhuDw]
@@ -744,3 +828,11 @@ will provides some element as example. I take some of transcript in this video, 
 
 + For TOC, see
 [Markdown to create pages and table of contents? `[closed]`](https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents?page=1&tab=trending#tab-top)
+
++ For markdown language at Github, see
+  - [Quickstart](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)
+  - [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+  - [GFM (Github Flaverod Markdown)](https://github.github.com/gfm/)
+  - [Writing mathematical expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
+  
++ For some special case and controversial case , see [GFM](https://github.github.com/gfm/).
