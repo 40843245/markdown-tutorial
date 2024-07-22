@@ -33,3 +33,13 @@ To create paragraphs, use a blank line to separate one or more lines of text.
 | -------- | ---- | --------------- |
 | I really like using Markdown. <br> <br> I think I'll use it to format all of my documents from now on.	| `<p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>` | <p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>
   
+### **NOTES**
+Unless the paragraph is in a list, don’t indent paragraphs with spaces or tabs.
+
+## Line Breaks
+To create a line break or new line (<br>), end a line with two or more spaces, and then type return.
+
+| Markdown | HTML | Rendered Output |
+| -------- | ---- | --------------- |
+| This is the first line.  <br> And this is the second line. |	`<p>This is the first line.<br> And this is the second line.</p>`	 | <p>This is the first line.<br> And this is the second line.</p> |
+And this is the second line.
