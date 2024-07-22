@@ -84,3 +84,15 @@ There don't exist this syntax. Such as `A_cat_meow`.
 
 #### **NOTES**
 There don't exist this syntax. Such as `This is really___very__important text.`.
+
+#### **NOTES** 
+The order of the em and strong tags might be reversed depending on the Markdown processor you're using.
+
+## Blockquotes
+To create a blockquote, add a > in front of a paragraph.
+
+    > Dorothy followed her through many of the beautiful rooms in her castle.
+
+The rendered output looks like this:
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
