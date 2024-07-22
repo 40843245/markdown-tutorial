@@ -372,9 +372,30 @@ To create a horizontal rule, use three or more asterisks (***), dashes (---), or
 For compatibility, put blank lines before and after horizontal rules.
 
 ## [Links](https://www.markdownguide.org/basic-syntax/#links)
+### [Normal Links](https://www.markdownguide.org/basic-syntax/#links)
 
++ Example 1: Don't specify title,
+
+```https://www.markdownguide.org/basic-syntax/#links```
+
+The rendered output looks like this:
+
+https://www.markdownguide.org/basic-syntax/#links
+
++ Example 2: Don't specify title,
+
+```(https://www.markdownguide.org/basic-syntax/#links)```
+
+The rendered output looks like this:
+
+(https://www.markdownguide.org/basic-syntax/#links)
+
++ Example 2: Do specify title
+  
 ```[Links](https://www.markdownguide.org/basic-syntax/#links)```
 
 The rendered output looks like this:
 
 [Links](https://www.markdownguide.org/basic-syntax/#links)
+
+### [URLs and Email Addresses](https://www.markdownguide.org/basic-syntax/#urls-and-email-addresses)
