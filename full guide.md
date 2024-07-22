@@ -626,5 +626,12 @@ From the transcript of YT video ["I'm going to eat you" Strange guy sneaks into 
 
 The rendered output looks like the content in [example of TOC at Github](https://github.com/40843245/markdown-tutorial/blob/main/example/TOC.md).
 
+## Appreciation
+(Magical Girls of Amazing Rainbow【Anime】)[https://www.youtube.com/watch?v=swkJz-DhuDw]
+
+will provides some element as example. I take some of transcript in this video, [(Ridiculous people on the subway!! #anime #manga)](https://www.youtube.com/watch?v=swkJz-DhuDw) as elements for examples.
+
 ### Ref
-https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents?page=1&tab=trending#tab-top
+
++ For TOC, see
+[Markdown to create pages and table of contents? `[closed]`](https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents?page=1&tab=trending#tab-top)
