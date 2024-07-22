@@ -72,6 +72,20 @@ There don't exist this syntax. Such as `Love__is__bold`.
 #### **NOTES**
 There don't exist this syntax. Such as `A_cat_meow`.
 
+### [Strikethrough](https://learn-markdown.github.io/)
+Any word wrapped with two tildes (like `~~this~~`) will appear crossed out.
+
++ Example 1:
+
+```
+~~this~~
+```
+
+The rendered output looks like this:
+
+~~this~~
+
+
 ### [Bold and Italic](https://www.markdownguide.org/basic-syntax/#bold-and-italic)
 
 | Markdown | HTML |	Rendered Output |
@@ -626,12 +640,19 @@ From the transcript of YT video ["I'm going to eat you" Strange guy sneaks into 
 
 The rendered output looks like the content in [example of TOC at Github](https://github.com/40843245/markdown-tutorial/blob/main/example/TOC.md).
 
+## [Username @mentions](https://learn-markdown.github.io/)
+
 ## Appreciation
 (Magical Girls of Amazing Rainbow【Anime】)[https://www.youtube.com/watch?v=swkJz-DhuDw]
 
 will provides some element as example. I take some of transcript in this video, [(Ridiculous people on the subway!! #anime #manga)](https://www.youtube.com/watch?v=swkJz-DhuDw) as elements for examples.
 
 ### Ref
++ For basic syntax in most section, see
+
+  - [basic syntax of markdown](https://www.markdownguide.org/basic-syntax/)
+  - [basic syntax of markdown](https://learn-markdown.github.io/)
+  
 
 + For TOC, see
 [Markdown to create pages and table of contents? `[closed]`](https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents?page=1&tab=trending#tab-top)
