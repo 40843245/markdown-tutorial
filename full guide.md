@@ -284,7 +284,7 @@ The rendered output looks like this:
       > come on.
       > <em>please sit down</em>. 
       > Kary, are you able to <strong>stand alone</strong>?
-      > I'm okay.<br> I'm good at standing on one foot.
+      > I'm okay.<br> I'm good at standing on one foot.<br><br>
 
 The rendered output looks like this:
 
@@ -297,4 +297,4 @@ The rendered output looks like this:
 > come on.
 > <em>please sit down</em>. 
 > Kary, are you able to <strong>stand alone</strong>?
-> I'm okay.<br> I'm good at standing on one foot.
+> I'm okay.<br> I'm good at standing on one foot.<br><br>
