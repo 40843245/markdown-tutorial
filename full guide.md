@@ -678,7 +678,57 @@ The rendered output looks like this:
 [^note]:
     Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
     This footnote also has been made with a different syntax using 4 spaces for new lines.
+
+## [Alerts on Github)](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#footnotes)
+
+Five kinds of alerts are available at Github.
+
+```
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+```
+
+The rendered output looks like this:
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
+
 ## [Username @mentions](https://learn-markdown.github.io/)
+Typing a hash tag (i.e. an `@` symbol), followed by a username, will notify that person to come and view the comment. 
+
+Like in YT.
+
+## Emoji
+
+GitHub support Emoji.
+
+[List of emoji in Github](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md).
+
 
 ## Appreciation
 (Magical Girls of Amazing Rainbow【Anime】)[https://www.youtube.com/watch?v=swkJz-DhuDw]
