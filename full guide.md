@@ -126,3 +126,22 @@ The rendered output looks like this:
 >
 >> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
 
+### Multiple Nested Blockquotes
+
+    > I'm so excited. 
+    > I didn't sleep well last night.
+    >> We're going bird watching the camping.
+    > It's a school assignment, 
+    >>> so don't just play around. 
+    > Please take it seriously.
+    > We have to spend 3 weeks looking for birds.
+
+The rendered output looks like this:
+
+> I'm so excited. 
+> I didn't sleep well last night.
+>> We're going bird watching the camping.
+> It's a school assignment, 
+>>> so don't just play around. 
+> Please take it seriously.
+> We have to spend 3 weeks looking for birds.
