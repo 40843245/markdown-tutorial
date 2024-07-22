@@ -150,7 +150,7 @@ The rendered output looks like this:
 > Please take it seriously.
 > We have to spend 3 weeks looking for birds.
 
-+ Example 2
++ Example 2 (12-level nested blockquotes)
 
       > hey you young lady, can I have your seat?
       > why?
@@ -172,7 +172,7 @@ The rendered output looks like this:
       > can you understand hold up now
       >>>>>>>>>>> you're too much are
       > Other poeple says: they arguing can't they do this elsewhere
-      >>>>>>>>>>> gosh thanks to this keys
+      >>>>>>>>>>>> gosh thanks to this keys
       > I'm attracting so much attention
 
 The rendered output looks like this:
@@ -199,3 +199,17 @@ The rendered output looks like this:
 > Other poeple says: they arguing can't they do this elsewhere
 >>>>>>>>>>> gosh thanks to this keys
 > I'm attracting so much attention
+
++ Example 3:
+  
+      > I'm glad you finally understand.
+      >> you're lucky. Midory is way too nice huh.
+      >>> it's all for to say to an unwell person.
+      >>>> it's not a big deal AE what she's got a point.
+
+The rendered output looks like this:
+
+> I'm glad you finally understand.
+>> you're lucky. Midory is way too nice huh.
+>>> it's all for to say to an unwell person.
+>>>> it's not a big deal AE what she's got a point.
