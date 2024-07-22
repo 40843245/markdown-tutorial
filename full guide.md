@@ -309,3 +309,16 @@ Without blank lines, this might not look right.
 > This is a blockquote
 Don't do this!
 ```
+
+## [Lists](https://www.markdownguide.org/basic-syntax/#lists-1)
+### [Ordered Lists](https://www.markdownguide.org/basic-syntax/#ordered-lists)
+See [example in Ordered Lists](https://www.markdownguide.org/basic-syntax/#ordered-lists)
+
+### **NOTES**
+
+```
+`CommonMark` and a few other lightweight markup languages let you use a parenthesis ()) as a delimiter (e.g., 1) First item), 
+
+but not all Markdown applications support this, so it isn’t a great option from a compatibility perspective. For compatibility, use periods only.
+```
+
