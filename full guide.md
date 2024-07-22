@@ -364,3 +364,17 @@ To create code blocks, either
 
 + indent every line of the block by at least four spaces or one tab. Or
 + use ` ``` `.
+
+## [Horizontal Rules](https://www.markdownguide.org/basic-syntax/#horizontal-rules)
+To create a horizontal rule, use three or more asterisks (***), dashes (---), or underscores (___) on a line by themselves.
+
+### **NOTES**
+For compatibility, put blank lines before and after horizontal rules.
+
+## [Links](https://www.markdownguide.org/basic-syntax/#links)
+
+> [Links](https://www.markdownguide.org/basic-syntax/#links)
+
+The rendered output looks like this:
+
+[Links](https://www.markdownguide.org/basic-syntax/#links)
