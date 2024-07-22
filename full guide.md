@@ -534,3 +534,20 @@ The rendered output looks like this:
 | Markdown | HTML | Rendered Output |
 | -------- | ---- | --------------- |
 | ```At the command prompt, type `nano` ```.|	`At the command prompt, type <code>nano</code> .`	| At the command prompt, type <code>nano</code> .
+
++ Example 4:
+
+```
+| Markdown | HTML | Rendered Output |
+| -------- | ---- | --------------- |
+| ```At the command prompt, type `nano` ```.|	`At the command prompt, type <code>nano</code> .`	| At the command prompt, type <code>nano</code> . | More cells | More and more cells. |
+```
+
+The rendered output looks like this:
+
+| Markdown | HTML | Rendered Output |
+| -------- | ---- | --------------- |
+| ```At the command prompt, type `nano` ```.|	`At the command prompt, type <code>nano</code> .`	| At the command prompt, type <code>nano</code> . | More cells | More and more cells. |
+### **NOTES**
++ For any row (except for first row and second row), if the number of `|` in the row is less than that in first row. Then rest of cell will be null.
++ For any row (except for first row and second row), if the number of `|` in the row is less than that in first row. Then rest of cell will be null.
