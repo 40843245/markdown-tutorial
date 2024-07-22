@@ -651,6 +651,33 @@ From the transcript of YT video ["I'm going to eat you" Strange guy sneaks into 
 
 The rendered output looks like the content in [example of TOC at Github](https://github.com/40843245/markdown-tutorial/blob/main/example/TOC.md).
 
+## Footenotes
+Footnotes aren't part of the core Markdown spec, but they supported by [GFM](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#footnotes) and thus is available at Github.
+
+
+```
+Here is a simple footnote[^1].
+
+A footnote can also have multiple lines[^2].  
+
+You can also use words, to fit your writing style more closely[^note].
+
+[^1]: My reference.
+[^2]: Every new line should be prefixed with 2 spaces.  
+  This allows you to have a footnote with multiple lines.
+[^note]:
+    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
+    This footnote also has been made with a different syntax using 4 spaces for new lines.
+```
+
+The rendered output looks like this:
+
+[^1]: My reference.
+[^2]: Every new line should be prefixed with 2 spaces.  
+  This allows you to have a footnote with multiple lines.
+[^note]:
+    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
+    This footnote also has been made with a different syntax using 4 spaces for new lines.
 ## [Username @mentions](https://learn-markdown.github.io/)
 
 ## Appreciation
