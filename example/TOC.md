@@ -20,4 +20,4 @@ stomach ache isn't there a soul that is
 worthy to be my
 meal h Huh I'm so glad to this last
 ## [Fourth Example](http://www.fourthexample.com) 
-From the transcript of YT video [Magical Girls of Amazing Rainbow【Anime】](https://www.youtube.com/watch?v=zxwZHosp-0w)
+From the transcript of YT video ["I'm going to eat you" Strange guy sneaks into a girl's house #anime #manga (Magical Girls of Amazing Rainbow【Anime】)](https://www.youtube.com/watch?v=zxwZHosp-0w)
