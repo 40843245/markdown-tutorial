@@ -548,6 +548,33 @@ The rendered output looks like this:
 | Markdown | HTML | Rendered Output |
 | -------- | ---- | --------------- |
 | ```At the command prompt, type `nano` ```.|	`At the command prompt, type <code>nano</code> .`	| At the command prompt, type <code>nano</code> . | More cells | More and more cells. |
+
 ### **NOTES**
 + For any row (except for first row and second row), if the number of `|` in the row is less than that in first row. Then rest of cell will be null.
-+ For any row (except for first row and second row), if the number of `|` in the row is less than that in first row. Then rest of cell will be null.
++ For any row (except for first row and second row), if the number of `|` in the row is less than that in first row. Then extraneous cell will be ignored. (See above exmaple `Example 4`)
+
+## Images
+
++ Example 1: Copy an image from local device.
+
+At present, if one copies an image from local device then paste it in some specific app or platform.
+
++ Github
++ Stackoverflow
+
+Then 
+
+```
+![try_login_dataflow](https://github.com/user-attachments/assets/fbe3314d-3252-45ca-a132-83e8a0234e40)
+```
+
+will render output looks like this:
+
+![try_login_dataflow](https://github.com/user-attachments/assets/fbe3314d-3252-45ca-a132-83e8a0234e40)
+
+
+
+
+
+  
+
