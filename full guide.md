@@ -314,7 +314,7 @@ Don't do this!
 ### [Ordered Lists](https://www.markdownguide.org/basic-syntax/#ordered-lists)
 See [example in Ordered Lists](https://www.markdownguide.org/basic-syntax/#ordered-lists)
 
-### **NOTES**
+#### **NOTES**
 
 ```
 CommonMark and a few other lightweight markup languages let you use a parenthesis ()) as a delimiter (e.g., 1) First item), 
@@ -325,3 +325,32 @@ so it isn’t a great option from a compatibility perspective. For compatibility
 ### [Unordered Lists](https://www.markdownguide.org/basic-syntax/#unordered-lists)
 See [example in Unordered Lists](https://www.markdownguide.org/basic-syntax/#unordered-lists)
 
+### [Starting Unordered List Items With Numbers](https://www.markdownguide.org/basic-syntax/#starting-unordered-list-items-with-numbers)
+
+If you need to start an unordered list item with a number followed by a period, you can use a backslash (\) to escape the period.
+
+See [example in Starting Unordered List Items With Numbers](https://www.markdownguide.org/basic-syntax/#starting-unordered-list-items-with-numbers)
+
+#### **NOTES**
+
+Markdown applications don’t agree on how to handle different delimiters in the same list. 
+
+For compatibility, don’t mix and match delimiters in the same list — pick one and stick with it.
+
+### [Adding Elements in Lists](https://www.markdownguide.org/basic-syntax/#adding-elements-in-lists)
+
+To add another element in a list while preserving the continuity of the list, indent the element four spaces or one tab, as shown in the following examples.
+
+#### **Tip** 
+
+If things don't appear the way you expect, re-check that you've indented the elements in the list four spaces or one tab.
+
+See [example in Adding Elements in Lists](https://www.markdownguide.org/basic-syntax/#adding-elements-in-lists)
+
+## [Code and Code Block](https://www.markdownguide.org/basic-syntax/#code)
+### [Code within Single line](https://www.markdownguide.org/basic-syntax/#code)
+To denote a word or phrase as code, enclose it in backticks (`).
+
+| Markdown | HTML | Rendered Output |
+| -------- | ---- | --------------- |
+| ```At the command prompt, type `nano` ```.|	`At the command prompt, type <code>nano</code>.`	| At the command prompt, type <code>nano</code>.
