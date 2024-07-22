@@ -130,7 +130,7 @@ The rendered output looks like this:
 
 Let's dig in with several examples.
 
-+ Example 1
++ Example 1: 3-level nested blcokquotes
 
     > I'm so excited. 
     > I didn't sleep well last night.
@@ -150,7 +150,7 @@ The rendered output looks like this:
 > Please take it seriously.
 > We have to spend 3 weeks looking for birds.
 
-+ Example 2 (12-level nested blockquotes)
++ Example 2: 12-level nested blockquotes
 
       > hey you young lady, can I have your seat?
       > why?
@@ -200,7 +200,7 @@ The rendered output looks like this:
 >>>>>>>>>>> gosh thanks to this keys
 > I'm attracting so much attention
 
-+ Example 3:
++ Example 3: 4-level blockquotes where there are no one `>` as seperator in each different level
   
       > I'm glad you finally understand.
       >> you're lucky. Midory is way too nice huh.
@@ -213,3 +213,39 @@ The rendered output looks like this:
 >> you're lucky. Midory is way too nice huh.
 >>> it's all for to say to an unwell person.
 >>>> it's not a big deal AE what she's got a point.
+
++ Example 4:
+
+      > in the following week,
+      >> ouch ouch are you okay?
+      >>> stepping into the gap between the train and the platform...
+      >>>> why are you always so careless?
+      >>> I wasn't paying attention because the train was about to leave once we get over there
+      >> we need to get it treat.
+      > sorry to trouble you.
+
+The rendered output looks like this:
+
+> in the following week,
+>> ouch ouch are you okay?
+>>> stepping into the gap between the train and the platform...
+>>>> why are you always so careless?
+>>> I wasn't paying attention because the train was about to leave once we get over there
+>> we need to get it treat.
+> sorry to trouble you.
+
+
+> we still have two more weeks left for bird watching,
+> so you need to be more careful. huh those are the kids from last
+week they're here again how dare they
+embrace me last time hey you
+guys stand up and give me your
+seat but K is injured I'm sorry could
+you ask someone else for the seat aari
+just BR her ankle what prano do they
+know each other unbelievable how can she
+demand seed from an injured girl what uh
+I'm fine come on please sit down Carrie
+are you able to steal I'm okay I'm good
+at standing on one foot the swaying
+
