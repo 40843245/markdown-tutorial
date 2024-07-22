@@ -85,7 +85,6 @@ The rendered output looks like this:
 
 ~~this~~
 
-
 ### [Bold and Italic](https://www.markdownguide.org/basic-syntax/#bold-and-italic)
 
 | Markdown | HTML |	Rendered Output |
@@ -101,6 +100,18 @@ There don't exist this syntax. Such as `This is really___very__important text.`.
 
 #### **NOTES** 
 The order of the em and strong tags might be reversed depending on the Markdown processor you're using.
+
+### Underline
+I put this subsection under last of this section. Since the implementation of underline text in markdown are complicate and rough.
+
+Due to the feature of markdown.
+
++ some markdown language support some html (a kind of markup language) in some platform or app. 
+
+Thus, we may use the html tag to achieve this (or may not in some markdown languages and platforms or apps).
+
+This artcile on [stackoveflow](https://stackoverflow.com/questions/3003476/get-underlined-text-with-markdown) covers a lot of way to underline texts with html tag.
+
 
 ## [Blockquotes](https://www.markdownguide.org/basic-syntax/#blockquotes-1)
 ### [Blockquotes with Single Line](https://www.markdownguide.org/basic-syntax/#blockquotes-1)
