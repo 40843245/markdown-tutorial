@@ -37,7 +37,7 @@ To create paragraphs, use a blank line to separate one or more lines of text.
 Unless the paragraph is in a list, don’t indent paragraphs with spaces or tabs.
 
 ## Line Breaks
-To create a line break or new line (<br>), end a line with two or more spaces, and then type return.
+To create a line break or new line (in html `<br>`), end a line with two or more spaces, and then type return.
 
 | Markdown | HTML | Rendered Output |
 | -------- | ---- | --------------- |
