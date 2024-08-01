@@ -498,14 +498,14 @@ To create a task list, start each list item with a hyphen and space followed by 
 + Example 1:
   
 ```
-- [x] This is a completed task.
-- [ ] This is an incomplete task.
+[x] This is a completed task.
+[ ] This is an incomplete task.
 ```
 
 will be rendered output looks like this:
 
-- [x] This is a completed task.
-- [ ] This is an incomplete task.
+[x] This is a completed task.
+[ ] This is an incomplete task.
 
 > [!TIP]
 > You can use any character inside the brackets to mark it as complete.
@@ -513,14 +513,14 @@ will be rendered output looks like this:
 + Example 2:
 
 ```
-- [x] Milk
-- [?] Eggs
-- [-] Eggs
+[x] Milk
+[?] Eggs
+[-] Eggs
 ```
 
-- [x] Milk
-- [?] Eggs
-- [-] Eggs
+[x] Milk
+[?] Eggs
+[-] Eggs
 
 ## Table
 In markdown, a table must satisfy these requirements.
