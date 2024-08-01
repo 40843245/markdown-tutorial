@@ -667,7 +667,7 @@ will render output looks like this:
 
 will render output looks like this:
 
-![CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+![CNAME_ex1|20x100](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
 
 + Example 3: 
 
@@ -688,6 +688,16 @@ will render output looks like this:
 will render output looks like this:
 
 ![<img alt='CNAME_ex1' width='20'/>](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+
++ Example 5:
+
+```
+![CNAME_ex1\|20x100](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+```
+
+will render output looks like this:
+
+![CNAME_ex1\|20x100](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
 
 ## [Escaping Characters](https://www.markdownguide.org/basic-syntax/#escaping-characters)
 To escape characters (i.e. display a literal character that would otherwise be used to format text in a Markdown document), add a backslash (\) in front of the character. 
