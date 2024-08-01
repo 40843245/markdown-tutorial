@@ -650,61 +650,8 @@ The rendered output looks like this:
 
 ### [Images that specifies the width or height etc](https://stackoverflow.com/questions/14675913/changing-image-size-in-markdown)
 
-Let's look at images the size is **NOT** changed and its syntax first, then, look at images that the width or height is specified, and its syntax, through following exmaple.
+See [syntax in Obsidian (My notes at Github)](https://github.com/40843245/markdown-tutorial/blob/main/Obsidian/full%20guide.md)
 
-> [!IMPORTANT]
-> > They have same effect at Github. However, they may have different effect in different platforms.
-
-
-+ Example 1: The size is **NOT** changed.
-
-```
-![CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
-```
-
-will render output looks like this:
-
-![CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
-
-+ Example 2:
-
-```
-![CNAME_ex1|20x100](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
-```
-
-will render output looks like this:
-
-![CNAME_ex1|20x100](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
-
-+ Example 3: 
-
-```
-![<img alt='CNAME_ex1' src='https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg' width='20'/>](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
-```
-
-will render output looks like this:
-
-![<img alt='CNAME_ex1' src='https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg' width='20'/>](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
-
-+ Example 4: 
-
-```
-![<img alt='CNAME_ex1' width='20'/>](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
-```
-
-will render output looks like this:
-
-![<img alt='CNAME_ex1' width='20'/>](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
-
-+ Example 5:
-
-```
-![CNAME_ex1\|20x100](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
-```
-
-will render output looks like this:
-
-![CNAME_ex1\|20x100](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
 
 ## [Escaping Characters](https://www.markdownguide.org/basic-syntax/#escaping-characters)
 To escape characters (i.e. display a literal character that would otherwise be used to format text in a Markdown document), add a backslash (\) in front of the character. 
@@ -719,7 +666,6 @@ For more details, see [HTML](https://www.markdownguide.org/basic-syntax/#html)
 
 ## Comment 
 Like html tag, may use ```<!-- This content will not appear in the rendered Markdown -->```
-
 
 ```
 <!-- This content will not appear in the rendered Markdown -->
