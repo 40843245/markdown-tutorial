@@ -893,13 +893,15 @@ The syntax of content in math expression is similar to that in `Microsoft Word`,
 ## Diagram (available at Github)
 ### [Mermaid Diagram](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams)
 
-To create a Mermaid diagram, add Mermaid syntax inside a fenced code block with the mermaid language identifier.
+To create a Mermaid diagram, add Mermaid syntax inside a code block ` ``` ` with the mermaid language identifier (i.e. ` ```mermaid ``` `). Then adding the graph we want in the code block (` ```mermaid ``` `)
+
+I will refer the website about [mermaid](https://mermaid.js.org/intro/) and use a few example to illustrate which graph can be display in the code block (` ```mermaid ``` `).
+
+#### [Flow chart](https://mermaid.js.org/syntax/flowchart.html?id=flowcharts-basic-syntax)
 
 + Example 1:
 
 ```
-Here is a simple flow chart:
-
 \`\`\`mermaid
 graph TD;
     A-->B;
@@ -911,8 +913,6 @@ graph TD;
 ```
 
 The rendered output looks like this:
-
-Here is a simple flow chart:
 
 ```mermaid
 graph TD;
@@ -926,11 +926,337 @@ graph TD;
 
 You may observe errors if you run a third-party Mermaid plugin when using Mermaid syntax on GitHub
 
+#### [Sequence diagram](https://mermaid.js.org/syntax/sequenceDiagram.html)
+
++ Example 1:
+
+```
+\`\`\`mermaid
+sequenceDiagram
+    Alice->>+John: Hello John, how are you?
+    Alice->>+John: John, can you hear me?
+    John-->>-Alice: Hi Alice, I can hear you!
+    John-->>-Alice: I feel great!
+\`\`\`
+```
+
+will be rendered output like this:
+
+```mermaid
+sequenceDiagram
+    Alice->>+John: Hello John, how are you?
+    Alice->>+John: John, can you hear me?
+    John-->>-Alice: Hi Alice, I can hear you!
+    John-->>-Alice: I feel great!
+```
+
+> [!NOTE]
+> You can create `internal links` in your diagrams by attaching the `internal-link` class to your nodes.
+
+> [!NOTE]
+> Internal links from diagrams don't show up in the Graph view.
+
+#### [Gannt chart](https://mermaid.js.org/syntax/gantt.html)
+
++ Example 1:
+  
+```
+\`\`\`mermaid
+gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+excludes weekdays 2014-01-10
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d
+\`\`\`
+```
+
+will be rendered output like this:
+
+```mermaid
+gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+excludes weekdays 2014-01-10
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d
+```
+
+#### [Class diagram](https://mermaid.js.org/syntax/classDiagram.html)
+
++ Example 1:
+
+```
+\`\`\`mermaid
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --> C2 : Where am i?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 <--> C2: Cool label
+\`\`\`
+```
+
+will be rendered output like this:
+
+```mermaid
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --> C2 : Where am i?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 <--> C2: Cool label
+```
+
+#### [Git graph](https://mermaid.js.org/syntax/gitgraph.html)
+
++ Example 1:
+
+```
+\`\`\`mermaid
+    gitGraph
+       commit
+       commit
+       branch develop
+       commit
+       commit
+       commit
+       checkout main
+       commit
+       commit
+\`\`\`
+```
+
+will be rendered like this:
+
+```mermaid
+    gitGraph
+       commit
+       commit
+       branch develop
+       commit
+       commit
+       commit
+       checkout main
+       commit
+       commit
+```
+
+#### [Entity relationship diagram](https://mermaid.js.org/syntax/entityRelationshipDiagram.html)
+
+> [!CAUTION]
+> It is experimental. Be careful when use it.
+
++ Example 1:
+
+```
+\`\`\`mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+\`\`\`
+```
+
+will be rendered output like this:
+
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+```
+
+#### [User Journey Diagram](https://mermaid.js.org/syntax/userJourney.html)
+
++ Example 1:
+
+```
+\`\`\`mermaid
+journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 5: Me
+\`\`\`
+```
+
+will be rendered output like this
+
+```mermaid
+journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 5: Me
+
+```
+
+#### [Quadrant Chart](https://mermaid.js.org/syntax/quadrantChart.html)
+
++ Example 1:
+
+```
+\`\`\`mermaid
+quadrantChart
+    title Reach and engagement of campaigns
+    x-axis Low Reach --> High Reach
+    y-axis Low Engagement --> High Engagement
+    quadrant-1 We should expand
+    quadrant-2 Need to promote
+    quadrant-3 Re-evaluate
+    quadrant-4 May be improved
+    Campaign A: [0.3, 0.6]
+    Campaign B: [0.45, 0.23]
+    Campaign C: [0.57, 0.69]
+    Campaign D: [0.78, 0.34]
+    Campaign E: [0.40, 0.34]
+    Campaign F: [0.35, 0.78]
+\`\`\`
+```
+
+will be rendered output like this:
+
+```mermaid
+quadrantChart
+    title Reach and engagement of campaigns
+    x-axis Low Reach --> High Reach
+    y-axis Low Engagement --> High Engagement
+    quadrant-1 We should expand
+    quadrant-2 Need to promote
+    quadrant-3 Re-evaluate
+    quadrant-4 May be improved
+    Campaign A: [0.3, 0.6]
+    Campaign B: [0.45, 0.23]
+    Campaign C: [0.57, 0.69]
+    Campaign D: [0.78, 0.34]
+    Campaign E: [0.40, 0.34]
+    Campaign F: [0.35, 0.78]
+```
+
+#### [XY Chart](https://mermaid.js.org/syntax/xyChart.html)
+
+```
+\`\`\`mermaid
+xychart-beta
+    title "Sales Revenue"
+    x-axis [jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec]
+    y-axis "Revenue (in $)" 4000 --> 11000
+    bar [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
+    line [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
+\`\`\`
+```
+
+will be renderd output like this:
+
+```mermaid
+xychart-beta
+    title "Sales Revenue"
+    x-axis [jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec]
+    y-axis "Revenue (in $)" 4000 --> 11000
+    bar [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
+    line [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
+```
+
+### Mermaid diagram with internal link
+#### Simple case
+
++ Example 1:
+
+```
+\`\`\`mermaid
+graph TD
+
+Biology --> Chemistry
+
+class Biology,Chemistry internal-link;
+\`\`\`
+```
+
+will be rendered output like this:
+
+```mermaid
+graph TD
+
+Biology --> Chemistry
+
+class Biology,Chemistry internal-link;
+```
+
+#### Case about the alias a class
+
++ Example 1:
+
+```
+\`\`\`mermaid
+graph TD
+
+A[Biology]
+B[Chemistry]
+
+A --> B
+
+class A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z internal-link;
+\`\`\`
+```
+
+will be rendered output like this:
+
+```mermaid
+graph TD
+
+A[Biology]
+B[Chemistry]
+
+A --> B
+
+class A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z internal-link;
+```
+
+> [!NOTE]
+> If you use special characters in your note names, you need to put the note name in double quotes.
+
+> > class "⨳ special character" internal-link
+> Or, A["⨳ special character"].
 ## Data with special type
 ### Json 
 #### GeoJson (available at Github)
 In Github, one can create a map by specifying coordinates in data with GeoJson type through the code block and consecutive `geojson` (i.e.` ```geojson `).
 
++ Example 1:
+  
 ```
 \`\`\`geojson
 {
@@ -992,6 +1318,8 @@ The rendered output looks like this:
 #### TopoJson
 To create a map that can select area according to coordinates and with different shape, use TopoJson with code block and consecutive `topoJson` (i.e. ` ```topoJson `)
 
++ Example 1:
+  
 ```
 \`\`\`topojson
 {
