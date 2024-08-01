@@ -8,8 +8,6 @@
 > + [full guide in markdown (My notes at Github)](https://github.com/40843245/markdown-tutorial/blob/main/full%20guide.md) or
 > + [full guide in markdown (My notes at Github) (has TOC)](https://github.com/40843245/markdown-tutorial/blob/main/full%20guide-toc.md)
 
-
-
 ## [Task lists](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Task+lists)
 
 > [!IMPORTANT]
@@ -152,65 +150,6 @@ will be rendered output looks like following screenshot in Reading View mode:
 
 ![image](https://github.com/user-attachments/assets/ce022407-8175-48fc-b203-e61557c30a49)
 
-## Image
-### [Images that specifies the width or height etc](https://stackoverflow.com/questions/14675913/changing-image-size-in-markdown)
-
-Let's look at images the size is **NOT** changed and its syntax first, then, look at images that the width or height is specified, and its syntax, through following exmaple.
-
-> [!IMPORTANT]
-> > They have same effect at Github. However, they may have different effect in different platforms.
-
-
-+ Example 1: The size is **NOT** changed.
-
-```
-![CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
-```
-
-will render output looks like this:
-
-![CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
-
-+ Example 2:
-
-```
-![CNAME_ex1|20x100](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
-```
-
-will render output looks like this:
-
-![CNAME_ex1|20x100](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
-
-+ Example 3: 
-
-```
-![<img alt='CNAME_ex1' src='https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg' width='20'/>](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
-```
-
-will render output looks like this:
-
-![<img alt='CNAME_ex1' src='https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg' width='20'/>](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
-
-+ Example 4: 
-
-```
-![<img alt='CNAME_ex1' width='20'/>](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
-```
-
-will render output looks like this:
-
-![<img alt='CNAME_ex1' width='20'/>](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
-
-+ Example 5:
-
-```
-![CNAME_ex1\|20x100](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
-```
-
-will render output looks like this:
-
-![CNAME_ex1\|20x100](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
-
 ## Alert on Obsidian
 
 + Example 1:
@@ -238,6 +177,7 @@ will render output looks like as following screenshot:
 
 ## File
 ### Internal file
+#### PDF
 
 + Example 1: Import a file.
 
@@ -257,6 +197,18 @@ Shown as following figure.
 
 ![image](https://github.com/user-attachments/assets/f8c981ef-c66e-4eb3-9da3-4af861a95c17)
 
+#### Image
+##### [Images that specifies the width or height etc](https://stackoverflow.com/questions/14675913/changing-image-size-in-markdown)
 
-will render output looks like as following screenshot:
+Take `Import Figure.md` in `vault1.zip` at Github as example. To illustrate the example, do the following step.
+
+1. Download [`vault1.zip` at Github](https://github.com/40843245/tool/blob/main/markdown/extensions%20tool/Obsidian/attachment/vault1.zip)
+2. Unzip the file.
+3. Open `Import Figure.md`.
+4. View it with source mode.
+5. View it with Editor View mode.
+6. View it with Reading View mode.
+
+After you view the file with many modes (such as source mode, Editor View mode, Reading View mode, you will understand how it works.
+
 
