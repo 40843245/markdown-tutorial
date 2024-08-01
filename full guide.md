@@ -491,6 +491,37 @@ See [Reference-style Links](https://www.markdownguide.org/basic-syntax/#referenc
 
 See [Autolinked references and URLs at Github](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls)
 
+## [Task lists](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Task+lists)
+
+To create a task list, start each list item with a hyphen and space followed by [ ].
+
++ Example 1:
+  
+```
+- [x] This is a completed task.
+- [ ] This is an incomplete task.
+```
+
+will be rendered output looks like this:
+
+- [x] This is a completed task.
+- [ ] This is an incomplete task.
+
+> [!TIP]
+> You can use any character inside the brackets to mark it as complete.
+
++ Example 2:
+
+```
+- [x] Milk
+- [?] Eggs
+- [-] Eggs
+```
+
+- [x] Milk
+- [?] Eggs
+- [-] Eggs
+
 ## Table
 In markdown, a table must satisfy these requirements.
 
