@@ -117,4 +117,38 @@ will be rendered output looks like following screenshot in Reading View mode:
 
 ![image](https://github.com/user-attachments/assets/42d28416-1393-4f7a-90b0-125ae23c5b2e)
 
+## [Internal Link](https://help.obsidian.md/Linking+notes+and+files/Embed+files#Embed+a+note+in+another+note)
+
+one can embed a note through `internal link`
+
++ Example 1:
+
+1. Create a note named `Internal links` (or open existing one named `Internal links`), 
+
+type `Internal links` as title.
+
+Then type these contents in code block in the note.
+
+```
+#^b15695
+This is a section.
+```
+
+shown as follows.
+
+![image](https://github.com/user-attachments/assets/a7919353-7b7b-464e-83d4-48aecbda55f5)
+
+2. Create a note named `Other notes` (or open existing one named `Other notes`),
+
+type `Other notes` as title.   
+
+Then type these contents in code block in the note.
+
+```
+![[Internal links]]
+```
+
+will be rendered output looks like following screenshot in Reading View mode: 
+
+![image](https://github.com/user-attachments/assets/ce022407-8175-48fc-b203-e61557c30a49)
 
