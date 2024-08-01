@@ -1519,7 +1519,8 @@ endsolid
 
 ## Appreciation
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/ca04cec5-1987-491f-8a0a-5a2752391cab)
+
 
 (Magical Girls of Amazing Rainbow【Anime】)[https://www.youtube.com/watch?v=swkJz-DhuDw]
 
