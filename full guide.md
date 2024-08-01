@@ -598,6 +598,9 @@ The rendered output looks like this:
 + For any row (except for first row and second row), if the number of `|` in the row is less than that in first row. Then extraneous cell will be ignored. (See above exmaple `Example 4`)
 
 ## Images
+### Images whose alternative is just a text
+
+The syntax is that add `!` symbol before `[` symbol. See following examples.
 
 + Example 1: Copy an image from local device.
 
@@ -616,7 +619,17 @@ will render output looks like this:
 
 ![try_login_dataflow](https://github.com/user-attachments/assets/fbe3314d-3252-45ca-a132-83e8a0234e40)
 
-## [Linking Images](https://www.markdownguide.org/basic-syntax/#reference-style-links)
++ Example 2: Image which links from url
+
+```
+![CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+```
+
+will render output looks like this:
+
+![CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+
+### [Images whose alternative is a link shown as a text](https://www.markdownguide.org/basic-syntax/#reference-style-links)
 
 To add a link to an image, enclose the markdown for the image in brackets, and then add the link in parentheses.
 
@@ -627,6 +640,50 @@ To add a link to an image, enclose the markdown for the image in brackets, and t
 The rendered output looks like this:
 
 [![An old rock in the desert](/assets/images/shiprock.jpg "Shiprock, New Mexico by Beau Rogers")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)
+
+### [Images that specifies the width or height etc](https://stackoverflow.com/questions/14675913/changing-image-size-in-markdown)
+
+Let's look at images the size is **NOT** changed and its syntax first, then, look at images that the width or height is specified, and its syntax, through following exmaple.
+
++ Example 1: The size is **NOT** changed.
+
+```
+![CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+```
+
+will render output looks like this:
+
+![CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+
++ Example 2: The size is changed.
+
+```
+![CNAME_ex1|200x100](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+```
+
+will render output looks like this:
+
+![CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+
++ Example 3: The size ischanged.
+
+```
+![CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+```
+
+will render output looks like this:
+
+![<img alt='CNAME_ex1' src='https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg' width='200'/>](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+
++ Example 4: The size ischanged.
+
+```
+![CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+```
+
+will render output looks like this:
+
+![<img alt='CNAME_ex1' width='200'/>](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
 
 ## [Escaping Characters](https://www.markdownguide.org/basic-syntax/#escaping-characters)
 To escape characters (i.e. display a literal character that would otherwise be used to format text in a Markdown document), add a backslash (\) in front of the character. 
