@@ -210,3 +210,53 @@ will render output looks like this:
 will render output looks like this:
 
 ![CNAME_ex1\|20x100](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+
+## Alert on Obsidian
+
++ Example 1:
+  
+```
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/bc940a36-3b60-4312-8bfd-9d0dd15f1aa9)
+
+## File
+### Internal file
+
++ Example 1: Import a file.
+
+Here is the file structure in file explorer.
+
+![image](https://github.com/user-attachments/assets/77f5c77a-ac3a-4c4f-bc73-f245681ab41e)
+
+1. Create a note named `Import PDF` and type `Import PDF` as title. 
+
+Shown as following figure.
+
+![image](https://github.com/user-attachments/assets/2d7a7981-e435-4e2a-ab22-81c2450e80e6)
+
+Then you will see the content of `RFC 2181 (full documentation,original).pdf` in Obsidian note.
+
+Shown as following figure.
+
+![image](https://github.com/user-attachments/assets/f8c981ef-c66e-4eb3-9da3-4af861a95c17)
+
+
+will render output looks like as following screenshot:
+
