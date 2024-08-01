@@ -833,6 +833,9 @@ GitHub support Emoji.
 [List of emoji in Github](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md).
 
 ## [mathematical expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
+
+You can add math expressions to your notes using [`MathJax`](https://docs.mathjax.org/en/latest/basic/mathjax.html) and the [`LaTeX`](https://www.latex-project.org/) notation.
+
 ### Way 1: inline expression
 
 ```
@@ -889,6 +892,10 @@ The rendered output looks like this:
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
 The syntax of content in math expression is similar to that in `Microsoft Word`, `LaTex`.
+
+> [!NOTE]
+> + For more information about the syntax, refer to [MathJax basic tutorial and quick reference](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
+> + For a list of supported MathJax packages, refer to [TeX/LaTeX Extension List](https://docs.mathjax.org/en/latest/input/tex/extensions/index.html).
 
 ## Diagram (available at Github)
 ### [Mermaid Diagram](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams)
@@ -1250,6 +1257,44 @@ class A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z internal-link;
 
 > > class "⨳ special character" internal-link
 > Or, A["⨳ special character"].
+
+
+## [Diagram breaking](https://mermaid.js.org/intro/syntax-reference.html#diagram-breaking)
+See [Diagram breaking](https://mermaid.js.org/intro/syntax-reference.html#diagram-breaking)
+
+## Configuration about diagram
+### [Theme configuration](https://mermaid.js.org/config/theming.html)
+
+Available Themes:
++ default: This is the default theme for all diagrams.
++ neutral: This theme is great for black and white documents that will be printed.
++ dark: This theme goes well with dark-colored elements or dark-mode.
++ forest: This theme contains shades of green. Like color of forest.
++ base: This is the only theme that can be modified. Use this theme as the base for customizations.
+
+#### [Specify themes configuration in diagram](https://mermaid.js.org/config/theming.html#diagram-specific-themes)
+
+Use directives (see diagram breaking) and `init` keyword. See following example.
+
++ Example 1:
+
+```
+\`\`\`mermaid
+%%{init: {'theme':'forest'}}%%
+  graph TD
+    a --> b
+\`\`\`
+```
+will be rendered output like this:
+
+```mermaid
+%%{init: {'theme':'forest'}}%%
+  graph TD
+    a --> b
+```
+
+For more information, see [Theme Configuration](https://mermaid.js.org/config/theming.html)
+
 ## Data with special type
 ### Json 
 #### GeoJson (available at Github)
@@ -1473,6 +1518,9 @@ endsolid
 
 
 ## Appreciation
+
+![Uploading image.png…]()
+
 (Magical Girls of Amazing Rainbow【Anime】)[https://www.youtube.com/watch?v=swkJz-DhuDw]
 
 will provides some element as example. I take some of transcript in this video, [(Ridiculous people on the subway!! #anime #manga)](https://www.youtube.com/watch?v=swkJz-DhuDw) as elements for examples.
