@@ -49,14 +49,16 @@
    * [Table](#table)
       + [**NOTES**](#notes-11)
    * [Images](#images)
-   * [Linking Images](#linking-images)
+      + [Images whose alternative is just a text](#images-whose-alternative-is-just-a-text)
+      + [Images whose alternative is a link shown as a text](#images-whose-alternative-is-a-link-shown-as-a-text)
+      + [Images that specifies the width or height etc](#images-that-specifies-the-width-or-height-etc)
    * [Escaping Characters](#escaping-characters)
       + [Characters You Can Escape](#characters-you-can-escape)
    * [HTML](#html)
    * [Comment ](#comment)
    * [TOC](#toc)
    * [Footenotes](#footenotes)
-   * [Alerts on Github)](#alerts-on-github)
+   * [Alerts on Github](#alerts-on-github)
    * [Username @mentions](#username-mentions)
    * [Emoji](#emoji)
    * [mathematical expressions](#mathematical-expressions)
@@ -64,6 +66,22 @@
       + [Way 2: block](#way-2-block)
    * [Diagram (available at Github)](#diagram-available-at-github)
       + [Mermaid Diagram](#mermaid-diagram)
+         - [Flow chart](#flow-chart)
+         - [Sequence diagram](#sequence-diagram)
+         - [Gannt chart](#gannt-chart)
+         - [Class diagram](#class-diagram)
+         - [Git graph](#git-graph)
+         - [Entity relationship diagram](#entity-relationship-diagram)
+         - [User Journey Diagram](#user-journey-diagram)
+         - [Quadrant Chart](#quadrant-chart)
+         - [XY Chart](#xy-chart)
+      + [Mermaid diagram with internal link](#mermaid-diagram-with-internal-link)
+         - [Simple case](#simple-case)
+         - [Case about the alias a class](#case-about-the-alias-a-class)
+   * [Diagram breaking](#diagram-breaking)
+   * [Configuration about diagram](#configuration-about-diagram)
+      + [Theme configuration](#theme-configuration)
+         - [Specify themes configuration in diagram](#specify-themes-configuration-in-diagram)
    * [Data with special type](#data-with-special-type)
       + [Json ](#json)
          - [GeoJson (available at Github)](#geojson-available-at-github)
@@ -726,6 +744,10 @@ The rendered output looks like this:
 
 <!-- TOC --><a name="images"></a>
 ## Images
+<!-- TOC --><a name="images-whose-alternative-is-just-a-text"></a>
+### Images whose alternative is just a text
+
+The syntax is that add `!` symbol before `[` symbol. See following examples.
 
 + Example 1: Copy an image from local device.
 
@@ -744,8 +766,18 @@ will render output looks like this:
 
 ![try_login_dataflow](https://github.com/user-attachments/assets/fbe3314d-3252-45ca-a132-83e8a0234e40)
 
-<!-- TOC --><a name="linking-images"></a>
-## [Linking Images](https://www.markdownguide.org/basic-syntax/#reference-style-links)
++ Example 2: Image which links from url
+
+```
+![CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+```
+
+will render output looks like this:
+
+![CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+
+<!-- TOC --><a name="images-whose-alternative-is-a-link-shown-as-a-text"></a>
+### [Images whose alternative is a link shown as a text](https://www.markdownguide.org/basic-syntax/#reference-style-links)
 
 To add a link to an image, enclose the markdown for the image in brackets, and then add the link in parentheses.
 
@@ -756,6 +788,65 @@ To add a link to an image, enclose the markdown for the image in brackets, and t
 The rendered output looks like this:
 
 [![An old rock in the desert](/assets/images/shiprock.jpg "Shiprock, New Mexico by Beau Rogers")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)
+
+<!-- TOC --><a name="images-that-specifies-the-width-or-height-etc"></a>
+### [Images that specifies the width or height etc](https://stackoverflow.com/questions/14675913/changing-image-size-in-markdown)
+
+Let's look at images the size is **NOT** changed and its syntax first, then, look at images that the width or height is specified, and its syntax, through following exmaple.
+
+> [!IMPORTANT]
+> > They have same effect at Github. However, they may have different effect in different platforms.
+
+
++ Example 1: The size is **NOT** changed.
+
+```
+![CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+```
+
+will render output looks like this:
+
+![CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+
++ Example 2:
+
+```
+![CNAME_ex1|20x100](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+```
+
+will render output looks like this:
+
+![CNAME_ex1|20x100](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+
++ Example 3: 
+
+```
+![<img alt='CNAME_ex1' src='https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg' width='20'/>](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+```
+
+will render output looks like this:
+
+![<img alt='CNAME_ex1' src='https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg' width='20'/>](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+
++ Example 4: 
+
+```
+![<img alt='CNAME_ex1' width='20'/>](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+```
+
+will render output looks like this:
+
+![<img alt='CNAME_ex1' width='20'/>](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+
++ Example 5:
+
+```
+![CNAME_ex1\|20x100](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+```
+
+will render output looks like this:
+
+![CNAME_ex1\|20x100](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
 
 <!-- TOC --><a name="escaping-characters"></a>
 ## [Escaping Characters](https://www.markdownguide.org/basic-syntax/#escaping-characters)
@@ -847,7 +938,7 @@ The rendered output looks like this:
     This footnote also has been made with a different syntax using 4 spaces for new lines.
 
 <!-- TOC --><a name="alerts-on-github"></a>
-## [Alerts on Github)](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#footnotes)
+## [Alerts on Github](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#footnotes)
 
 Five kinds of alerts are available at Github.
 
@@ -901,6 +992,9 @@ GitHub support Emoji.
 
 <!-- TOC --><a name="mathematical-expressions"></a>
 ## [mathematical expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
+
+You can add math expressions to your notes using [`MathJax`](https://docs.mathjax.org/en/latest/basic/mathjax.html) and the [`LaTeX`](https://www.latex-project.org/) notation.
+
 <!-- TOC --><a name="way-1-inline-expression"></a>
 ### Way 1: inline expression
 
@@ -960,18 +1054,25 @@ $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \
 
 The syntax of content in math expression is similar to that in `Microsoft Word`, `LaTex`.
 
+> [!NOTE]
+> + For more information about the syntax, refer to [MathJax basic tutorial and quick reference](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
+> + For a list of supported MathJax packages, refer to [TeX/LaTeX Extension List](https://docs.mathjax.org/en/latest/input/tex/extensions/index.html).
+
 <!-- TOC --><a name="diagram-available-at-github"></a>
 ## Diagram (available at Github)
 <!-- TOC --><a name="mermaid-diagram"></a>
 ### [Mermaid Diagram](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams)
 
-To create a Mermaid diagram, add Mermaid syntax inside a fenced code block with the mermaid language identifier.
+To create a Mermaid diagram, add Mermaid syntax inside a code block ` ``` ` with the mermaid language identifier (i.e. ` ```mermaid ``` `). Then adding the graph we want in the code block (` ```mermaid ``` `)
+
+I will refer the website about [mermaid](https://mermaid.js.org/intro/) and use a few example to illustrate which graph can be display in the code block (` ```mermaid ``` `).
+
+<!-- TOC --><a name="flow-chart"></a>
+#### [Flow chart](https://mermaid.js.org/syntax/flowchart.html?id=flowcharts-basic-syntax)
 
 + Example 1:
 
 ```
-Here is a simple flow chart:
-
 \`\`\`mermaid
 graph TD;
     A-->B;
@@ -983,8 +1084,6 @@ graph TD;
 ```
 
 The rendered output looks like this:
-
-Here is a simple flow chart:
 
 ```mermaid
 graph TD;
@@ -998,6 +1097,383 @@ graph TD;
 
 You may observe errors if you run a third-party Mermaid plugin when using Mermaid syntax on GitHub
 
+<!-- TOC --><a name="sequence-diagram"></a>
+#### [Sequence diagram](https://mermaid.js.org/syntax/sequenceDiagram.html)
+
++ Example 1:
+
+```
+\`\`\`mermaid
+sequenceDiagram
+    Alice->>+John: Hello John, how are you?
+    Alice->>+John: John, can you hear me?
+    John-->>-Alice: Hi Alice, I can hear you!
+    John-->>-Alice: I feel great!
+\`\`\`
+```
+
+will be rendered output like this:
+
+```mermaid
+sequenceDiagram
+    Alice->>+John: Hello John, how are you?
+    Alice->>+John: John, can you hear me?
+    John-->>-Alice: Hi Alice, I can hear you!
+    John-->>-Alice: I feel great!
+```
+
+> [!NOTE]
+> You can create `internal links` in your diagrams by attaching the `internal-link` class to your nodes.
+
+> [!NOTE]
+> Internal links from diagrams don't show up in the Graph view.
+
+<!-- TOC --><a name="gannt-chart"></a>
+#### [Gannt chart](https://mermaid.js.org/syntax/gantt.html)
+
++ Example 1:
+  
+```
+\`\`\`mermaid
+gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+excludes weekdays 2014-01-10
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d
+\`\`\`
+```
+
+will be rendered output like this:
+
+```mermaid
+gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+excludes weekdays 2014-01-10
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d
+```
+
+<!-- TOC --><a name="class-diagram"></a>
+#### [Class diagram](https://mermaid.js.org/syntax/classDiagram.html)
+
++ Example 1:
+
+```
+\`\`\`mermaid
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --> C2 : Where am i?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 <--> C2: Cool label
+\`\`\`
+```
+
+will be rendered output like this:
+
+```mermaid
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --> C2 : Where am i?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 <--> C2: Cool label
+```
+
+<!-- TOC --><a name="git-graph"></a>
+#### [Git graph](https://mermaid.js.org/syntax/gitgraph.html)
+
++ Example 1:
+
+```
+\`\`\`mermaid
+    gitGraph
+       commit
+       commit
+       branch develop
+       commit
+       commit
+       commit
+       checkout main
+       commit
+       commit
+\`\`\`
+```
+
+will be rendered like this:
+
+```mermaid
+    gitGraph
+       commit
+       commit
+       branch develop
+       commit
+       commit
+       commit
+       checkout main
+       commit
+       commit
+```
+
+<!-- TOC --><a name="entity-relationship-diagram"></a>
+#### [Entity relationship diagram](https://mermaid.js.org/syntax/entityRelationshipDiagram.html)
+
+> [!CAUTION]
+> It is experimental. Be careful when use it.
+
++ Example 1:
+
+```
+\`\`\`mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+\`\`\`
+```
+
+will be rendered output like this:
+
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+```
+
+<!-- TOC --><a name="user-journey-diagram"></a>
+#### [User Journey Diagram](https://mermaid.js.org/syntax/userJourney.html)
+
++ Example 1:
+
+```
+\`\`\`mermaid
+journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 5: Me
+\`\`\`
+```
+
+will be rendered output like this
+
+```mermaid
+journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 5: Me
+
+```
+
+<!-- TOC --><a name="quadrant-chart"></a>
+#### [Quadrant Chart](https://mermaid.js.org/syntax/quadrantChart.html)
+
++ Example 1:
+
+```
+\`\`\`mermaid
+quadrantChart
+    title Reach and engagement of campaigns
+    x-axis Low Reach --> High Reach
+    y-axis Low Engagement --> High Engagement
+    quadrant-1 We should expand
+    quadrant-2 Need to promote
+    quadrant-3 Re-evaluate
+    quadrant-4 May be improved
+    Campaign A: [0.3, 0.6]
+    Campaign B: [0.45, 0.23]
+    Campaign C: [0.57, 0.69]
+    Campaign D: [0.78, 0.34]
+    Campaign E: [0.40, 0.34]
+    Campaign F: [0.35, 0.78]
+\`\`\`
+```
+
+will be rendered output like this:
+
+```mermaid
+quadrantChart
+    title Reach and engagement of campaigns
+    x-axis Low Reach --> High Reach
+    y-axis Low Engagement --> High Engagement
+    quadrant-1 We should expand
+    quadrant-2 Need to promote
+    quadrant-3 Re-evaluate
+    quadrant-4 May be improved
+    Campaign A: [0.3, 0.6]
+    Campaign B: [0.45, 0.23]
+    Campaign C: [0.57, 0.69]
+    Campaign D: [0.78, 0.34]
+    Campaign E: [0.40, 0.34]
+    Campaign F: [0.35, 0.78]
+```
+
+<!-- TOC --><a name="xy-chart"></a>
+#### [XY Chart](https://mermaid.js.org/syntax/xyChart.html)
+
+```
+\`\`\`mermaid
+xychart-beta
+    title "Sales Revenue"
+    x-axis [jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec]
+    y-axis "Revenue (in $)" 4000 --> 11000
+    bar [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
+    line [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
+\`\`\`
+```
+
+will be renderd output like this:
+
+```mermaid
+xychart-beta
+    title "Sales Revenue"
+    x-axis [jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec]
+    y-axis "Revenue (in $)" 4000 --> 11000
+    bar [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
+    line [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
+```
+
+<!-- TOC --><a name="mermaid-diagram-with-internal-link"></a>
+### Mermaid diagram with internal link
+<!-- TOC --><a name="simple-case"></a>
+#### Simple case
+
++ Example 1:
+
+```
+\`\`\`mermaid
+graph TD
+
+Biology --> Chemistry
+
+class Biology,Chemistry internal-link;
+\`\`\`
+```
+
+will be rendered output like this:
+
+```mermaid
+graph TD
+
+Biology --> Chemistry
+
+class Biology,Chemistry internal-link;
+```
+
+<!-- TOC --><a name="case-about-the-alias-a-class"></a>
+#### Case about the alias a class
+
++ Example 1:
+
+```
+\`\`\`mermaid
+graph TD
+
+A[Biology]
+B[Chemistry]
+
+A --> B
+
+class A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z internal-link;
+\`\`\`
+```
+
+will be rendered output like this:
+
+```mermaid
+graph TD
+
+A[Biology]
+B[Chemistry]
+
+A --> B
+
+class A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z internal-link;
+```
+
+> [!NOTE]
+> If you use special characters in your note names, you need to put the note name in double quotes.
+
+> > class "⨳ special character" internal-link
+> Or, A["⨳ special character"].
+
+
+<!-- TOC --><a name="diagram-breaking"></a>
+## [Diagram breaking](https://mermaid.js.org/intro/syntax-reference.html#diagram-breaking)
+See [Diagram breaking](https://mermaid.js.org/intro/syntax-reference.html#diagram-breaking)
+
+<!-- TOC --><a name="configuration-about-diagram"></a>
+## Configuration about diagram
+<!-- TOC --><a name="theme-configuration"></a>
+### [Theme configuration](https://mermaid.js.org/config/theming.html)
+
+Available Themes:
++ default: This is the default theme for all diagrams.
++ neutral: This theme is great for black and white documents that will be printed.
++ dark: This theme goes well with dark-colored elements or dark-mode.
++ forest: This theme contains shades of green. Like color of forest.
++ base: This is the only theme that can be modified. Use this theme as the base for customizations.
+
+<!-- TOC --><a name="specify-themes-configuration-in-diagram"></a>
+#### [Specify themes configuration in diagram](https://mermaid.js.org/config/theming.html#diagram-specific-themes)
+
+Use directives (see diagram breaking) and `init` keyword. See following example.
+
++ Example 1:
+
+```
+\`\`\`mermaid
+%%{init: {'theme':'forest'}}%%
+  graph TD
+    a --> b
+\`\`\`
+```
+will be rendered output like this:
+
+```mermaid
+%%{init: {'theme':'forest'}}%%
+  graph TD
+    a --> b
+```
+
+For more information, see [Theme Configuration](https://mermaid.js.org/config/theming.html)
+
 <!-- TOC --><a name="data-with-special-type"></a>
 ## Data with special type
 <!-- TOC --><a name="json"></a>
@@ -1006,6 +1482,8 @@ You may observe errors if you run a third-party Mermaid plugin when using Mermai
 #### GeoJson (available at Github)
 In Github, one can create a map by specifying coordinates in data with GeoJson type through the code block and consecutive `geojson` (i.e.` ```geojson `).
 
++ Example 1:
+  
 ```
 \`\`\`geojson
 {
@@ -1068,6 +1546,8 @@ The rendered output looks like this:
 #### TopoJson
 To create a map that can select area according to coordinates and with different shape, use TopoJson with code block and consecutive `topoJson` (i.e. ` ```topoJson `)
 
++ Example 1:
+  
 ```
 \`\`\`topojson
 {
@@ -1225,6 +1705,9 @@ endsolid
 
 <!-- TOC --><a name="appreciation"></a>
 ## Appreciation
+
+![Uploading image.png…]()
+
 (Magical Girls of Amazing Rainbow【Anime】)[https://www.youtube.com/watch?v=swkJz-DhuDw]
 
 will provides some element as example. I take some of transcript in this video, [(Ridiculous people on the subway!! #anime #manga)](https://www.youtube.com/watch?v=swkJz-DhuDw) as elements for examples.
