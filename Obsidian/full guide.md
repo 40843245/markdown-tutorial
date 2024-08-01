@@ -8,7 +8,8 @@
 > + [full guide in markdown (My notes at Github)](https://github.com/40843245/markdown-tutorial/blob/main/full%20guide.md) or
 > + [full guide in markdown (My notes at Github) (has TOC)](https://github.com/40843245/markdown-tutorial/blob/main/full%20guide-toc.md)
 
-## [Task lists](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Task+lists)
+## List
+### [Task lists](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Task+lists)
 
 > [!IMPORTANT]
 > It is only available in Obsidian note.
@@ -42,7 +43,7 @@ will be rendered output looks like following screenshot:
 
 ![image](https://github.com/user-attachments/assets/4e564e52-f3ef-4634-9493-c0a7c907e4d1)
 
-### [Nested item](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Nesting+lists)
+#### [With Nested item](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Nesting+lists)
 
 + Example 1:
   
@@ -59,6 +60,23 @@ will be rendered output looks like following screenshot:
 will be rendered output looks like following screenshot:
 
 ![image](https://github.com/user-attachments/assets/d7b1f8be-c997-431f-9714-ae9a997af2b7)
+
+### [Embed a list](https://help.obsidian.md/Linking+notes+and+files/Embed+files#Embed+a+list+in+a+note)
+
+To embed a list from a different note, first add a block identifier to your list:
+
+```
+- list item 1
+- list item 2
+
+^my-list-id
+```
+
+Then link to the list using the block identifier:
+
+```
+![[My note#^my-list-id]]
+```
 
 ## Code block
 ### [Syntax highlighting](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Code+blocks)
@@ -177,15 +195,58 @@ will render output looks like as following screenshot:
 
 ## File
 ### Internal file
+
+To embed a file.
+
+Type `!` followed by `[`, then your file name , finally closed by `]`.
+
+Such as
+
+```
+![RFC 2181 (full documentation,original).pdf]
+```
+
+For more details, see following example.
+
 #### PDF
 
-+ Example 1: Import a file.
+As same as embeding a file in Obsidian.
+
+To embed a pdf file named `RFC 2181 (full documentation,original).pdf`. Type
+
+```
+![[RFC 2181 (full documentation,original).pdf]]
+```
+
+One can also open a specific page in the PDF, by adding `#page=N` to the link destination, where N is the number of the page. 
+
+To open `RFC 2181 (full documentation,original).pdf` at third page. Type 
+
+```
+![[RFC 2181 (full documentation,original).pdf#page=3]]
+```
+
+One can also specify the height in pixels for the embedded PDF viewer, by adding `#height=[number]` to the link. 
+
+To open `RFC 2181 (full documentation,original).pdf` with `height` `400`. Type
+
+```
+![[RFC 2181 (full documentation,original).pdf#height=400]]
+```
+
++ Example 1: Import a PDF file.
 
 Here is the file structure in file explorer.
 
 ![image](https://github.com/user-attachments/assets/77f5c77a-ac3a-4c4f-bc73-f245681ab41e)
 
 1. Create a note named `Import PDF` and type `Import PDF` as title. 
+
+2. Type these content in following code block.
+
+```
+![[RFC 2181 (full documentation,original).pdf]]
+```
 
 Shown as following figure.
 
@@ -211,4 +272,17 @@ Take `Import Figure.md` in `vault1.zip` at Github as example. To illustrate the 
 
 After you view the file with many modes (such as source mode, Editor View mode, Reading View mode, you will understand how it works.
 
+## Search result
+### [Embed search results in a note](https://help.obsidian.md/Plugins/Search#Embed+search+results+in+a+note)
 
+To embed search results in a note, add a query code block:
+
+```
+\`\`\`query
+embed OR search
+\`\`\`
+```
+
+> [!NOTE]
+> Obsidian Publish doesn't support embedded search results.
+> To see a live rendered example, use the code block above within your vault.
