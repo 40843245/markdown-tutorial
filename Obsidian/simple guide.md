@@ -770,6 +770,8 @@ About syntax on css in Obsidian, see [css variable in Obsidian](https://docs.obs
 2. Under `CSS snippets`, click `Reload` button to refresh it.
 3. Under `CSS snippets`, toggle on the css snippet that you want to apply.
 
+For demo, see my YT video [Apply css snippets in Obsidian](https://youtu.be/xzkSn0wQ1Pk)
+
 ### Unapply a customized style
 1. Select `settings`->`Appearance`.
 2. Under `CSS snippets`, toggle off the css snippet that you want to apply.
@@ -885,3 +887,42 @@ will render output looks like as following screenshot:
 > [!NOTE]
 > Obsidian Publish doesn't support embedded search results.
 > To see a live rendered example, use the code block above within your vault.
+
+## [bookmark](https://help.obsidian.md/Plugins/Bookmarks#Add+a+bookmark)
+### [bookmark a file](https://help.obsidian.md/Plugins/Bookmarks#Add+a+bookmark)
+There are many ways to bookmark a file. See the following demo.
+
+For demo, see my YT video 
++ [Bookmark a file way 1](https://www.youtube.com/watch?v=S_GrMAwcq_Y)
++ [Bookmark a file way 2](https://www.youtube.com/watch?v=Cbn1hOUjKEY)
++ [Bookmark a file in Obsidian - way 3](https://www.youtube.com/watch?v=SKFgETOqXJ8)
+
+### [bookmark a search term](https://help.obsidian.md/Plugins/Bookmarks#Add+a+bookmark)
+
+For demo, see my YT video [Bookmark a search term in Obsidian](https://www.youtube.com/watch?v=US5DugJgXk8)
+
+### [bookmark a folder](https://help.obsidian.md/Plugins/Bookmarks#Add+a+bookmark)
+
+For demo, see my YT video [Bookmark a folder in Obsidian](https://www.youtube.com/watch?v=LWnCHW_3GTE)
+
+### [bookmark a graph](https://help.obsidian.md/Plugins/Bookmarks#Add+a+bookmark)
+
+For demo, see my YT video [Bookmark a graph in Obsidian](https://www.youtube.com/watch?v=oS6llEpSHio)
+
+### [bookmark a heading](https://help.obsidian.md/Plugins/Bookmarks#Add+a+bookmark)
+
+For demo, see my YT video [Bookmark a heading in Obsidian](https://www.youtube.com/watch?v=atBpCLwGviU)
+
+### [bookmark a block](https://help.obsidian.md/Plugins/Bookmarks#Add+a+bookmark)
+
+Command palette:
+1. Select the block with cursor.
+2. Press `Ctrl+P` (or Cmd+P on macOS) to open the Command palette.
+3. Select the Bookmark block under cursor command.
+
+For demo, see my YT video [Bookmark a block in Obsidian](https://www.youtube.com/watch?v=MdddUMYVOtk)
+
+## theme
+### Install theme in Obsidian
+For demo, see my YT video [Install theme in Obsidian](https://www.youtube.com/watch?v=tK7K_hlTUi4).
+
