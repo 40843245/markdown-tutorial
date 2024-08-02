@@ -826,18 +826,61 @@ will render output looks like as following screenshot:
 ![image](https://github.com/user-attachments/assets/2aaa2978-dbaa-4b00-9dcf-5aa54d6e4545)
 
 ### [Search operators](https://help.obsidian.md/Plugins/Search#Search+operators)
+Available search operators at [Search operators](https://help.obsidian.md/Plugins/Search#Search+operators).
 
+## Search results
+### [Copy search results](https://help.obsidian.md/Plugins/Search#Copy+search+results)
+1. Enter a search term.
+2. Under the search field, select the three dots icon next to the number of results.
+3. Select `Copy search results`.
+4. One will see the following popup for instance.
 
-## Search result
+![image](https://github.com/user-attachments/assets/5d29dfb2-c177-499e-b280-749a65bb84eb)
+
+5. Make up the settings of popup.
+6. Click `Copy results` in the popup.
+
+For demo, see my YT video [Copy search results in Obsidian.](https://www.youtube.com/watch?v=wWxgTl_nUBk).
+
+### [Sort search results](https://help.obsidian.md/Plugins/Search#Change+result+sort+order)
+1. Enter a search term.
+2. Under the search field, click on the dropdown on the right.
+3. Select the sort order you want. Default is "File name (A to Z)".
+
+For demo, see my YT video [Sort search results in Obsidian](https://www.youtube.com/watch?v=5DcwCz0iYjE).
+
+### get explanation of search query
+1. Enter a search term.
+2. Click the filter icon. Shown as follows
+
+![image](https://github.com/user-attachments/assets/2cc2dbe6-6f03-49e8-be6b-799079657aef) 
+
+3. Toggle on `Explain search terms`.
+
+For demo, see my YT video [get explanation of search query in Obsidian](https://www.youtube.com/watch?v=o5Tr9HJu7kY).
+
+### [search results case sensitively](https://help.obsidian.md/Plugins/Search#Change+case+sensitivity)
+1. Click match case icon 'Aa'. Shown as follows.
+
+![image](https://github.com/user-attachments/assets/55acfa63-8437-4a39-bed6-c2d23b31844f)
+
+For demo, see my YT video [search results case sensitively in Obsidian](https://www.youtube.com/watch?v=qfdqTL7hqNA).
+   
 ### [Embed search results in a note](https://help.obsidian.md/Plugins/Search#Embed+search+results+in+a+note)
 
 To embed search results in a note, add a query code block:
 
++ Example 1: (See `Embed search results in a note.md` in `vault2.zip` at Github)
+  
 ```
 \`\`\`query
 embed OR search
 \`\`\`
 ```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/68eefe6a-ec7d-49ee-84f3-c89369a0f5f8)
 
 > [!NOTE]
 > Obsidian Publish doesn't support embedded search results.
