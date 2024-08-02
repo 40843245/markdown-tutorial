@@ -44,6 +44,15 @@ See `MarkdownFile1.md` in `vault2.zip` at Github.
 #### Highlight text
 See `MarkdownFile1.md` in `vault2.zip` at Github.
 
+## Table
+Since Obsidian supports some markdown language, the syntax of table in Obsidian are same as those in markdown language. 
+
+## [Anchor link](https://help.obsidian.md/Linking+notes+and+files/Internal+links#Link+to+a+heading+in+a+note)
+One can link to specific headings in notes, also known as anchor links.
+
+See [Anchor link](https://help.obsidian.md/Linking+notes+and+files/Internal+links#Link+to+a+heading+in+a+note)
+
+
 ## List
 ### [Task lists](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Task+lists)
 
@@ -114,7 +123,35 @@ Then link to the list using the block identifier:
 ![[My note#^my-list-id]]
 ```
 
-## Code block
+## [Block](https://help.obsidian.md/Linking+notes+and+files/Internal+links#Link+to+a+block+in+a+note)
+
+> [!IMPORTANT]
+> It is only availables in Obsidian. NOT in markdown language.
+
++ Example 1: (See `Block1.md`,`Link to Block1.md`, and `2023-01-01.md` in `vault2.zip` at Github)
+  
+To create a link that links to `quote-of-the-day` in in `2023-01-01.md`.
+1. Define a block named `quote-of-the-day`.
+2. Type a block `[[2023-01-01#^quote-of-the-day]]`.
+
+1. Define a block named `quote-of-the-day`:
+
+To add `^quote-of-the-day`  at the end of a block. Type such as 
+
+```
+"You do not rise to the level of your goals. You fall to the level of your systems." by James Clear ^quote-of-the-day
+### Link a block in a note
+```
+
+P.S. can type it in any note.
+
+2. Type a block `[[2023-01-01#^quote-of-the-day]]`:
+Now you can link to the block by typing `[[2023-01-01#^quote-of-the-day]]`.
+
+
+## [Code block](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Code+blocks)
+Since Obsidian supports some markdown language, the syntax of code block are same as those in markdown language. 
+
 ### [Syntax highlighting](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Code+blocks)
 
 See [Syntax highlighting](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Code+blocks)
@@ -142,7 +179,7 @@ will be rendered output looks like following screenshot:
 	
 ![image](https://github.com/user-attachments/assets/4c7c304e-42a9-46d4-9ef0-aee0286ea577)
 
-## [Comments]
+## [Comments](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Comments)
 
 Obsidian support not only non-inline comments but also inline comments.
 
