@@ -8,6 +8,42 @@
 > + [full guide in markdown (My notes at Github)](https://github.com/40843245/markdown-tutorial/blob/main/full%20guide.md) or
 > + [full guide in markdown (My notes at Github) (has TOC)](https://github.com/40843245/markdown-tutorial/blob/main/full%20guide-toc.md)
 
+## Text 
+### Heading
+Since Obsidian supports some markdown language, the syntax of heading are same as those in markdown language. 
+
+See `MarkdownFile1.md` in `vault2.zip` at Github.
+
+### Paragraph
+Since Obsidian supports some markdown language, and all markdown language supports html tag, the syntax of paragraph are same as those in html. 
+
+See `MarkdownFile1.md` in `vault2.zip` at Github.
+
+### Text formatting
+Since Obsidian supports some markdown language, the syntax of bold, italic, bold and italic, bold and nested italic in Obsidian are same as those in markdown language. 
+
+In Addition, it supports strikethrough, highlight.
+
+See `MarkdownFile1.md` in `vault2.zip` at Github.
+
+#### Bold text
+See `MarkdownFile1.md` in `vault2.zip` at Github.
+
+#### Italic text
+See `MarkdownFile1.md` in `vault2.zip` at Github.
+
+#### Bold and Italic text
+See `MarkdownFile1.md` in `vault2.zip` at Github.
+
+#### Bold and nested Italic text
+See `MarkdownFile1.md` in `vault2.zip` at Github.
+
+#### Strikethrough text
+See `MarkdownFile1.md` in `vault2.zip` at Github.
+
+#### Highlight text
+See `MarkdownFile1.md` in `vault2.zip` at Github.
+
 ## List
 ### [Task lists](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Task+lists)
 
@@ -170,6 +206,13 @@ will be rendered output looks like following screenshot in Reading View mode:
 
 ## Callout on Obsidian
 ### [Supported types](https://help.obsidian.md/Editing+and+formatting/Callouts#Supported+types)
+
+> [!NOTE]
+> Unless you Customize callouts, any unsupported type defaults to the `note` type.
+
+> [!NOTE]
+> The type identifier is **case-insensitive**.
+
 
 + Example 1: (See `Callback0_1.md` in `vault2.zip`)
   
@@ -488,8 +531,6 @@ To embed a file.
 
 Type `!` followed by `[`, then your file name , finally closed by `]`.
 
-Such as
-
 ```
 ![RFC 2181 (full documentation,original).pdf]
 ```
@@ -499,7 +540,7 @@ For more details, see following example.
 #### PDF
 
 As same as embeding a file in Obsidian.
-
+  
 To embed a pdf file named `RFC 2181 (full documentation,original).pdf`. Type
 
 ```
@@ -522,7 +563,7 @@ To open `RFC 2181 (full documentation,original).pdf` with `height` `400`. Type
 ![[RFC 2181 (full documentation,original).pdf#height=400]]
 ```
 
-+ Example 1: Import a PDF file.
++ Example 1: Import a PDF file. (See `Import PDF.md` in `vault2.zip`)
 
 Here is the file structure in file explorer.
 
@@ -585,7 +626,6 @@ To use customized style.
 For example, see `vault2.zip` file at Github.
 
 About syntax on css in Obsidian, see [css variable in Obsidian](https://docs.obsidian.md/Reference/CSS+variables/CSS+variables)
-
 
 ### Create a customized style
 1. Create a css file under `.../.obsidian/snippets` folder.
