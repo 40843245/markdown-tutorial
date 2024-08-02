@@ -1,4 +1,4 @@
-# syntax in Obsidian 
+![image](https://github.com/user-attachments/assets/663743cb-03ec-4af9-8595-bde989dead3e)# syntax in Obsidian 
 ## Support
 ### Markdown 
 > [!NOTE]
@@ -168,9 +168,9 @@ will be rendered output looks like following screenshot in Reading View mode:
 
 ![image](https://github.com/user-attachments/assets/ce022407-8175-48fc-b203-e61557c30a49)
 
-## Alert on Obsidian
+## Callout on Obsidian
 
-+ Example 1:
++ Example 1: (See `Callback0.md` in `vault2.zip`)
   
 ```
 > [!NOTE]
@@ -192,6 +192,128 @@ will be rendered output looks like following screenshot in Reading View mode:
 will render output looks like as following screenshot:
 
 ![image](https://github.com/user-attachments/assets/bc940a36-3b60-4312-8bfd-9d0dd15f1aa9)
+
++ Example 2: (See `Callback1.md` in `vault2.zip`)
+
+```
+> [!info]
+>  Here's a callout block.
+> It supports **Markdown**, [[Internal link|Wikilinks]], and [[Embed files|embeds]]!
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/0d1c5ebf-fee1-4cc1-aee7-c1213d9e1cef)
+
++ Example 3:
+
+```
+> [!faq]
+> - Are callouts foldable? 
+> - Yes! In a foldable callout, the contents are hidden when the callout is collapsed.
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/90c14029-7208-4a9a-aa86-dca446f7122f)
+
+### Change the title of callout
+By default, the title of the callout is its type identifier in title case. 
+
+One can change it by adding text after the type identifier. (See Example 1)
+
+One can even omit the body to create title-only callouts. (See Example 2)
+
++ Example 1: (See `Callback2.md` in `vault2.zip`)
+
+```
+> [!tip] Callouts can have custom titles 
+> Like this one.
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/0ffba3d8-37fe-4e11-af19-c2c4e55234c7)
+
+
++ Example 2: (See `Callback3.md` in `vault2.zip`)
+
+```
+> [!tip] Title-only callout 
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/70cea76f-1064-45b1-a6bc-ab88c688145a)
+
+### Foldable callout
+
+To add a foldable callout, add consecutive `-` after `]`. 
+
+> [!NOTE]
+> Don't leave any characters between `]` and `-`. Otherwise, the callout will NOT be foldable.
+
++ Example 1: (See `Callback4.md` in `vault2.zip`)
+
+```
+> [!faq]- Are callouts foldable? 
+> - Yes! In a foldable callout, the contents are hidden when the callout is collapsed.
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/8cc422e4-de22-412a-9a0a-e92b67ab7dfa)
+
++ Example 2: (See `Callback5.md` in `vault2.zip`)
+
+```
+> [!faq]-
+> - Yes! In a foldable callout, the contents are hidden when the callout is collapsed.
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/d4c9d5b6-d414-45a4-a67e-ea80ce5cb340)
+
+#### Nested foldable callout
+
++ Example 1: (See `Callback6.md` in `vault2.zip`)
+
+```
+> [!question] Can callouts be nested? 
+> > [!todo] Yes!, they can. 
+> > > [!example] You can even use multiple layers of nesting.
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/a2e2d8b2-3053-4bf1-88c8-63a65b531cff)
+
+### [Customized callout](https://help.obsidian.md/Editing+and+formatting/Callouts#Customize+callouts)
+
++ Example 1: (See `Callback7.md` in `vault2.zip`)
+
+1. Create a css file (here I named it as `customized_callout_css1.css`) under `.../.obsidian/snippets`.
+
+2. Add the following in the css file.
+
+```
+.callout[data-callout="custom-question-type"] {
+    --callout-color: 255, 128, 128;
+    --callout-icon: lucide-alert-circle;
+}
+```
+
+3. Then one uses a callout with identifier `custom-question-type`. (i.e. `[!custom-question-type]` ). The css style will be applied.
+
+```
+> [!custom-question-type]
+> This is a callout.
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/b34b7be0-5ea3-4b2e-a745-df55f60df0a2)
 
 ## File
 ### Internal file
