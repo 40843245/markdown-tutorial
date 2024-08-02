@@ -52,6 +52,49 @@ One can link to specific headings in notes, also known as anchor links.
 
 See [Anchor link](https://help.obsidian.md/Linking+notes+and+files/Internal+links#Link+to+a+heading+in+a+note)
 
+## Alias
+### [Link to a note using an alias](https://help.obsidian.md/Linking+notes+and+files/Aliases#Link+to+a+note+using+an+alias)
+
+The syntax is shown as follows.
+
+```
+[[Artificial Intelligence|AI]]
+```
+
+The left hand side of `|` indicates a note that will be link.
+
+The right hand side of `|` indicates the text will be displayed.
+
++ Example 1: (See `alias2.md` in `vault2.zip` at GitHub)
+
+```
+# Nickname
+## Give it a nickname
+[[Artificial Intelligence|AI]]
+
+[[Artificial Intelligence#Intro|AI]]
+
+[[Artificial Intelligence#Intro|AI#Intro]]
+
+[[Artificial Intelligence#See also|AI#Intro]]
+```
+
+will be rendered output looks like following screenshot:
+
+![image](https://github.com/user-attachments/assets/36019bab-acd9-47e6-adaf-42833ba6ef9a)
+
+In this example, there are four links.
+
+| item | link name | a note that will be link | displayed text | 
+| ----- | -------- | ------------------------ | -------------- |
+| `[[Artificial Intelligence\|AI]]` | `Artificial Intelligence` | `Artificial Intelligence.md` | `AI` |
+| `[[Artificial Intelligence#Intro\|AI]]` | `Artificial Intelligence#Intro` | `Intro` section in `Artificial Intelligence.md` | `AI` |
+| `[[Artificial Intelligence#Intro\|AI#Intro]]` | `Artificial Intelligence#Intro` | `Intro` section in `Artificial Intelligence.md` | `AI#Intro` |
+| `[[Artificial Intelligence#See also\|AI#Intro]]` | `Artificial Intelligence#See also` | `See also` section in `Artificial Intelligence.md` | `AI#Intro` |
+
+For full example, see `alias2.md` in `vault2.zip` at GitHub)
+
+Has a name
 
 ## List
 ### [Task lists](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Task+lists)
