@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/663743cb-03ec-4af9-8595-bde989dead3e)# syntax in Obsidian 
+# syntax in Obsidian 
 ## Support
 ### Markdown 
 > [!NOTE]
