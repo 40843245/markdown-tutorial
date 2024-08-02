@@ -851,7 +851,7 @@ For demo, see my YT video [Sort search results in Obsidian](https://www.youtube.
 
 ### get explanation of search query
 1. Enter a search term.
-2. Click the filter icon. Shown as follows
+2. Click the Search settings icon. Shown as follows
 
 ![image](https://github.com/user-attachments/assets/2cc2dbe6-6f03-49e8-be6b-799079657aef) 
 
