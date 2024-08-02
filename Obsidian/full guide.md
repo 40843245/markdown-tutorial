@@ -1,4 +1,4 @@
-# syntax in Obsidian 
+# guide in Obsidian 
 ## Support
 ### Markdown 
 > [!NOTE]
@@ -94,7 +94,45 @@ In this example, there are four links.
 
 For full example, see `alias2.md` in `vault2.zip` at GitHub)
 
-Has a name
+## [Backlinks](https://help.obsidian.md/Plugins/Backlinks)
+
+With the Backlinks plugin, you can see all the backlinks for the active note.
+
+A backlink for a note is a link from another note to that note.
+
+> [!NOTE]
+> backlinks can be categorized into
+> + Linked mentions
+> + Unlinked mentions
+
+See the following subsections for more details.
+
+Backlinks provides the following options.
++ Collapse results toggles whether to expand each note to display the mentions in it.
++ Show more context toggles whether to truncate or display the full paragraph that contains the mention.
++ Change sort order determines how to sort the mentions.
++ Show search filter toggles a text field that lets you filter the mentions.
+
+For more information on how to build a search query, refer to [Search](https://help.obsidian.md/Plugins/Search).
+
++ Example 1: from the official Docs
+
+In the following example, the "Three laws of motion" note contains a link to the "Isaac Newton" note. The corresponding backlink would link from "Isaac Newton" back to "Three laws of motion". 
+
+See the following figure.
+
+![image](https://github.com/user-attachments/assets/c41027ad-46dd-4e94-934c-635b031543fd)
+
+### Linked mentions
+Linked mentions are backlinks to the notes that contain an internal link to the active note.
+
+### Unlinked mentions
+Unlinked mentions are backlinks to any unlinked occurrence of the name of the active note.
+
+
+
+
+
 
 ## List
 ### [Task lists](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Task+lists)
@@ -681,20 +719,37 @@ Take `Import Figure.md` in `vault1.zip` at Github as example. To illustrate the 
 
 After you view the file with many modes (such as source mode, Editor View mode, Reading View mode, you will understand how it works.
 
-## Search result
-### [Embed search results in a note](https://help.obsidian.md/Plugins/Search#Embed+search+results+in+a+note)
+## Video
+### YT Video
+#### [Embed a YouTube video](https://help.obsidian.md/Editing+and+formatting/Embed+web+pages#Embed+a+YouTube+video)
 
-To embed search results in a note, add a query code block:
+To embed a YouTube video, use the same Markdown syntax as external images:
 
++ Example 1: (See `Embed YT Video.md` in `vault2.zip` at Github)
+  
 ```
-\`\`\`query
-embed OR search
-\`\`\`
+![](https://www.youtube.com/watch?v=NnTvZWp5Q7o)
 ```
 
-> [!NOTE]
-> Obsidian Publish doesn't support embedded search results.
-> To see a live rendered example, use the code block above within your vault.
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/0c68e8a0-797f-40c3-8e2c-f1508ee48085)
+
+## Social media
+### Tweet
+#### [Embed a tweet](https://help.obsidian.md/Editing+and+formatting/Embed+web+pages#Embed+a+tweet)
+
+To embed a tweet, use the same Markdown syntax as external images:
+
++ Example 1: (See `Embed YT Video.md` in `vault2.zip` at Github)
+  
+```
+![](https://twitter.com/obsdmd/status/1580548874246443010)
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/b03bbc32-ac98-4e0d-a45f-3d2108f9e56c)
 
 ## Style
 ### Change style
@@ -719,3 +774,71 @@ About syntax on css in Obsidian, see [css variable in Obsidian](https://docs.obs
 1. Select `settings`->`Appearance`.
 2. Under `CSS snippets`, toggle off the css snippet that you want to apply.
 
+## Property
+
+> [!NOTE]
+> Properties allow you to organize information about a note.
+> Properties contain structured data such as text, links, dates, checkboxes, and numbers.
+> Properties can also be used in combination with Community plugins that can do useful things with your structured data.
+
+### [Add properties to a note](https://help.obsidian.md/Editing+and+formatting/Properties#Add+properties+to+a+note)
+There are several ways to add a property to a note.
++ Use the `Add file property` command.
++ Use the `Cmd/Ctrl`+`;` hotkey.
++ Choose `Add file property1 from the `More actions menu` (brought up by the three dots icon or by right-clicking the tab).
++ Type `---` at the very beginning of a file.
+
+### [Property types](https://help.obsidian.md/Editing+and+formatting/Properties#Property+types)
+
+Obsidian supports the following property types.
++ Text
++ List
++ Number
++ Checkbox
++ Date
++ Date & time
+
+> [!IMPORTANT]
+> Once a property type is assigned to a property, all properties with that name are assumed to have the same property type.
+
+### Search property
+See next subsection `Search property` in `Search plugins` section.
+
+## [Search plugins](https://help.obsidian.md/Plugins/Search)
+### [Search properties](https://help.obsidian.md/Plugins/Search#Search+properties)
+
+Use brackets around a property name `[yourProperty]` to return files with that property `yourProperty`.
+
+Use brackets and a colon `[yourProperty:yourValue]` to return files with that property `yourProperty` and value `yourValue`.
+
++ Example 1: (See `vault2.zip` at Github)
+
+Take `vault2.zip` at Github as example.
+
+In search box, type
+
+```
+[tag:YT] 
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/2aaa2978-dbaa-4b00-9dcf-5aa54d6e4545)
+
+### [Search operators](https://help.obsidian.md/Plugins/Search#Search+operators)
+
+
+## Search result
+### [Embed search results in a note](https://help.obsidian.md/Plugins/Search#Embed+search+results+in+a+note)
+
+To embed search results in a note, add a query code block:
+
+```
+\`\`\`query
+embed OR search
+\`\`\`
+```
+
+> [!NOTE]
+> Obsidian Publish doesn't support embedded search results.
+> To see a live rendered example, use the code block above within your vault.
