@@ -286,3 +286,28 @@ embed OR search
 > [!NOTE]
 > Obsidian Publish doesn't support embedded search results.
 > To see a live rendered example, use the code block above within your vault.
+
+## Style
+### Change style
+
+To use customized style.
+1. Create a customized style.
+2. Apply the customized style.
+
+For example, see `vault2.zip` file at Github.
+
+About syntax on css in Obsidian, see [css variable in Obsidian](https://docs.obsidian.md/Reference/CSS+variables/CSS+variables)
+
+
+### Create a customized style
+1. Create a css file under `.../.obsidian/snippets` folder.
+    
+### Apply a customized style
+1. Select `settings`->`Appearance`.
+2. Under `CSS snippets`, click `Reload` button to refresh it.
+3. Under `CSS snippets`, toggle on the css snippet that you want to apply.
+
+### Unapply a customized style
+1. Select `settings`->`Appearance`.
+2. Under `CSS snippets`, toggle off the css snippet that you want to apply.
+
