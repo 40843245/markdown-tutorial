@@ -169,31 +169,197 @@ will be rendered output looks like following screenshot in Reading View mode:
 ![image](https://github.com/user-attachments/assets/ce022407-8175-48fc-b203-e61557c30a49)
 
 ## Callout on Obsidian
+### [Supported types](https://help.obsidian.md/Editing+and+formatting/Callouts#Supported+types)
 
-+ Example 1: (See `Callback0.md` in `vault2.zip`)
++ Example 1: (See `Callback0_1.md` in `vault2.zip`)
   
 ```
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
-
 > [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!hint]
 > Helpful advice for doing things better or more easily.
 
 > [!IMPORTANT]
 > Key information users need to know to achieve their goal.
-
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
 ```
 
 will render output looks like as following screenshot:
 
-![image](https://github.com/user-attachments/assets/bc940a36-3b60-4312-8bfd-9d0dd15f1aa9)
+![image](https://github.com/user-attachments/assets/f1f4bc4b-5ddc-4053-a989-cb7b2039e5a3)
 
-+ Example 2: (See `Callback1.md` in `vault2.zip`)
++ Example 2: (See `Callback0_2.md` in `vault2.zip`)
+  
+```
+> [!abstract] 
+> Lorem ipsum dolor sit amet
+
+> [!summary] 
+> Lorem ipsum dolor sit amet
+
+> [!tldr] 
+> Lorem ipsum dolor sit amet
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/9a967840-e065-4366-ba6f-d5f710b19385)
+
++ Example 3: (See `Callback0_3.md` in `vault2.zip`)
+  
+```
+> [!todo] 
+> Lorem ipsum dolor sit amet
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/0b654cab-e599-4e14-8efe-48892a866100)
+
++ Example 4: (See `Callback0_4.md` in `vault2.zip`)
+  
+```
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+>  Advises about risks or negative outcomes of certain actions.
+
+> [!attention]
+>  Advises about risks or negative outcomes of certain actions.
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/1607448e-fb60-43bc-9f8f-69cf6ed8ee30)
+
++ Example 5: (See `Callback0_5.md` in `vault2.zip`)
+  
+```
+> [!info] 
+> Lorem ipsum dolor sit amet
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/e100309a-7e92-4446-9510-2b4eaef313d4)
+
++ Example 6: (See `Callback0_6.md` in `vault2.zip`)
+  
+```
+> [!success] 
+> Lorem ipsum dolor sit amet
+
+> [!check] 
+> Lorem ipsum dolor sit amet
+
+> [!done] 
+> Lorem ipsum dolor sit amet
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/5ccaf2a5-31ad-40b5-a231-42deb4fc0784)
+
++ Example 7: (See `Callback0_7.md` in `vault2.zip`)
+  
+```
+> [!question] 
+> Lorem ipsum dolor sit amet
+
+> [!help] 
+> Lorem ipsum dolor sit amet
+
+> [!faq] 
+> Lorem ipsum dolor sit amet
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/a186a904-6b3e-439c-92e8-0305de0275c3)
+
++ Example 8: (See `Callback0_8.md` in `vault2.zip`)
+  
+```
+> [!note] 
+> Lorem ipsum dolor sit amet
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/044362f5-f550-44aa-8eec-ad173b9db1f4)
+
++ Example 9: (See `Callback0_9.md` in `vault2.zip`)
+  
+```
+> [!failure] 
+> Lorem ipsum dolor sit amet
+
+> [!fail] 
+> Lorem ipsum dolor sit amet
+
+> [!missing] 
+> Lorem ipsum dolor sit amet
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/5ad52ff4-f9d3-4503-992e-481e8f5f7eed)
+
++ Example 10: (See `Callback0_10.md` in `vault2.zip`)
+  
+```
+> [!danger] 
+> Lorem ipsum dolor sit amet
+
+> [!error] 
+> Lorem ipsum dolor sit amet
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/0581fd83-60b5-4dc3-89c6-ab4c2511a444)
+
++ Example 11: (See `Callback0_11.md` in `vault2.zip`)
+  
+```
+> [!bug] 
+> Lorem ipsum dolor sit amet
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/8d2c8a8d-06f6-4713-aee7-984d752f8c79)
+
++ Example 12: (See `Callback0_12.md` in `vault2.zip`)
+  
+```
+> [!example] 
+> Lorem ipsum dolor sit amet
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/dd1790c8-cde2-48ac-84c5-4216dc67cb06)
+
++ Example 13: (See `Callback0_13.md` in `vault2.zip`)
+  
+```
+> [!quote] 
+> Lorem ipsum dolor sit amet
+
+> [!cite] 
+> Lorem ipsum dolor sit amet
+```
+
+will render output looks like as following screenshot:
+
+![image](https://github.com/user-attachments/assets/0a330b9a-526f-4b6d-bfe5-86a24a266282)
+
+
+### Nested item in callout
+
++ Example 1: (See `Callback1.md` in `vault2.zip`)
 
 ```
 > [!info]
