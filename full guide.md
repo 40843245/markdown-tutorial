@@ -27,6 +27,28 @@ While heading 6 has the smallest text among these headings.
 + Don't forget to put one space between `#` and the first word.
 + `#` must be consecutive. For example, `## Heading 2` and `# # Heading 2` are **NOT** equivalent.
 
+## [Section](https://www.w3schools.io/markdown-asciidoc-tutorials/)
+
++ Example 1:
+
+```
+= page title
+this is page title of an document
+== Section
+    This is main section
+=== Sub section
+    This is sub section
+```
+
+will be rendered output like this:
+
+= page title
+this is page title of an document
+== Section
+    This is main section
+=== Sub section
+    This is sub section
+    
 ### [Paragraphs](https://www.markdownguide.org/basic-syntax/#paragraphs-1)
 To create paragraphs, use a blank line to separate one or more lines of text.
 
