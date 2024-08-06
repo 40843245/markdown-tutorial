@@ -23,11 +23,10 @@ While heading 6 has the smallest text among these headings.
 | Heading level 1 <br> ===============	| `<h1>Heading level 1</h1>` | <h1>Heading level 1</h1> |
 | Heading level 2 <br> ---------------	| `<h2>Heading level 2</h2>` | <h2>Heading level 2</h2> |
 
-#### **NOTES**
-+ Don't forget to put one space between `#` and the first word.
-+ `#` must be consecutive. For example, `## Heading 2` and `# # Heading 2` are **NOT** equivalent.
+> [!NOTE]
+> + Don't forget to put one space between `#` and the first word.
+> + `#` must be consecutive. For example, `## Heading 2` and `# # Heading 2` are **NOT** equivalent.
 
-    
 ### [Paragraphs](https://www.markdownguide.org/basic-syntax/#paragraphs-1)
 To create paragraphs, use a blank line to separate one or more lines of text.
 
@@ -35,8 +34,8 @@ To create paragraphs, use a blank line to separate one or more lines of text.
 | -------- | ---- | --------------- |
 | I really like using Markdown. <br> <br> I think I'll use it to format all of my documents from now on.	| `<p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>` | <p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>
   
-#### **NOTES**
-Unless the paragraph is in a list, don’t indent paragraphs with spaces or tabs.
+> [!NOTE]
+> Unless the paragraph is in a list, don’t indent paragraphs with spaces or tabs.
 
 ### [Line Breaks](https://www.markdownguide.org/basic-syntax/#line-breaks)
 To create a line break or new line (in html `<br>`), end a line with two or more spaces, and then type return.
@@ -45,8 +44,9 @@ To create a line break or new line (in html `<br>`), end a line with two or more
 | -------- | ---- | --------------- |
 | This is the first line.  <br> And this is the second line. |	`<p>This is the first line.<br> And this is the second line.</p>`	 | <p>This is the first line.<br> And this is the second line.</p> |
 
-#### **NOTES**
-Unlike C, one can ***NOT*** `\` to break a new line.
+
+> [!NOTE]
+> Unlike C, one can ***NOT*** `\` to break a new line.
 
 See the example on [Line Break Best Practices](https://www.markdownguide.org/basic-syntax/#line-break-best-practices)
 
@@ -59,8 +59,8 @@ See the example on [Line Break Best Practices](https://www.markdownguide.org/bas
 | `I just love __bold text__.` | `I just love <strong>bold text</strong>.` | I just love <strong>bold text</strong>. |
 | `Love**is**bold`	| `Love<strong>is</strong>` | Love**is**bold |
 
-#### **NOTES**
-There don't exist this syntax. Such as `Love__is__bold`.
+> [!NOTE]
+> There don't exist this syntax. Such as `Love__is__bold`.
 
 ### [Italic](https://www.markdownguide.org/basic-syntax/#bold-and-italic)
 
@@ -70,8 +70,8 @@ There don't exist this syntax. Such as `Love__is__bold`.
 | `Italicized text is the _cat's meow_.`	| `Italicized text is the <em>cat's meow</em>.`	| Italicized text is the <em>cat's meow</em>. | 
 | `A*cat*meow` | `A<em>cat</em>meow` | A*cat*meow
 
-#### **NOTES**
-There don't exist this syntax. Such as `A_cat_meow`.
+> [!NOTE]
+> There don't exist this syntax. Such as `A_cat_meow`.
 
 ### [Strikethrough](https://learn-markdown.github.io/)
 Any word wrapped with two tildes (like `~~this~~`) will appear crossed out.
@@ -96,11 +96,11 @@ The rendered output looks like this:
 | `This text is **_really important_**.` | `This text is <em><strong>really important</strong></em>.` | This text is <em><strong>really important</strong></em> |
 | `This is really***very***important text.`	| `This is really<em><strong>very</strong></em>important text.`	| This text is <em><strong>really important</strong></em> |
 
-#### **NOTES**
-There don't exist this syntax. Such as `This is really___very__important text.`.
+> [!NOTE]
+> There don't exist this syntax. Such as `This is really___very__important text.`.
 
-#### **NOTES** 
-The order of the em and strong tags might be reversed depending on the Markdown processor you're using.
+> [!NOTE]
+> The order of the em and strong tags might be reversed depending on the Markdown processor you're using.
 
 ### [Subscript](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#styling-text)
 Due to the feature of markdown.
@@ -126,6 +126,20 @@ Due to the feature of markdown.
 Thus, we may use the html tag to achieve this (or may not in some markdown languages and platforms or apps).
 
 This artcile on [stackoveflow](https://stackoverflow.com/questions/3003476/get-underlined-text-with-markdown) covers a lot of way to underline texts with html tag.
+
+### Keyboard input icon (kbd)
+
+Since Github support one of html tag `<kdb>`, we can use it to show keyboard input icons.
+
++ Example 1:
+
+```
+<kbd>CTRL</kbd> + <kbd>L</kbd>
+```
+
+will be rendered output like this:
+
+<kbd>CTRL</kbd> + <kbd>L</kbd>
 
 ## [Checkbox](https://www.w3schools.io/file/markdown-checkbox-github/)
 
