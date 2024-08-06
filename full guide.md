@@ -147,6 +147,62 @@ will be rendered output like this:
 
 &#9746; - Unicode checkbox example
 
+## [Indent](https://www.w3schools.io/file/markdown-indent-lines/)
+
++ Example 1:
+
+```
+normal Text content  one
+    indented Text content  one
+        indented more  Text content  one
+```
+
+will be rendered output like this:
+
+normal Text content  one
+    indented Text content  one
+        indented more  Text content  one
+
++ Example 2:
+
+```
+normal Text content  one
+
+&nbsp;&nbsp;&nbsp;&nbsp;indented Text content  one
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;indented more
+Text content  one
+```
+
+will be rendered output like this:
+
+normal Text content  one
+
+&nbsp;&nbsp;&nbsp;&nbsp;indented Text content  one
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;indented more
+Text content  one
+
++ Example 3:
+
+```
+normal Text content  one
+
+&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;indented Text content  one
+
+&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;indented more  Text
+ content  one
+```
+
+will be rendered output like this:
+
+normal Text content  one
+
+&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;indented Text content  one
+
+&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;indented more  Text
+ content  one
+
 ## [Blockquotes](https://www.markdownguide.org/basic-syntax/#blockquotes-1)
 ### [Blockquotes with Single Line](https://www.markdownguide.org/basic-syntax/#blockquotes-1)
 To create a blockquote, add a > in front of a paragraph.
