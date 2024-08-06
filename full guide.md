@@ -880,6 +880,26 @@ The rendered output looks like this:
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
 
+## [Color](https://stackoverflow.com/questions/35465557/how-to-apply-color-on-text-in-markdown) (availables at Github)
+Since May 2022, Github supports LaTex, thus one can use Latex to show different color of texts.
+
+| Code | Appearing |
+| --- | --- |
+| `$${\color{red}Red}$$` | $${\\color{red}Red}$$ |
+| `$${\color{green}Green}$$` | $${\\color{green}Green}$$ |
+| `$${\color{lightgreen}Light \space Green}$$` | $${\\color{lightgreen}Light \\space Green}$$ |
+| `$${\color{blue}Blue}$$` | $${\\color{blue}Blue}$$ |
+| `$${\color{lightblue}Light \space Blue}$$` | $${\\color{lightblue}Light \\space Blue}$$ |
+| `$${\color{black}Black}$$` | $${\\color{black}Black}$$ |
+| `$${\color{white}White}$$` | $${\\color{white}White}$$ |
+
+```
+$${\color{red}Welcome \space \color{lightblue}To \space \color{orange}Stackoverflow}$$
+```
+
+will be rendered output like this
+
+$${\color{red}Welcome \space \color{lightblue}To \space \color{orange}Stackoverflow}$$
 
 ## [Username @mentions](https://learn-markdown.github.io/)
 Typing a hash tag (i.e. an `@` symbol), followed by a username, will notify that person to come and view the comment. 
