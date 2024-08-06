@@ -883,6 +883,8 @@ The rendered output looks like this:
 ## [Color](https://stackoverflow.com/questions/35465557/how-to-apply-color-on-text-in-markdown) (availables at Github)
 Since May 2022, Github supports LaTex, thus one can use Latex to show different color of texts.
 
++ Example 1:
+
 | Code | Appearing |
 | --- | --- |
 | `$${\color{red}Red}$$` | $${\\color{red}Red}$$ |
@@ -893,6 +895,8 @@ Since May 2022, Github supports LaTex, thus one can use Latex to show different 
 | `$${\color{black}Black}$$` | $${\\color{black}Black}$$ |
 | `$${\color{white}White}$$` | $${\\color{white}White}$$ |
 
++ Example 2:
+  
 ```
 $${\color{red}Welcome \space \color{lightblue}To \space \color{orange}Stackoverflow}$$
 ```
@@ -900,6 +904,18 @@ $${\color{red}Welcome \space \color{lightblue}To \space \color{orange}Stackoverf
 will be rendered output like this
 
 $${\color{red}Welcome \space \color{lightblue}To \space \color{orange}Stackoverflow}$$
+
++ Example 3:
+
+Please use the below syntax to get the BOLD & Font Color as Red.
+
+```
+__`A`__
+```
+
+will be rendered output like this:
+
+__`A`__
 
 ## [Username @mentions](https://learn-markdown.github.io/)
 Typing a hash tag (i.e. an `@` symbol), followed by a username, will notify that person to come and view the comment. 
@@ -976,6 +992,8 @@ The syntax of content in math expression is similar to that in `Microsoft Word`,
 > [!NOTE]
 > + For more information about the syntax, refer to [MathJax basic tutorial and quick reference](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
 > + For a list of supported MathJax packages, refer to [TeX/LaTeX Extension List](https://docs.mathjax.org/en/latest/input/tex/extensions/index.html).
+
+> + For more information about [What thing Github supports MathTex](https://github.blog/news-insights/product-news/math-support-in-markdown/)
 
 ## Diagram (available at Github)
 ### [Mermaid Diagram](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams)
