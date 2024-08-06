@@ -154,14 +154,18 @@ This artcile on [stackoveflow](https://stackoverflow.com/questions/3003476/get-u
   
 ```
 &check; - html checkbox example
+
 :white_check_mark: - emoji checkbox example
+
 &#9746; - Unicode checkbox example
 ```
 
 will be rendered output like this:
 
 &check; - html checkbox example
+
 :white_check_mark: - emoji checkbox example
+
 &#9746; - Unicode checkbox example
 
 ## [Blockquotes](https://www.markdownguide.org/basic-syntax/#blockquotes-1)
