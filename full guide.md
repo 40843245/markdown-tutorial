@@ -1520,8 +1520,11 @@ solid cube_corner
 endsolid
 ```
 
-## Programming language
-### [CSharp]
+## [Syntax highlight code](https://www.w3schools.io/file/markdown-code-fence-blocks/)
+For code block with these programming language as identifier in the table under [this website](https://www.w3schools.io/file/markdown-code-fence-blocks/), its syntax will be highlighted.
+
+### Programming language
+#### CSharp
 
 + Example 1:
 
@@ -1538,7 +1541,7 @@ will be rendered output like this:
 Console.WriteLine("Markdown fenced code example");
 ```
 
-### [Javascript]
+### Javascript
 
 + Example 1:
 
