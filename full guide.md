@@ -1520,8 +1520,8 @@ solid cube_corner
 endsolid
 ```
 
-### Programming language
-#### [CSharp]
+## Programming language
+### [CSharp]
 
 + Example 1:
 
@@ -1536,6 +1536,23 @@ will be rendered output like this:
 
 ``` cs
 Console.WriteLine("Markdown fenced code example");
+```
+
+### [Javascript]
+
++ Example 1:
+
+```
+\`\`\` js
+console.log("Markdown fenced code example")
+\`\`\`
+```
+
+will be rendered output like this:
+
+
+``` js
+console.log("Markdown fenced code example")
 ```
 
 
