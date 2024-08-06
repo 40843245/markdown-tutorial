@@ -427,10 +427,6 @@ Either use
 <!-- Wrap text -->
 ```
 
-```
-.. 
-```
-
 + Example 1:
 
 ```
@@ -451,15 +447,6 @@ will be rendered output like this:
 
 <!-- Wrap text -->
 
-+ Example 3:
-
-```
-.. this is a single line comment
-```
-
-will be rendered output like this:
-
-.. this is a single line comment
 
 ### [Code Blocks](https://www.markdownguide.org/basic-syntax/#code-blocks)
 
@@ -1532,6 +1519,24 @@ solid cube_corner
   endfacet
 endsolid
 ```
+
+### Programming language
+#### [CSharp]
+
++ Example 1:
+
+```
+``` cs
+Console.WriteLine("Markdown fenced code example");
+\```
+```
+
+will be rendered output like this:
+
+
+``` cs
+Console.WriteLine("Markdown fenced code example");
+\```
 
 
 ## Appreciation
