@@ -148,6 +148,21 @@ Thus, we may use the html tag to achieve this (or may not in some markdown langu
 
 This artcile on [stackoveflow](https://stackoverflow.com/questions/3003476/get-underlined-text-with-markdown) covers a lot of way to underline texts with html tag.
 
+## [Checkbox](https://www.w3schools.io/file/markdown-checkbox-github/)
+
++ Example 1:
+  
+```
+&check; - html checkbox example
+:white_check_mark: - emoji checkbox example
+&#9746; - Unicode checkbox example
+```
+
+will be rendered output like this:
+
+&check; - html checkbox example
+:white_check_mark: - emoji checkbox example
+&#9746; - Unicode checkbox example
 
 ## [Blockquotes](https://www.markdownguide.org/basic-syntax/#blockquotes-1)
 ### [Blockquotes with Single Line](https://www.markdownguide.org/basic-syntax/#blockquotes-1)
