@@ -1526,9 +1526,9 @@ endsolid
 + Example 1:
 
 ```
-``` cs
+\`\`\` cs
 Console.WriteLine("Markdown fenced code example");
-\```
+\`\`\`
 ```
 
 will be rendered output like this:
@@ -1536,7 +1536,7 @@ will be rendered output like this:
 
 ``` cs
 Console.WriteLine("Markdown fenced code example");
-\```
+```
 
 
 ## Appreciation
