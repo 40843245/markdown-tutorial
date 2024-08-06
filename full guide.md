@@ -380,9 +380,9 @@ For compatibility, don’t mix and match delimiters in the same list — pick on
 
 To add another element in a list while preserving the continuity of the list, indent the element four spaces or one tab, as shown in the following examples.
 
-#### **Tip** 
 
-If things don't appear the way you expect, re-check that you've indented the elements in the list four spaces or one tab.
+> [!TIP]
+> If things don't appear the way you expect, re-check that you've indented the elements in the list four spaces or one tab.
 
 See [example in Adding Elements in Lists](https://www.markdownguide.org/basic-syntax/#adding-elements-in-lists)
 
@@ -396,6 +396,50 @@ To denote a word or phrase as code, enclose it in backticks (`).
 
 ### **Extra Info**
 For Escaping Backticks on Code, see [Escaping Backticks on Code](https://www.markdownguide.org/basic-syntax/#escaping-backticks).
+
+## [Comments](https://stackoverflow.com/questions/4823468/comments-in-markdown)
+Either use 
+```
+<!--- Wrap text --->
+```
+
+```
+<!-- Wrap text -->
+```
+
+```
+{::comment}comment text can be inline or block {:/comment}
+```
+
++ Example 1:
+
+```
+<!--- Wrap text --->
+```
+
+will be rendered output like this:
+
+<!--- Wrap text --->
+
++ Example 2:
+
+```
+<!-- Wrap text -->
+```
+
+will be rendered output like this:
+
+<!-- Wrap text -->
+
++ Example 3:
+
+```
+{::comment}comment text can be inline or block {:/comment}
+```
+
+will be rendered output like this:
+
+{::comment}comment text can be inline or block {:/comment}
 
 ### [Code Blocks](https://www.markdownguide.org/basic-syntax/#code-blocks)
 
