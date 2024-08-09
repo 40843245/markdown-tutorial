@@ -443,13 +443,12 @@ Don't do this!
 ### [Ordered Lists](https://www.markdownguide.org/basic-syntax/#ordered-lists)
 See [example in Ordered Lists](https://www.markdownguide.org/basic-syntax/#ordered-lists)
 
-#### **NOTES**
-
-```
-CommonMark and a few other lightweight markup languages let you use a parenthesis ()) as a delimiter (e.g., 1) First item), 
-but not all Markdown applications support this,
-so it isn’t a great option from a compatibility perspective. For compatibility, use periods only.
-```
+> [!NOTE]
+> ```
+> CommonMark and a few other lightweight markup languages let you use a parenthesis ()) as a delimiter (e.g., 1) First item),
+> but not all Markdown applications support this,
+> so it isn’t a great option from a compatibility perspective. For compatibility, use periods only.
+> ```
 
 ### [Unordered Lists](https://www.markdownguide.org/basic-syntax/#unordered-lists)
 See [example in Unordered Lists](https://www.markdownguide.org/basic-syntax/#unordered-lists)
@@ -721,9 +720,26 @@ The rendered output looks like this:
 | -------- | ---- | --------------- |
 | ```At the command prompt, type `nano` ```.|	`At the command prompt, type <code>nano</code> .`	| At the command prompt, type <code>nano</code> . | More cells | More and more cells. |
 
-### **NOTES**
-+ For any row (except for first row and second row), if the number of `|` in the row is less than that in first row. Then rest of cell will be null.
-+ For any row (except for first row and second row), if the number of `|` in the row is less than that in first row. Then extraneous cell will be ignored. (See above exmaple `Example 4`)
+> [!NOTE]
+> + For any row (except for first row and second row), if the number of `|` in the row is less than that in first row. Then rest of cell will be null.
+> + For any row (except for first row and second row), if the number of `|` in the row is less than that in first row. Then extraneous cell will be
+>  ignored. (See above exmaple `Example 4`)
+
+## Indent
+
+```
+Indented lines:
+$\hspace{5pt}$ This line is indented 5 points.
+$\hspace{5mm}$ This line is indented 5 millimeters.
+$\hspace{2cm}$ This line is indented 2 centimeters.
+```
+
+willl output
+
+Indented lines:
+$\hspace{5pt}$ This line is indented 5 points.
+$\hspace{5mm}$ This line is indented 5 millimeters.
+$\hspace{2cm}$ This line is indented 2 centimeters.
 
 ## Images
 ### Images whose alternative is just a text
