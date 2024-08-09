@@ -428,8 +428,10 @@ The rendered output looks like this:
 > Kary, are you able to <strong>stand alone</strong>?
 > I'm okay.<br> I'm good at standing on one foot.<br><br>
 
-#### **NOTES**
-For compatibility, put blank lines before and after blockquotes.
+> [!NOTE]
+> See also `line nreakpoint`.
+>
+> For compatibility, put blank lines before and after blockquotes.
 
 Don't do this
 
@@ -483,8 +485,8 @@ To denote a word or phrase as code, enclose it in backticks (`).
 | -------- | ---- | --------------- |
 | ```At the command prompt, type `nano` ```.|	`At the command prompt, type <code>nano</code> .`	| At the command prompt, type <code>nano</code> .
 
-### **Extra Info**
-For Escaping Backticks on Code, see [Escaping Backticks on Code](https://www.markdownguide.org/basic-syntax/#escaping-backticks).
+> [!NOTE]
+> For Escaping Backticks on Code, see [Escaping Backticks on Code](https://www.markdownguide.org/basic-syntax/#escaping-backticks).
 
 ## [Comments](https://stackoverflow.com/questions/4823468/comments-in-markdown)
 Either use 
@@ -527,8 +529,8 @@ To create code blocks, either
 ## [Horizontal Rules](https://www.markdownguide.org/basic-syntax/#horizontal-rules)
 To create a horizontal rule, use three or more asterisks (***), dashes (---), or underscores (___) on a line by themselves.
 
-### **NOTES**
-For compatibility, put blank lines before and after horizontal rules.
+> [!NOTE]
+> For compatibility, put blank lines before and after horizontal rules.
 
 ## [Links](https://www.markdownguide.org/basic-syntax/#links)
 ### [Normal Links](https://www.markdownguide.org/basic-syntax/#links)
@@ -729,16 +731,23 @@ The rendered output looks like this:
 
 ```
 Indented lines:
+
 $\hspace{5pt}$ This line is indented 5 points.
+
 $\hspace{5mm}$ This line is indented 5 millimeters.
+
 $\hspace{2cm}$ This line is indented 2 centimeters.
 ```
 
 willl output
 
+
 Indented lines:
+
 $\hspace{5pt}$ This line is indented 5 points.
+
 $\hspace{5mm}$ This line is indented 5 millimeters.
+
 $\hspace{2cm}$ This line is indented 2 centimeters.
 
 ## Images
