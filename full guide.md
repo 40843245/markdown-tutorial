@@ -161,6 +161,22 @@ will be rendered output like this:
 
 &#9746; - Unicode checkbox example
 
+## [Textbox](https://stackoverflow.com/questions/25654845/how-can-i-create-a-text-box-for-a-note-in-markdown)
+
++ Example 1:
+
+```
+::: warning
+*here be dragons*
+:::
+```
+
+will output
+
+::: warning
+*here be dragons*
+:::
+
 ## [Indent](https://www.w3schools.io/file/markdown-indent-lines/)
 
 + Example 1:
