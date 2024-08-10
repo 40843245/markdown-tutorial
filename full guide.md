@@ -251,6 +251,16 @@ This is first line.
 This is last line.
 ```
 
+will output
+
+This is first line.
+
+&emspThis is an indented line.
+
+&emsp&emspThis is an nested indented line.
+
+This is last line.
+
 ## [Blockquotes](https://www.markdownguide.org/basic-syntax/#blockquotes-1)
 ### [Blockquotes with Single Line](https://www.markdownguide.org/basic-syntax/#blockquotes-1)
 To create a blockquote, add a > in front of a paragraph.
