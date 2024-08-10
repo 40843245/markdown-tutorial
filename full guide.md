@@ -177,6 +177,20 @@ will output
 *here be dragons*
 :::
 
++ Example 2:
+
+```
+<div class="warning">
+   <em>here be dragons</em>
+</div>
+```
+
+will output
+
+<div class="warning">
+   <em>here be dragons</em>
+</div>
+
 ## [Indent](https://www.w3schools.io/file/markdown-indent-lines/)
 
 + Example 1:
