@@ -217,6 +217,40 @@ normal Text content  one
 &ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;indented more  Text
  content  one
 
++ Example 4:
+
+```
+Indented lines:
+
+$\hspace{5pt}$ This line is indented 5 points.
+
+$\hspace{5mm}$ This line is indented 5 millimeters.
+
+$\hspace{2cm}$ This line is indented 2 centimeters.
+```
+
+willl output
+
+Indented lines:
+
+$\hspace{5pt}$ This line is indented 5 points.
+
+$\hspace{5mm}$ This line is indented 5 millimeters.
+
+$\hspace{2cm}$ This line is indented 2 centimeters.
+
++ Example 5:
+
+```
+This is first line.
+
+&emspThis is an indented line.
+
+&emsp&emspThis is an nested indented line.
+
+This is last line.
+```
+
 ## [Blockquotes](https://www.markdownguide.org/basic-syntax/#blockquotes-1)
 ### [Blockquotes with Single Line](https://www.markdownguide.org/basic-syntax/#blockquotes-1)
 To create a blockquote, add a > in front of a paragraph.
@@ -461,11 +495,10 @@ If you need to start an unordered list item with a number followed by a period, 
 
 See [example in Starting Unordered List Items With Numbers](https://www.markdownguide.org/basic-syntax/#starting-unordered-list-items-with-numbers)
 
-#### **NOTES**
-
-Markdown applications don’t agree on how to handle different delimiters in the same list. 
-
-For compatibility, don’t mix and match delimiters in the same list — pick one and stick with it.
+> [!NOTE]
+> Markdown applications don’t agree on how to handle different delimiters in the same list.
+>
+> For compatibility, don’t mix and match delimiters in the same list — pick one and stick with it.
 
 ### [Adding Elements in Lists](https://www.markdownguide.org/basic-syntax/#adding-elements-in-lists)
 
@@ -726,29 +759,6 @@ The rendered output looks like this:
 > + For any row (except for first row and second row), if the number of `|` in the row is less than that in first row. Then rest of cell will be null.
 > + For any row (except for first row and second row), if the number of `|` in the row is less than that in first row. Then extraneous cell will be
 >  ignored. (See above exmaple `Example 4`)
-
-## Indent
-
-```
-Indented lines:
-
-$\hspace{5pt}$ This line is indented 5 points.
-
-$\hspace{5mm}$ This line is indented 5 millimeters.
-
-$\hspace{2cm}$ This line is indented 2 centimeters.
-```
-
-willl output
-
-
-Indented lines:
-
-$\hspace{5pt}$ This line is indented 5 points.
-
-$\hspace{5mm}$ This line is indented 5 millimeters.
-
-$\hspace{2cm}$ This line is indented 2 centimeters.
 
 ## Images
 ### Images whose alternative is just a text
