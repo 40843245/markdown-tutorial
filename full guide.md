@@ -244,9 +244,9 @@ $\hspace{2cm}$ This line is indented 2 centimeters.
 ```
 This is first line.
 
-&emspThis is an indented line.
+&emsp;This is an indented line.
 
-&emsp&emspThis is an nested indented line.
+&emsp;&emsp;This is an nested indented line.
 
 This is last line.
 ```
@@ -255,9 +255,53 @@ will output
 
 This is first line.
 
-&emspThis is an indented line.
+&emsp;This is an indented line.
 
-&emsp&emspThis is an nested indented line.
+&emsp;&emsp;This is an nested indented line.
+
+This is last line.
+
++ Example 6:
+
+```
+This is first line.
+
+&#9;This is an indented line.
+
+&#9;&#9;This is an nested indented line.
+
+This is last line.
+```
+
+will output
+
+This is first line.
+
+&#9;This is an indented line.
+
+&#9;&#9;This is an nested indented line.
+
+This is last line.
+
++ Example 7:
+
+```
+This is first line.
+
+&#8287;This is an indented line.
+
+&#8287;&#8287;This is an nested indented line.
+
+This is last line.
+```
+
+will output
+
+This is first line.
+
+&#8287;This is an indented line.
+
+&#8287;&#8287;This is an nested indented line.
 
 This is last line.
 
