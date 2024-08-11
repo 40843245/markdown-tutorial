@@ -334,7 +334,108 @@ This is first line.
 &#8287;&#8287;This is an nested indented line.
 
 This is last line.
-        
+
+## [Labels or Footnotes](https://stackoverflow.com/questions/6695439/how-to-link-to-a-named-anchor-in-multimarkdown/15843220#15843220)
+### Add labels or footnotes
+To add a footnote, create a label through `[]` followed by `:` symbol (i.e. `[`, your name or combination of `^` and your id,`]`,`:`)
+
+The [re](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expressions) (i.e. regular expression) of a label will be
+
+```
+{digit}: [0-9]
+{nonzeroDigit}: [1-9]
+{underscore}: _
+{uppercase}: [A-Z]
+{lowercase}: [a-z]
+{alphabet}: ({uppercase}|{lowercase})
+
+{positiveInteger}: {nonzeroDigit}({digit}*)
+{identifier}:{alphabet}({digit}|{alphabet}|{underscore})*
+
+{idSymbol}: \^
+{leftSquareBracket}: \[
+{rightSquareBracket}: \]
+
+{labelId}: {leftSquareBracket}{idSymbol}{identifier}{rightSquareBracket}
+{labelName}: {leftSquareBracket}{identifier}{rightSquareBracket}
+
+{validLabel}: ({labelId}|{labelName}) # valid label which we want.
+```
+
+To create a label. Type
+
+```
+{validLabel}
+```
+
+### Use labels or footnotes
+To use a footnote, simply type the id or name of label within `[]`.
+
+The syntax looks like this
+
+```
+Here is an [example label].
+
+  [example label]: #the-anchor-name-or-id "Optional title for mouse hover"
+```
+
++ Example 1:
+
+To create a label whose id is `label1` and it has a url `https://en.wikipedia.org/wiki/PyQt` displayed as `PyQt`. Type 
+
+```
+[label1]: [PyQt](https://en.wikipedia.org/wiki/PyQt)
+```
+
+To use the label. Type
+
+```
+[label1]
+```
+
+The full example will look like this:
+
+```
+This is a [label1]
+
+  [label1]: [PyQt](https://en.wikipedia.org/wiki/PyQt)
+```
+
+which will be rendered as following:
+
+This is a [label1]
+
+  [label1]: [PyQt](https://en.wikipedia.org/wiki/PyQt)
+
++ Example 2:
+
+To create a label with id `1`. Type
+
+```
+[^1]
+```
+
+To use label whose id is `1` and it has a url `https://www.r-project.org/` displayed as `R official website`. Type
+
+```
+[^1]: [R official website](https://www.r-project.org/)
+```
+
+The full example will look like this:
+
+```
+See get started of R official website[^1]
+
+[^1]: [R official website](https://www.r-project.org/)
+```
+
+#### Ref
+
+Thanks to [Mahozad's answer on stackoverflow](https://stackoverflow.com/questions/6695439/how-to-link-to-a-named-anchor-in-multimarkdown/15843220#15843220).
+
+![image](https://github.com/user-attachments/assets/5c6464cb-1bfe-4140-ac02-d4960bb27e85)
+
+
 ## [Blockquotes](https://www.markdownguide.org/basic-syntax/#blockquotes-1)
 ### [Blockquotes with Single Line](https://www.markdownguide.org/basic-syntax/#blockquotes-1)
 To create a blockquote, add a > in front of a paragraph.
@@ -1851,20 +1952,17 @@ console.log("Markdown fenced code example")
 
 will be rendered output like this:
 
-
 ``` js
 console.log("Markdown fenced code example")
 ```
 
-
 ## Appreciation
-
-![image](https://github.com/user-attachments/assets/ca04cec5-1987-491f-8a0a-5a2752391cab)
-
 
 (Magical Girls of Amazing Rainbow【Anime】)[https://www.youtube.com/watch?v=swkJz-DhuDw]
 
-will provides some element as example. I take some of transcript in this video, [(Ridiculous people on the subway!! #anime #manga)](https://www.youtube.com/watch?v=swkJz-DhuDw) as elements for examples.
+![image](https://github.com/user-attachments/assets/ca04cec5-1987-491f-8a0a-5a2752391cab)
+
+It provides some element as example. I take some of transcript in this video, [(Ridiculous people on the subway!! #anime #manga)](https://www.youtube.com/watch?v=swkJz-DhuDw) as elements for examples.
 
 ### Ref
 + For basic syntax in most section, see
