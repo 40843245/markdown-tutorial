@@ -429,6 +429,12 @@ See get started of R official website[^1]
 [^1]: [R official website](https://www.r-project.org/)
 ```
 
+which will be rendered as following:
+
+See get started of R official website[^1]
+
+[^1]: [R official website](https://www.r-project.org/)
+
 #### Ref
 
 Thanks to [Mahozad's answer on stackoverflow](https://stackoverflow.com/questions/6695439/how-to-link-to-a-named-anchor-in-multimarkdown/15843220#15843220).
