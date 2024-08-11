@@ -614,7 +614,6 @@ Factoids:
  - There are actually six different ways to enter loops.
  - There are six directionals and six I/O commands.
  - 666. ha.
-
    
 ### [Ordered Lists](https://www.markdownguide.org/basic-syntax/#ordered-lists)
 See [example in Ordered Lists](https://www.markdownguide.org/basic-syntax/#ordered-lists)
@@ -738,8 +737,16 @@ The rendered output looks like this
 
 [Links](https://www.markdownguide.org/basic-syntax?target=_blank)
 
+### Link to local device
 
++ Template:
   
+```
+[link](file:///d:/absolute.md)    # absolute filesystem path
+[link](./relative1.md)            # relative to opened file
+[link](/relativeToProject.md)     # relative to opened project
+```
+
 ### [URLs and Email Addresses](https://www.markdownguide.org/basic-syntax/#urls-and-email-addresses)
 
 There are a faster way to turn a URL or email address into a link, enclose it in angle brackets.
