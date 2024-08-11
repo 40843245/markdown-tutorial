@@ -390,6 +390,7 @@ Factoids:
  - There are actually six different ways to enter loops.
  - There are six directionals and six I/O commands.
  - 666. ha.
+   
 ## [Blockquotes](https://www.markdownguide.org/basic-syntax/#blockquotes-1)
 ### [Blockquotes with Single Line](https://www.markdownguide.org/basic-syntax/#blockquotes-1)
 To create a blockquote, add a > in front of a paragraph.
@@ -730,6 +731,18 @@ The rendered output looks like this:
 The rendered output looks like this:
 
 [Links](https://www.markdownguide.org/basic-syntax/#links)
+
+### [Link that open a new tab](https://stackoverflow.com/questions/4425198/can-i-create-links-with-target-blank-in-markdown#answer-4705645)
+
++ Example 1:
+
+```
+[Can I create links with 'target="_blank"' in Markdown?](https://stackoverflow.com/questions/4425198/can-i-create-links-with-target-blank-in-markdown#answer-4705645){:target="_blank"}
+```
+
+will output
+
+[Can I create links with 'target="_blank"' in Markdown?](https://stackoverflow.com/questions/4425198/can-i-create-links-with-target-blank-in-markdown#answer-4705645){:target="_blank"}
 
 ### [URLs and Email Addresses](https://www.markdownguide.org/basic-syntax/#urls-and-email-addresses)
 
