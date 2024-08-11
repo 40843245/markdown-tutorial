@@ -336,6 +336,11 @@ This is first line.
 This is last line.
 
 ## [Labels or Footnotes](https://stackoverflow.com/questions/6695439/how-to-link-to-a-named-anchor-in-multimarkdown/15843220#15843220)
+
+> [!CAUTION]
+> The label (such as`[label]`) may NOT be rendered in Github or other platform. Be careful to use it. For this reason, I did NOT use labels in markdown file but footnotes, and I highly recommend to use footnotes instead labels.
+
+
 ### Add labels or footnotes
 To add a footnote, create a label through `[]` followed by `:` symbol (i.e. `[`, your name or combination of `^` and your id,`]`,`:`)
 
@@ -359,7 +364,8 @@ The [re](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-ex
 {labelId}: {leftSquareBracket}{idSymbol}{identifier}{rightSquareBracket}
 {labelName}: {leftSquareBracket}{identifier}{rightSquareBracket}
 
-{validLabel}: ({labelId}|{labelName}) # valid label which we want.
+{validFootnote}: {labelId} # valid footnote which we want.
+{validLabel}: {labelName} # valid label which we want.
 ```
 
 To create a label. Type
@@ -368,14 +374,20 @@ To create a label. Type
 {validLabel}
 ```
 
+To create a footnote. Type
+
+```
+{validFootnote}
+```
+
 ### Use labels or footnotes
-To use a footnote, simply type the id or name of label within `[]`.
+- For label:
+  
+To use a label, simply type name of label within `[]`.
 
 The syntax looks like this
 
 ```
-Here is an [example label].
-
   [example label]: #the-anchor-name-or-id "Optional title for mouse hover"
 ```
 
@@ -387,7 +399,7 @@ To create a label whose id is `label1` and it has a url `https://en.wikipedia.or
 [label1]: [PyQt](https://en.wikipedia.org/wiki/PyQt)
 ```
 
-To use the label. Type
+To use the label whose name is `label1`. Type
 
 ```
 [label1]
@@ -406,6 +418,16 @@ which will be rendered as following:
 This is a [label1]
 
   [label1]: [PyQt](https://en.wikipedia.org/wiki/PyQt)
+
+- For footnote
+
+To use a footnote, type a `^` symbol followed by id of the footnote within `[]`.
+
+The syntax will look like this:
+
+```
+  [^1]: #the-anchor-name-or-id "Optional title for mouse hover"
+```
 
 + Example 2:
 
