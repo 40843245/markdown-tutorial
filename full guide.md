@@ -710,7 +710,9 @@ To create a horizontal rule, use three or more asterisks (***), dashes (---), or
 
 + Example 1: Don't specify title,
 
-```https://www.markdownguide.org/basic-syntax/#links```
+```
+https://www.markdownguide.org/basic-syntax/#links
+```
 
 The rendered output looks like this:
 
@@ -718,20 +720,26 @@ https://www.markdownguide.org/basic-syntax/#links
 
 + Example 2: Don't specify title,
 
-```(https://www.markdownguide.org/basic-syntax/#links)```
+```
+(https://www.markdownguide.org/basic-syntax/#links)
+```
 
 The rendered output looks like this:
 
 (https://www.markdownguide.org/basic-syntax/#links)
 
-+ Example 2: Do specify title
++ Example 3:
   
-```[Links](https://www.markdownguide.org/basic-syntax/#links)```
+```
+[Links](https://www.markdownguide.org/basic-syntax?target=_blank)
+```
 
-The rendered output looks like this:
+The rendered output looks like this
 
-[Links](https://www.markdownguide.org/basic-syntax/#links)
+[Links](https://www.markdownguide.org/basic-syntax?target=_blank)
 
+
+  
 ### [URLs and Email Addresses](https://www.markdownguide.org/basic-syntax/#urls-and-email-addresses)
 
 There are a faster way to turn a URL or email address into a link, enclose it in angle brackets.
