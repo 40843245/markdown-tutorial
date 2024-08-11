@@ -334,63 +334,7 @@ This is first line.
 &#8287;&#8287;This is an nested indented line.
 
 This is last line.
-
-## list
-
-+ Example 1:
-
-```
-Factoids:
- - There are about six different ways to do everything in Forked.
- - There are actually six different ways to enter loops.
- - There are six directionals and six I/O commands.
-```
-
-will output
-
-Factoids:
- - There are about six different ways to do everything in Forked.
- - There are actually six different ways to enter loops.
- - There are six directionals and six I/O commands.
-
-+ Example 2:
-
-```
-Factoids:
- - There are about six different ways to do everything in Forked.
- - There are actually six different ways to enter loops.
- - There are six directionals and six I/O commands.
- - 666\. ha.
-```
-
-will output
-
-Factoids:
- - There are about six different ways to do everything in Forked.
- - There are actually six different ways to enter loops.
- - There are six directionals and six I/O commands.
- - 666\. ha.
-
-Wrong Examples.
-
-+ Wrong Example 1: (See [GitHub satanically messing with Markdown - changes 666 to DCLXVI](https://stackoverflow.com/questions/44619165/github-satanically-messing-with-markdown-changes-666-to-dclxvi))
-
-```
-Factoids:
- - There are about six different ways to do everything in Forked.
- - There are actually six different ways to enter loops.
- - There are six directionals and six I/O commands.
- - 666. ha.
-```
-
-will output
-
-Factoids:
- - There are about six different ways to do everything in Forked.
- - There are actually six different ways to enter loops.
- - There are six directionals and six I/O commands.
- - 666. ha.
-   
+        
 ## [Blockquotes](https://www.markdownguide.org/basic-syntax/#blockquotes-1)
 ### [Blockquotes with Single Line](https://www.markdownguide.org/basic-syntax/#blockquotes-1)
 To create a blockquote, add a > in front of a paragraph.
@@ -616,6 +560,62 @@ Don't do this!
 ```
 
 ## [Lists](https://www.markdownguide.org/basic-syntax/#lists-1)
+
++ Example 1:
+
+```
+Factoids:
+ - There are about six different ways to do everything in Forked.
+ - There are actually six different ways to enter loops.
+ - There are six directionals and six I/O commands.
+```
+
+will output
+
+Factoids:
+ - There are about six different ways to do everything in Forked.
+ - There are actually six different ways to enter loops.
+ - There are six directionals and six I/O commands.
+
++ Example 2:
+
+```
+Factoids:
+ - There are about six different ways to do everything in Forked.
+ - There are actually six different ways to enter loops.
+ - There are six directionals and six I/O commands.
+ - 666\. ha.
+```
+
+will output
+
+Factoids:
+ - There are about six different ways to do everything in Forked.
+ - There are actually six different ways to enter loops.
+ - There are six directionals and six I/O commands.
+ - 666\. ha.
+
+Wrong Examples.
+
++ Wrong Example 1: (See [GitHub satanically messing with Markdown - changes 666 to DCLXVI](https://stackoverflow.com/questions/44619165/github-satanically-messing-with-markdown-changes-666-to-dclxvi))
+
+```
+Factoids:
+ - There are about six different ways to do everything in Forked.
+ - There are actually six different ways to enter loops.
+ - There are six directionals and six I/O commands.
+ - 666. ha.
+```
+
+will output
+
+Factoids:
+ - There are about six different ways to do everything in Forked.
+ - There are actually six different ways to enter loops.
+ - There are six directionals and six I/O commands.
+ - 666. ha.
+
+   
 ### [Ordered Lists](https://www.markdownguide.org/basic-syntax/#ordered-lists)
 See [example in Ordered Lists](https://www.markdownguide.org/basic-syntax/#ordered-lists)
 
@@ -731,18 +731,6 @@ The rendered output looks like this:
 The rendered output looks like this:
 
 [Links](https://www.markdownguide.org/basic-syntax/#links)
-
-### [Link that open a new tab](https://stackoverflow.com/questions/4425198/can-i-create-links-with-target-blank-in-markdown#answer-4705645)
-
-+ Example 1:
-
-```
-[Can I create links with 'target="_blank"' in Markdown?](https://stackoverflow.com/questions/4425198/can-i-create-links-with-target-blank-in-markdown#answer-4705645){:target="_blank"}
-```
-
-will output
-
-[Can I create links with 'target="_blank"' in Markdown?](https://stackoverflow.com/questions/4425198/can-i-create-links-with-target-blank-in-markdown#answer-4705645){:target="_blank"}
 
 ### [URLs and Email Addresses](https://www.markdownguide.org/basic-syntax/#urls-and-email-addresses)
 
