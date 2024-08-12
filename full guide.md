@@ -1156,6 +1156,20 @@ will output
 |  :white_large_square: This is not checked.         |      |
 | :white_check_mark: This is checked.                |      |
 
++ Example 5:
+
+```
+| Unchecked | Checked |
+| --------- | ------- |
+| &#9744;   | &#9745; |
+```
+
+will output
+
+| Unchecked | Checked |
+| --------- | ------- |
+| &#9744;   | &#9745; |
+
 ## Images
 ### Images whose alternative is just a text
 
