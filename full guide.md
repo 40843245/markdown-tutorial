@@ -309,16 +309,17 @@ will output
 ```
 | demo                                              | demo |
 | ------------------------------------------------- | ---- |
-|  :white_large_square This is not checked.         |      |
-| :white_check_mark This is checked.                |      |
+|  :white_large_square: This is not checked.         |      |
+| :white_check_mark: This is checked.                |      |
 ```
 
 will output
 
 | demo                                              | demo |
 | ------------------------------------------------- | ---- |
-|  :white_large_square This is not checked.         |      |
-| :white_check_mark This is checked.                |      |
+|  :white_large_square: This is not checked.         |      |
+| :white_check_mark: This is checked.                |      |
+
 ## [Indent](https://www.w3schools.io/file/markdown-indent-lines/)
 
 + Example 1:
