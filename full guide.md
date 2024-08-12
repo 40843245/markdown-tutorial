@@ -161,6 +161,11 @@ will be rendered output like this:
 
 &#9746; - Unicode checkbox example
 
+## Emoji
+
+A list of emoji at Github is available at Github gists:
++ [Emoji](https://github.com/StylishThemes/GitHub-Dark/wiki/Emoji)
++ [Emoji](https://gist.github.com/rxaviers/7360908)
 
 ## [Textbox](https://stackoverflow.com/questions/25654845/how-can-i-create-a-text-box-for-a-note-in-markdown)
 
