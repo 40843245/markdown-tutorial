@@ -161,6 +161,7 @@ will be rendered output like this:
 
 &#9746; - Unicode checkbox example
 
+
 ## [Textbox](https://stackoverflow.com/questions/25654845/how-can-i-create-a-text-box-for-a-note-in-markdown)
 
 + Example 1:
@@ -191,134 +192,6 @@ will output
    <em>here be dragons</em>
 </div>
 
-
-## Table
-
-+ Example 1:
-```
-| Markdown	| HTML | Rendered Output |
-| --------- | ---- | --------------- |
-| # Heading level 1 | `<h1>Heading level 1</h1>` |	<h1>Heading level 1</h1> | 
-| ## Heading level 2	| `<h2>Heading level 2</h2>` | <h2>Heading level 2</h2>	| 
-| ### Heading level 3	| `<h3>Heading level 3</h3>` | <h3>Heading level 3</h3>	| 
-| #### Heading level 4	| `<h4>Heading level 4</h4>` | <h4>Heading level 4</h4> |
-| ##### Heading level 5	| `<h5>Heading level 5</h5>` | <h5>Heading level 5</h5> |
-| ###### Heading level 6 | `<h6>Heading level 6</h6>`	| <h6>Heading level 6</h6> |
-```
-
-will output
-
-| Markdown	| HTML | Rendered Output |
-| --------- | ---- | --------------- |
-| # Heading level 1 | `<h1>Heading level 1</h1>` |	<h1>Heading level 1</h1> | 
-| ## Heading level 2	| `<h2>Heading level 2</h2>` | <h2>Heading level 2</h2>	| 
-| ### Heading level 3	| `<h3>Heading level 3</h3>` | <h3>Heading level 3</h3>	| 
-| #### Heading level 4	| `<h4>Heading level 4</h4>` | <h4>Heading level 4</h4> |
-| ##### Heading level 5	| `<h5>Heading level 5</h5>` | <h5>Heading level 5</h5> |
-| ###### Heading level 6 | `<h6>Heading level 6</h6>`	| <h6>Heading level 6</h6> |
-
-+ Example 2:
-
-```
-| Markdown | HTML | Rendered Output |
-| -------- | ---- | --------------- |
-| Heading level 1 <br> ===============	| `<h1>Heading level 1</h1>` | <h1>Heading level 1</h1> |
-| Heading level 2 <br> ---------------	| `<h2>Heading level 2</h2>` | <h2>Heading level 2</h2> |
-```
-
-will output
-
-| Markdown | HTML | Rendered Output |
-| -------- | ---- | --------------- |
-| Heading level 1 <br> ===============	| `<h1>Heading level 1</h1>` | <h1>Heading level 1</h1> |
-| Heading level 2 <br> ---------------	| `<h2>Heading level 2</h2>` | <h2>Heading level 2</h2> |
-
-+ Example 3:
-
-```
-| Markdown | HTML | Rendered Output |
-| -------- | ---- | --------------- |
-| I really like using Markdown. <br> <br> I think I'll use it to format all of my documents from now on.	| `<p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>` | <p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>
-```
-
-will output
-
-| Markdown | HTML | Rendered Output |
-| -------- | ---- | --------------- |
-| I really like using Markdown. <br> <br> I think I'll use it to format all of my documents from now on.	| `<p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>` | <p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>
-
-### [Checkbox in table](https://stackoverflow.com/questions/47344571/how-to-draw-checkbox-or-tick-mark-in-github-markdown-table/47344640#47344640)
-
-+ Example 1:
-
-```
-| Selection |        |
-| --------- | ------ |
-| <li>- [ ] </li> |  |
-
-| Selection |        |
-| --------- | ------ |
-| <li>- [x] </li> |  |
-```
-
-will output
-
-| Selection |        |
-| --------- | ------ |
-| <li>- [ ] </li> |  |
-
-| Selection |        |
-| --------- | ------ |
-| <li>- [x] </li> |  |
-
-
-+ Example 2:
-
-```
-|checked|unchecked|crossed|
-|---|---|---|
-|&check;|_|&cross;|
-|&#x2611;|&#x2610;|&#x2612;|
-```
-
-will output
-
-|checked|unchecked|crossed|
-|---|---|---|
-|&check;|_|&cross;|
-|&#x2611;|&#x2610;|&#x2612;|
-
-+ Example 3:
-
-```
-| demo                                              | demo |
-| ------------------------------------------------- | ---- |
-| <input type="checkbox" disabled checked /> works  |      |
-| <input type="checkbox" disabled /> works here too |      |
-```
-
-will output
-
-| demo                                              | demo |
-| ------------------------------------------------- | ---- |
-| <input type="checkbox" disabled checked /> works  |      |
-| <input type="checkbox" disabled /> works here too |      |
-
-+ Example 4:
-
-```
-| demo                                              | demo |
-| ------------------------------------------------- | ---- |
-|  :white_large_square: This is not checked.         |      |
-| :white_check_mark: This is checked.                |      |
-```
-
-will output
-
-| demo                                              | demo |
-| ------------------------------------------------- | ---- |
-|  :white_large_square: This is not checked.         |      |
-| :white_check_mark: This is checked.                |      |
 
 ## [Indent](https://www.w3schools.io/file/markdown-indent-lines/)
 
@@ -1174,6 +1047,110 @@ The rendered output looks like this:
 > + For any row (except for first row and second row), if the number of `|` in the row is less than that in first row. Then extraneous cell will be
 >  ignored. (See above exmaple `Example 4`)
 
+
++ Example 5:
+
+```
+| Markdown | HTML | Rendered Output |
+| -------- | ---- | --------------- |
+| Heading level 1 <br> ===============	| `<h1>Heading level 1</h1>` | <h1>Heading level 1</h1> |
+| Heading level 2 <br> ---------------	| `<h2>Heading level 2</h2>` | <h2>Heading level 2</h2> |
+```
+
+will output
+
+| Markdown | HTML | Rendered Output |
+| -------- | ---- | --------------- |
+| Heading level 1 <br> ===============	| `<h1>Heading level 1</h1>` | <h1>Heading level 1</h1> |
+| Heading level 2 <br> ---------------	| `<h2>Heading level 2</h2>` | <h2>Heading level 2</h2> |
+
++ Example 6:
+
+```
+| Markdown | HTML | Rendered Output |
+| -------- | ---- | --------------- |
+| I really like using Markdown. <br> <br> I think I'll use it to format all of my documents from now on.	| `<p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>` | <p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>
+```
+
+will output
+
+| Markdown | HTML | Rendered Output |
+| -------- | ---- | --------------- |
+| I really like using Markdown. <br> <br> I think I'll use it to format all of my documents from now on.	| `<p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>` | <p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>
+
+### [Checkbox in table](https://stackoverflow.com/questions/47344571/how-to-draw-checkbox-or-tick-mark-in-github-markdown-table/47344640#47344640)
+
++ Example 1:
+
+```
+| Selection |        |
+| --------- | ------ |
+| <li>- [ ] </li> |  |
+
+| Selection |        |
+| --------- | ------ |
+| <li>- [x] </li> |  |
+```
+
+will output
+
+| Selection |        |
+| --------- | ------ |
+| <li>- [ ] </li> |  |
+
+| Selection |        |
+| --------- | ------ |
+| <li>- [x] </li> |  |
+
+
++ Example 2:
+
+```
+|checked|unchecked|crossed|
+|---|---|---|
+|&check;|_|&cross;|
+|&#x2611;|&#x2610;|&#x2612;|
+```
+
+will output
+
+|checked|unchecked|crossed|
+|---|---|---|
+|&check;|_|&cross;|
+|&#x2611;|&#x2610;|&#x2612;|
+
++ Example 3:
+
+```
+| demo                                              | demo |
+| ------------------------------------------------- | ---- |
+| <input type="checkbox" disabled checked /> works  |      |
+| <input type="checkbox" disabled /> works here too |      |
+```
+
+will output
+
+| demo                                              | demo |
+| ------------------------------------------------- | ---- |
+| <input type="checkbox" disabled checked /> works  |      |
+| <input type="checkbox" disabled /> works here too |      |
+
++ Example 4:
+
+```
+| demo                                              | demo |
+| ------------------------------------------------- | ---- |
+|  :white_large_square: This is not checked.         |      |
+| :white_check_mark: This is checked.                |      |
+```
+
+will output
+
+| demo                                              | demo |
+| ------------------------------------------------- | ---- |
+|  :white_large_square: This is not checked.         |      |
+| :white_check_mark: This is checked.                |      |
+
 ## Images
 ### Images whose alternative is just a text
 
@@ -1490,9 +1467,8 @@ graph TD;
     C-->D;
 ```
 
-**NOTES**
-
-You may observe errors if you run a third-party Mermaid plugin when using Mermaid syntax on GitHub
+> [!NOTE]
+> You may observe errors if you run a third-party Mermaid plugin when using Mermaid syntax on GitHub
 
 #### [Sequence diagram](https://mermaid.js.org/syntax/sequenceDiagram.html)
 
