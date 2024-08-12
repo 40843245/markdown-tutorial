@@ -191,6 +191,102 @@ will output
    <em>here be dragons</em>
 </div>
 
+
+## Table
+
++ Example 1:
+```
+| Markdown	| HTML | Rendered Output |
+| --------- | ---- | --------------- |
+| # Heading level 1 | `<h1>Heading level 1</h1>` |	<h1>Heading level 1</h1> | 
+| ## Heading level 2	| `<h2>Heading level 2</h2>` | <h2>Heading level 2</h2>	| 
+| ### Heading level 3	| `<h3>Heading level 3</h3>` | <h3>Heading level 3</h3>	| 
+| #### Heading level 4	| `<h4>Heading level 4</h4>` | <h4>Heading level 4</h4> |
+| ##### Heading level 5	| `<h5>Heading level 5</h5>` | <h5>Heading level 5</h5> |
+| ###### Heading level 6 | `<h6>Heading level 6</h6>`	| <h6>Heading level 6</h6> |
+```
+
+will output
+
+| Markdown	| HTML | Rendered Output |
+| --------- | ---- | --------------- |
+| # Heading level 1 | `<h1>Heading level 1</h1>` |	<h1>Heading level 1</h1> | 
+| ## Heading level 2	| `<h2>Heading level 2</h2>` | <h2>Heading level 2</h2>	| 
+| ### Heading level 3	| `<h3>Heading level 3</h3>` | <h3>Heading level 3</h3>	| 
+| #### Heading level 4	| `<h4>Heading level 4</h4>` | <h4>Heading level 4</h4> |
+| ##### Heading level 5	| `<h5>Heading level 5</h5>` | <h5>Heading level 5</h5> |
+| ###### Heading level 6 | `<h6>Heading level 6</h6>`	| <h6>Heading level 6</h6> |
+
++ Example 2:
+
+```
+| Markdown | HTML | Rendered Output |
+| -------- | ---- | --------------- |
+| Heading level 1 <br> ===============	| `<h1>Heading level 1</h1>` | <h1>Heading level 1</h1> |
+| Heading level 2 <br> ---------------	| `<h2>Heading level 2</h2>` | <h2>Heading level 2</h2> |
+```
+
+will output
+
+| Markdown | HTML | Rendered Output |
+| -------- | ---- | --------------- |
+| Heading level 1 <br> ===============	| `<h1>Heading level 1</h1>` | <h1>Heading level 1</h1> |
+| Heading level 2 <br> ---------------	| `<h2>Heading level 2</h2>` | <h2>Heading level 2</h2> |
+
++ Example 3:
+
+```
+| Markdown | HTML | Rendered Output |
+| -------- | ---- | --------------- |
+| I really like using Markdown. <br> <br> I think I'll use it to format all of my documents from now on.	| `<p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>` | <p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>
+```
+
+will output
+
+| Markdown | HTML | Rendered Output |
+| -------- | ---- | --------------- |
+| I really like using Markdown. <br> <br> I think I'll use it to format all of my documents from now on.	| `<p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>` | <p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>
+
+### [Checkbox in table](https://stackoverflow.com/questions/47344571/how-to-draw-checkbox-or-tick-mark-in-github-markdown-table/47344640#47344640)
+
++ Example 1:
+
+```
+| Selection |        |
+| --------- | ------ |
+| <li>- [ ] </li> |  |
+
+| Selection |        |
+| --------- | ------ |
+| <li>- [x] </li> |  |
+```
+
+will output
+
+| Selection |        |
+| --------- | ------ |
+| <li>- [ ] </li> |  |
+
+| Selection |        |
+| --------- | ------ |
+| <li>- [x] </li> |  |
+
+
++ Example 2:
+
+```
+|checked|unchecked|crossed|
+|---|---|---|
+|&check;|_|&cross;|
+|&#x2611;|&#x2610;|&#x2612;|
+```
+
+will output
+
+|checked|unchecked|crossed|
+|---|---|---|
+|&check;|_|&cross;|
+|&#x2611;|&#x2610;|&#x2612;|
 ## [Indent](https://www.w3schools.io/file/markdown-indent-lines/)
 
 + Example 1:
@@ -456,6 +552,7 @@ which will be rendered as following:
 See get started of R official website[^1]
 
 [^1]: [R official website](https://www.r-project.org/)
+
 
 #### Ref
 
