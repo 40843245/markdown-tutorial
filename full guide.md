@@ -287,6 +287,38 @@ will output
 |---|---|---|
 |&check;|_|&cross;|
 |&#x2611;|&#x2610;|&#x2612;|
+
++ Example 3:
+
+```
+| demo                                              | demo |
+| ------------------------------------------------- | ---- |
+| <input type="checkbox" disabled checked /> works  |      |
+| <input type="checkbox" disabled /> works here too |      |
+```
+
+will output
+
+| demo                                              | demo |
+| ------------------------------------------------- | ---- |
+| <input type="checkbox" disabled checked /> works  |      |
+| <input type="checkbox" disabled /> works here too |      |
+
++ Example 4:
+
+```
+| demo                                              | demo |
+| ------------------------------------------------- | ---- |
+|  :white_large_square This is not checked.         |      |
+| :white_check_mark This is checked.                |      |
+```
+
+will output
+
+| demo                                              | demo |
+| ------------------------------------------------- | ---- |
+|  :white_large_square This is not checked.         |      |
+| :white_check_mark This is checked.                |      |
 ## [Indent](https://www.w3schools.io/file/markdown-indent-lines/)
 
 + Example 1:
