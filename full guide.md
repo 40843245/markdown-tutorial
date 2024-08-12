@@ -127,6 +127,11 @@ Thus, we may use the html tag to achieve this (or may not in some markdown langu
 
 This artcile on [stackoveflow](https://stackoverflow.com/questions/3003476/get-underlined-text-with-markdown) covers a lot of way to underline texts with html tag.
 
+### [a long "-" in markdown, i.e. the character "–"](https://stackoverflow.com/questions/52371734/how-to-make-a-long-in-markdown-i-e-the-character)
+#### Use Unicode Characters
+#### Use HTML Entities
+#### Use Smartypants
+
 ### Keyboard input icon (kbd)
 
 Since Github support one of html tag `<kdb>`, we can use it to show keyboard input icons.
