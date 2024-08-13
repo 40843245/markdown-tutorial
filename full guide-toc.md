@@ -4,94 +4,66 @@
    * [Text](#text)
       + [Heading](#heading)
          - [Alternative Syntax](#alternative-syntax)
-         - [**NOTES**](#notes)
       + [Paragraphs](#paragraphs)
-         - [**NOTES**](#notes-1)
       + [Line Breaks](#line-breaks)
-         - [**NOTES**](#notes-2)
    * [Emphasis of text](#emphasis-of-text)
       + [Bold](#bold)
-         - [**NOTES**](#notes-3)
       + [Italic](#italic)
-         - [**NOTES**](#notes-4)
       + [Strikethrough](#strikethrough)
       + [Bold and Italic](#bold-and-italic)
-         - [**NOTES**](#notes-5)
-         - [**NOTES** ](#notes-6)
       + [Subscript](#subscript)
       + [Superscript](#superscript)
       + [Underline](#underline)
+      + [a long "-" in markdown, i.e. the character "–"](#a-long-in-markdown-ie-the-character-)
+         - [Use Unicode Characters](#use-unicode-characters)
+         - [Use HTML Entities](#use-html-entities)
+         - [Use Smartypants](#use-smartypants)
+      + [Keyboard input icon (kbd)](#keyboard-input-icon-kbd)
+   * [Checkbox](#checkbox)
+   * [Emoji](#emoji)
+   * [Textbox](#textbox)
+   * [Indent](#indent)
+   * [Labels or Footnotes](#labels-or-footnotes)
+      + [Add labels or footnotes](#add-labels-or-footnotes)
+      + [Use labels or footnotes](#use-labels-or-footnotes)
+         - [Ref](#ref)
    * [Blockquotes](#blockquotes)
       + [Blockquotes with Single Line](#blockquotes-with-single-line)
       + [Blockquotes with Multiple Paragraphs](#blockquotes-with-multiple-paragraphs)
       + [Nested Blockquotes](#nested-blockquotes)
       + [Multiple Nested Blockquotes](#multiple-nested-blockquotes)
       + [Blockquotes with Other Elements](#blockquotes-with-other-elements)
-         - [**NOTES**](#notes-7)
    * [Lists](#lists)
       + [Ordered Lists](#ordered-lists)
-         - [**NOTES**](#notes-8)
       + [Unordered Lists](#unordered-lists)
       + [Starting Unordered List Items With Numbers](#starting-unordered-list-items-with-numbers)
-         - [**NOTES**](#notes-9)
       + [Adding Elements in Lists](#adding-elements-in-lists)
-         - [**Tip** ](#tip)
    * [Code and Code Block](#code-and-code-block)
       + [Code within Single line](#code-within-single-line)
-      + [**Extra Info**](#extra-info)
+   * [Comments](#comments)
       + [Code Blocks](#code-blocks)
    * [Horizontal Rules](#horizontal-rules)
-      + [**NOTES**](#notes-10)
    * [Links](#links)
       + [Normal Links](#normal-links)
-      + [Reference-style Links](#reference-style-links)
-      + [Autolinked references and URLs](#autolinked-references-and-urls)
-   * [Task lists](#task-lists)
-   * [Table](#table)
-      + [**NOTES**](#notes-11)
-   * [Images](#images)
-      + [Images whose alternative is just a text](#images-whose-alternative-is-just-a-text)
-      + [Images whose alternative is a link shown as a text](#images-whose-alternative-is-a-link-shown-as-a-text)
-      + [Images that specifies the width or height etc](#images-that-specifies-the-width-or-height-etc)
-   * [Escaping Characters](#escaping-characters)
-      + [Characters You Can Escape](#characters-you-can-escape)
-   * [HTML](#html)
-   * [Comment ](#comment)
-   * [TOC](#toc)
-   * [Footenotes](#footenotes)
-   * [Alerts on Github](#alerts-on-github)
-   * [Username @mentions](#username-mentions)
-   * [Emoji](#emoji)
-   * [mathematical expressions](#mathematical-expressions)
-      + [Way 1: inline expression](#way-1-inline-expression)
-      + [Way 2: block](#way-2-block)
-   * [Diagram (available at Github)](#diagram-available-at-github)
-      + [Mermaid Diagram](#mermaid-diagram)
-         - [Flow chart](#flow-chart)
-         - [Sequence diagram](#sequence-diagram)
-         - [Gannt chart](#gannt-chart)
-         - [Class diagram](#class-diagram)
-         - [Git graph](#git-graph)
-         - [Entity relationship diagram](#entity-relationship-diagram)
-         - [User Journey Diagram](#user-journey-diagram)
-         - [Quadrant Chart](#quadrant-chart)
-         - [XY Chart](#xy-chart)
-      + [Mermaid diagram with internal link](#mermaid-diagram-with-internal-link)
-         - [Simple case](#simple-case)
-         - [Case about the alias a class](#case-about-the-alias-a-class)
-   * [Diagram breaking](#diagram-breaking)
-   * [Configuration about diagram](#configuration-about-diagram)
-      + [Theme configuration](#theme-configuration)
-         - [Specify themes configuration in diagram](#specify-themes-configuration-in-diagram)
-   * [Data with special type](#data-with-special-type)
-      + [Json ](#json)
+      + [Link to local device](#link-to-local-device)
+      + [URLs and Email Addresses](#urls-and-email-addresses)
+      + [Formatting Links](#formatting-links)
+- [Table of Contents](#table-of-contents)
+   * [Example](#example)
+   * [Example2](#example2)
+   * [Third Example](#third-example)
+   * [Fourth Example ](#fourth-example)
          - [GeoJson (available at Github)](#geojson-available-at-github)
          - [TopoJson](#topojson)
    * [Special models](#special-models)
       + [3D models](#3d-models)
          - [STL 3D models](#stl-3d-models)
+   * [Syntax highlight code](#syntax-highlight-code)
+      + [Programming language](#programming-language)
+         - [CSharp](#csharp)
+      + [Javascript](#javascript)
    * [Appreciation](#appreciation)
-      + [Ref](#ref)
+      + [Ref](#ref-1)
       + [Furthur reference](#furthur-reference)
 
 <!-- TOC end -->
@@ -125,10 +97,9 @@ While heading 6 has the smallest text among these headings.
 | Heading level 1 <br> ===============	| `<h1>Heading level 1</h1>` | <h1>Heading level 1</h1> |
 | Heading level 2 <br> ---------------	| `<h2>Heading level 2</h2>` | <h2>Heading level 2</h2> |
 
-<!-- TOC --><a name="notes"></a>
-#### **NOTES**
-+ Don't forget to put one space between `#` and the first word.
-+ `#` must be consecutive. For example, `## Heading 2` and `# # Heading 2` are **NOT** equivalent.
+> [!NOTE]
+> + Don't forget to put one space between `#` and the first word.
+> + `#` must be consecutive. For example, `## Heading 2` and `# # Heading 2` are **NOT** equivalent.
 
 <!-- TOC --><a name="paragraphs"></a>
 ### [Paragraphs](https://www.markdownguide.org/basic-syntax/#paragraphs-1)
@@ -138,9 +109,8 @@ To create paragraphs, use a blank line to separate one or more lines of text.
 | -------- | ---- | --------------- |
 | I really like using Markdown. <br> <br> I think I'll use it to format all of my documents from now on.	| `<p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>` | <p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>
   
-<!-- TOC --><a name="notes-1"></a>
-#### **NOTES**
-Unless the paragraph is in a list, don’t indent paragraphs with spaces or tabs.
+> [!NOTE]
+> Unless the paragraph is in a list, don’t indent paragraphs with spaces or tabs.
 
 <!-- TOC --><a name="line-breaks"></a>
 ### [Line Breaks](https://www.markdownguide.org/basic-syntax/#line-breaks)
@@ -150,9 +120,9 @@ To create a line break or new line (in html `<br>`), end a line with two or more
 | -------- | ---- | --------------- |
 | This is the first line.  <br> And this is the second line. |	`<p>This is the first line.<br> And this is the second line.</p>`	 | <p>This is the first line.<br> And this is the second line.</p> |
 
-<!-- TOC --><a name="notes-2"></a>
-#### **NOTES**
-Unlike C, one can ***NOT*** `\` to break a new line.
+
+> [!NOTE]
+> Unlike C, one can ***NOT*** `\` to break a new line.
 
 See the example on [Line Break Best Practices](https://www.markdownguide.org/basic-syntax/#line-break-best-practices)
 
@@ -167,9 +137,8 @@ See the example on [Line Break Best Practices](https://www.markdownguide.org/bas
 | `I just love __bold text__.` | `I just love <strong>bold text</strong>.` | I just love <strong>bold text</strong>. |
 | `Love**is**bold`	| `Love<strong>is</strong>` | Love**is**bold |
 
-<!-- TOC --><a name="notes-3"></a>
-#### **NOTES**
-There don't exist this syntax. Such as `Love__is__bold`.
+> [!NOTE]
+> There don't exist this syntax. Such as `Love__is__bold`.
 
 <!-- TOC --><a name="italic"></a>
 ### [Italic](https://www.markdownguide.org/basic-syntax/#bold-and-italic)
@@ -180,9 +149,8 @@ There don't exist this syntax. Such as `Love__is__bold`.
 | `Italicized text is the _cat's meow_.`	| `Italicized text is the <em>cat's meow</em>.`	| Italicized text is the <em>cat's meow</em>. | 
 | `A*cat*meow` | `A<em>cat</em>meow` | A*cat*meow
 
-<!-- TOC --><a name="notes-4"></a>
-#### **NOTES**
-There don't exist this syntax. Such as `A_cat_meow`.
+> [!NOTE]
+> There don't exist this syntax. Such as `A_cat_meow`.
 
 <!-- TOC --><a name="strikethrough"></a>
 ### [Strikethrough](https://learn-markdown.github.io/)
@@ -209,13 +177,11 @@ The rendered output looks like this:
 | `This text is **_really important_**.` | `This text is <em><strong>really important</strong></em>.` | This text is <em><strong>really important</strong></em> |
 | `This is really***very***important text.`	| `This is really<em><strong>very</strong></em>important text.`	| This text is <em><strong>really important</strong></em> |
 
-<!-- TOC --><a name="notes-5"></a>
-#### **NOTES**
-There don't exist this syntax. Such as `This is really___very__important text.`.
+> [!NOTE]
+> There don't exist this syntax. Such as `This is really___very__important text.`.
 
-<!-- TOC --><a name="notes-6"></a>
-#### **NOTES** 
-The order of the em and strong tags might be reversed depending on the Markdown processor you're using.
+> [!NOTE]
+> The order of the em and strong tags might be reversed depending on the Markdown processor you're using.
 
 <!-- TOC --><a name="subscript"></a>
 ### [Subscript](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#styling-text)
@@ -244,6 +210,368 @@ Due to the feature of markdown.
 Thus, we may use the html tag to achieve this (or may not in some markdown languages and platforms or apps).
 
 This artcile on [stackoveflow](https://stackoverflow.com/questions/3003476/get-underlined-text-with-markdown) covers a lot of way to underline texts with html tag.
+
+<!-- TOC --><a name="a-long-in-markdown-ie-the-character-"></a>
+### [a long "-" in markdown, i.e. the character "–"](https://stackoverflow.com/questions/52371734/how-to-make-a-long-in-markdown-i-e-the-character)
+<!-- TOC --><a name="use-unicode-characters"></a>
+#### Use Unicode Characters
+<!-- TOC --><a name="use-html-entities"></a>
+#### Use HTML Entities
+<!-- TOC --><a name="use-smartypants"></a>
+#### Use Smartypants
+
+<!-- TOC --><a name="keyboard-input-icon-kbd"></a>
+### Keyboard input icon (kbd)
+
+Since Github support one of html tag `<kdb>`, we can use it to show keyboard input icons.
+
++ Example 1:
+
+```
+<kbd>CTRL</kbd> + <kbd>L</kbd>
+```
+
+will be rendered output like this:
+
+<kbd>CTRL</kbd> + <kbd>L</kbd>
+
+<!-- TOC --><a name="checkbox"></a>
+## [Checkbox](https://www.w3schools.io/file/markdown-checkbox-github/)
+
++ Example 1:
+  
+```
+&check; - html checkbox example
+
+:white_check_mark: - emoji checkbox example
+
+&#9746; - Unicode checkbox example
+```
+
+will be rendered output like this:
+
+&check; - html checkbox example
+
+:white_check_mark: - emoji checkbox example
+
+&#9746; - Unicode checkbox example
+
+<!-- TOC --><a name="emoji"></a>
+## Emoji
+
+A list of emoji at Github is available at Github gists:
++ [Emoji](https://github.com/StylishThemes/GitHub-Dark/wiki/Emoji)
++ [Emoji](https://gist.github.com/rxaviers/7360908)
+
+<!-- TOC --><a name="textbox"></a>
+## [Textbox](https://stackoverflow.com/questions/25654845/how-can-i-create-a-text-box-for-a-note-in-markdown)
+
++ Example 1:
+
+```
+::: warning
+*here be dragons*
+:::
+```
+
+will output
+
+::: warning
+*here be dragons*
+:::
+
++ Example 2:
+
+```
+<div class="warning">
+   <em>here be dragons</em>
+</div>
+```
+
+will output
+
+<div class="warning">
+   <em>here be dragons</em>
+</div>
+
+
+<!-- TOC --><a name="indent"></a>
+## [Indent](https://www.w3schools.io/file/markdown-indent-lines/)
+
++ Example 1:
+
+```
+normal Text content  one
+    indented Text content  one
+        indented more  Text content  one
+```
+
+will be rendered output like this:
+
+normal Text content  one
+    indented Text content  one
+        indented more  Text content  one
+
++ Example 2:
+
+```
+normal Text content  one
+
+&nbsp;&nbsp;&nbsp;&nbsp;indented Text content  one
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;indented more
+Text content  one
+```
+
+will be rendered output like this:
+
+normal Text content  one
+
+&nbsp;&nbsp;&nbsp;&nbsp;indented Text content  one
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;indented more
+Text content  one
+
++ Example 3:
+
+```
+normal Text content  one
+
+&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;indented Text content  one
+
+&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;indented more  Text
+ content  one
+```
+
+will be rendered output like this:
+
+normal Text content  one
+
+&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;indented Text content  one
+
+&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;&ensp;&thinsp;indented more  Text
+ content  one
+
++ Example 4:
+
+```
+Indented lines:
+
+$\hspace{5pt}$ This line is indented 5 points.
+
+$\hspace{5mm}$ This line is indented 5 millimeters.
+
+$\hspace{2cm}$ This line is indented 2 centimeters.
+```
+
+willl output
+
+Indented lines:
+
+$\hspace{5pt}$ This line is indented 5 points.
+
+$\hspace{5mm}$ This line is indented 5 millimeters.
+
+$\hspace{2cm}$ This line is indented 2 centimeters.
+
++ Example 5:
+
+```
+This is first line.
+
+&emsp;This is an indented line.
+
+&emsp;&emsp;This is an nested indented line.
+
+This is last line.
+```
+
+will output
+
+This is first line.
+
+&emsp;This is an indented line.
+
+&emsp;&emsp;This is an nested indented line.
+
+This is last line.
+
++ Example 6:
+
+```
+This is first line.
+
+&#9;This is an indented line.
+
+&#9;&#9;This is an nested indented line.
+
+This is last line.
+```
+
+will output
+
+This is first line.
+
+&#9;This is an indented line.
+
+&#9;&#9;This is an nested indented line.
+
+This is last line.
+
++ Example 7:
+
+```
+This is first line.
+
+&#8287;This is an indented line.
+
+&#8287;&#8287;This is an nested indented line.
+
+This is last line.
+```
+
+will output
+
+This is first line.
+
+&#8287;This is an indented line.
+
+&#8287;&#8287;This is an nested indented line.
+
+This is last line.
+
+<!-- TOC --><a name="labels-or-footnotes"></a>
+## [Labels or Footnotes](https://stackoverflow.com/questions/6695439/how-to-link-to-a-named-anchor-in-multimarkdown/15843220#15843220)
+
+> [!CAUTION]
+> The label (such as`[label]`) may NOT be rendered in Github or other platform. Be careful to use it. For this reason, I did NOT use labels in markdown file but footnotes, and I highly recommend to use footnotes instead labels.
+
+
+<!-- TOC --><a name="add-labels-or-footnotes"></a>
+### Add labels or footnotes
+To add a footnote, create a label through `[]` followed by `:` symbol (i.e. `[`, your name or combination of `^` and your id,`]`,`:`)
+
+The [re](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expressions) (i.e. regular expression) of a label will be
+
+```
+{digit}: [0-9]
+{nonzeroDigit}: [1-9]
+{underscore}: _
+{uppercase}: [A-Z]
+{lowercase}: [a-z]
+{alphabet}: ({uppercase}|{lowercase})
+
+{positiveInteger}: {nonzeroDigit}({digit}*)
+{identifier}:{alphabet}({digit}|{alphabet}|{underscore})*
+
+{idSymbol}: \^
+{leftSquareBracket}: \[
+{rightSquareBracket}: \]
+
+{labelId}: {leftSquareBracket}{idSymbol}{identifier}{rightSquareBracket}
+{labelName}: {leftSquareBracket}{identifier}{rightSquareBracket}
+
+{validFootnote}: {labelId} # valid footnote which we want.
+{validLabel}: {labelName} # valid label which we want.
+```
+
+To create a label. Type
+
+```
+{validLabel}
+```
+
+To create a footnote. Type
+
+```
+{validFootnote}
+```
+
+<!-- TOC --><a name="use-labels-or-footnotes"></a>
+### Use labels or footnotes
+- For label:
+  
+To use a label, simply type name of label within `[]`.
+
+The syntax looks like this
+
+```
+  [example label]: #the-anchor-name-or-id "Optional title for mouse hover"
+```
+
++ Example 1:
+
+To create a label whose id is `label1` and it has a url `https://en.wikipedia.org/wiki/PyQt` displayed as `PyQt`. Type 
+
+```
+[label1]: [PyQt](https://en.wikipedia.org/wiki/PyQt)
+```
+
+To use the label whose name is `label1`. Type
+
+```
+[label1]
+```
+
+The full example will look like this:
+
+```
+This is a [label1]
+
+  [label1]: [PyQt](https://en.wikipedia.org/wiki/PyQt)
+```
+
+which will be rendered as following:
+
+This is a [label1]
+
+  [label1]: [PyQt](https://en.wikipedia.org/wiki/PyQt)
+
+- For footnote
+
+To use a footnote, type a `^` symbol followed by id of the footnote within `[]`.
+
+The syntax will look like this:
+
+```
+  [^1]: #the-anchor-name-or-id "Optional title for mouse hover"
+```
+
++ Example 2:
+
+To create a label with id `1`. Type
+
+```
+[^1]
+```
+
+To use label whose id is `1` and it has a url `https://www.r-project.org/` displayed as `R official website`. Type
+
+```
+[^1]: [R official website](https://www.r-project.org/)
+```
+
+The full example will look like this:
+
+```
+See get started of R official website[^1]
+
+[^1]: [R official website](https://www.r-project.org/)
+```
+
+which will be rendered as following:
+
+See get started of R official website[^1]
+
+[^1]: [R official website](https://www.r-project.org/)
+
+
+<!-- TOC --><a name="ref"></a>
+#### Ref
+
+Thanks to [Mahozad's answer on stackoverflow](https://stackoverflow.com/questions/6695439/how-to-link-to-a-named-anchor-in-multimarkdown/15843220#15843220).
+
+![image](https://github.com/user-attachments/assets/5c6464cb-1bfe-4140-ac02-d4960bb27e85)
 
 
 <!-- TOC --><a name="blockquotes"></a>
@@ -463,9 +791,10 @@ The rendered output looks like this:
 > Kary, are you able to <strong>stand alone</strong>?
 > I'm okay.<br> I'm good at standing on one foot.<br><br>
 
-<!-- TOC --><a name="notes-7"></a>
-#### **NOTES**
-For compatibility, put blank lines before and after blockquotes.
+> [!NOTE]
+> See also `line nreakpoint`.
+>
+> For compatibility, put blank lines before and after blockquotes.
 
 Don't do this
 
@@ -477,18 +806,71 @@ Don't do this!
 
 <!-- TOC --><a name="lists"></a>
 ## [Lists](https://www.markdownguide.org/basic-syntax/#lists-1)
+
++ Example 1:
+
+```
+Factoids:
+ - There are about six different ways to do everything in Forked.
+ - There are actually six different ways to enter loops.
+ - There are six directionals and six I/O commands.
+```
+
+will output
+
+Factoids:
+ - There are about six different ways to do everything in Forked.
+ - There are actually six different ways to enter loops.
+ - There are six directionals and six I/O commands.
+
++ Example 2:
+
+```
+Factoids:
+ - There are about six different ways to do everything in Forked.
+ - There are actually six different ways to enter loops.
+ - There are six directionals and six I/O commands.
+ - 666\. ha.
+```
+
+will output
+
+Factoids:
+ - There are about six different ways to do everything in Forked.
+ - There are actually six different ways to enter loops.
+ - There are six directionals and six I/O commands.
+ - 666\. ha.
+
+Wrong Examples.
+
++ Wrong Example 1: (See [GitHub satanically messing with Markdown - changes 666 to DCLXVI](https://stackoverflow.com/questions/44619165/github-satanically-messing-with-markdown-changes-666-to-dclxvi))
+
+```
+Factoids:
+ - There are about six different ways to do everything in Forked.
+ - There are actually six different ways to enter loops.
+ - There are six directionals and six I/O commands.
+ - 666. ha.
+```
+
+will output
+
+Factoids:
+ - There are about six different ways to do everything in Forked.
+ - There are actually six different ways to enter loops.
+ - There are six directionals and six I/O commands.
+ - 666. ha.
+   
 <!-- TOC --><a name="ordered-lists"></a>
 ### [Ordered Lists](https://www.markdownguide.org/basic-syntax/#ordered-lists)
 See [example in Ordered Lists](https://www.markdownguide.org/basic-syntax/#ordered-lists)
 
-<!-- TOC --><a name="notes-8"></a>
-#### **NOTES**
-
-```
-CommonMark and a few other lightweight markup languages let you use a parenthesis ()) as a delimiter (e.g., 1) First item), 
-but not all Markdown applications support this,
-so it isn’t a great option from a compatibility perspective. For compatibility, use periods only.
-```
+> [!NOTE]
+> ```
+> CommonMark and a few other lightweight markup languages let you use a parenthesis ()) as a delimiter (e.g., 1) First item),
+> but not all Markdown applications support this,
+> so it isn’t a great option from a compatibility perspective. For compatibility, use periods only.
+> ```
 
 <!-- TOC --><a name="unordered-lists"></a>
 ### [Unordered Lists](https://www.markdownguide.org/basic-syntax/#unordered-lists)
@@ -501,22 +883,19 @@ If you need to start an unordered list item with a number followed by a period, 
 
 See [example in Starting Unordered List Items With Numbers](https://www.markdownguide.org/basic-syntax/#starting-unordered-list-items-with-numbers)
 
-<!-- TOC --><a name="notes-9"></a>
-#### **NOTES**
-
-Markdown applications don’t agree on how to handle different delimiters in the same list. 
-
-For compatibility, don’t mix and match delimiters in the same list — pick one and stick with it.
+> [!NOTE]
+> Markdown applications don’t agree on how to handle different delimiters in the same list.
+>
+> For compatibility, don’t mix and match delimiters in the same list — pick one and stick with it.
 
 <!-- TOC --><a name="adding-elements-in-lists"></a>
 ### [Adding Elements in Lists](https://www.markdownguide.org/basic-syntax/#adding-elements-in-lists)
 
 To add another element in a list while preserving the continuity of the list, indent the element four spaces or one tab, as shown in the following examples.
 
-<!-- TOC --><a name="tip"></a>
-#### **Tip** 
 
-If things don't appear the way you expect, re-check that you've indented the elements in the list four spaces or one tab.
+> [!TIP]
+> If things don't appear the way you expect, re-check that you've indented the elements in the list four spaces or one tab.
 
 See [example in Adding Elements in Lists](https://www.markdownguide.org/basic-syntax/#adding-elements-in-lists)
 
@@ -530,9 +909,40 @@ To denote a word or phrase as code, enclose it in backticks (`).
 | -------- | ---- | --------------- |
 | ```At the command prompt, type `nano` ```.|	`At the command prompt, type <code>nano</code> .`	| At the command prompt, type <code>nano</code> .
 
-<!-- TOC --><a name="extra-info"></a>
-### **Extra Info**
-For Escaping Backticks on Code, see [Escaping Backticks on Code](https://www.markdownguide.org/basic-syntax/#escaping-backticks).
+> [!NOTE]
+> For Escaping Backticks on Code, see [Escaping Backticks on Code](https://www.markdownguide.org/basic-syntax/#escaping-backticks).
+
+<!-- TOC --><a name="comments"></a>
+## [Comments](https://stackoverflow.com/questions/4823468/comments-in-markdown)
+Either use 
+```
+<!--- Wrap text --->
+```
+
+```
+<!-- Wrap text -->
+```
+
++ Example 1:
+
+```
+<!--- Wrap text --->
+```
+
+will be rendered output like this:
+
+<!--- Wrap text --->
+
++ Example 2:
+
+```
+<!-- Wrap text -->
+```
+
+will be rendered output like this:
+
+<!-- Wrap text -->
+
 
 <!-- TOC --><a name="code-blocks"></a>
 ### [Code Blocks](https://www.markdownguide.org/basic-syntax/#code-blocks)
@@ -546,9 +956,8 @@ To create code blocks, either
 ## [Horizontal Rules](https://www.markdownguide.org/basic-syntax/#horizontal-rules)
 To create a horizontal rule, use three or more asterisks (***), dashes (---), or underscores (___) on a line by themselves.
 
-<!-- TOC --><a name="notes-10"></a>
-### **NOTES**
-For compatibility, put blank lines before and after horizontal rules.
+> [!NOTE]
+> For compatibility, put blank lines before and after horizontal rules.
 
 <!-- TOC --><a name="links"></a>
 ## [Links](https://www.markdownguide.org/basic-syntax/#links)
@@ -557,7 +966,9 @@ For compatibility, put blank lines before and after horizontal rules.
 
 + Example 1: Don't specify title,
 
-```https://www.markdownguide.org/basic-syntax/#links```
+```
+https://www.markdownguide.org/basic-syntax/#links
+```
 
 The rendered output looks like this:
 
@@ -565,20 +976,36 @@ https://www.markdownguide.org/basic-syntax/#links
 
 + Example 2: Don't specify title,
 
-```(https://www.markdownguide.org/basic-syntax/#links)```
+```
+(https://www.markdownguide.org/basic-syntax/#links)
+```
 
 The rendered output looks like this:
 
 (https://www.markdownguide.org/basic-syntax/#links)
 
-+ Example 2: Do specify title
++ Example 3:
   
-```[Links](https://www.markdownguide.org/basic-syntax/#links)```
+```
+[Links](https://www.markdownguide.org/basic-syntax?target=_blank)
+```
 
-The rendered output looks like this:
+The rendered output looks like this
 
-[Links](https://www.markdownguide.org/basic-syntax/#links)
+[Links](https://www.markdownguide.org/basic-syntax?target=_blank)
 
+<!-- TOC --><a name="link-to-local-device"></a>
+### Link to local device
+
++ Template:
+  
+```
+[link](file:///d:/absolute.md)    # absolute filesystem path
+[link](./relative1.md)            # relative to opened file
+[link](/relativeToProject.md)     # relative to opened project
+```
+
+<!-- TOC --><a name="urls-and-email-addresses"></a>
 ### [URLs and Email Addresses](https://www.markdownguide.org/basic-syntax/#urls-and-email-addresses)
 
 There are a faster way to turn a URL or email address into a link, enclose it in angle brackets.
@@ -599,6 +1026,7 @@ The rendered output looks like this:
 
 <fake@example.com>
 
+<!-- TOC --><a name="formatting-links"></a>
 ### [Formatting Links](https://www.markdownguide.org/basic-syntax/#formatting-links)
 To emphasize links, add asterisks before and after the brackets and parentheses. To denote links as code, add backticks in the brackets.
 
@@ -626,16 +1054,13 @@ The rendered output looks like this:
 
 See the section on [`code`](#code).
 
-<!-- TOC --><a name="reference-style-links"></a>
 ### [Reference-style Links](https://www.markdownguide.org/basic-syntax/#reference-style-links)
 See [Reference-style Links](https://www.markdownguide.org/basic-syntax/#reference-style-links)
 
-<!-- TOC --><a name="autolinked-references-and-urls"></a>
 ### [Autolinked references and URLs](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls)
 
 See [Autolinked references and URLs at Github](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls)
 
-<!-- TOC --><a name="task-lists"></a>
 ## [Task lists](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Task+lists)
 
 > [!IMPORTANT]
@@ -643,7 +1068,6 @@ See [Autolinked references and URLs at Github](https://docs.github.com/en/get-st
 
 See [syntax in Obsidian (My notes at Github)](https://github.com/40843245/markdown-tutorial/tree/main/Obsidian)
 
-<!-- TOC --><a name="table"></a>
 ## Table
 In markdown, a table must satisfy these requirements.
 
@@ -746,14 +1170,130 @@ The rendered output looks like this:
 | -------- | ---- | --------------- |
 | ```At the command prompt, type `nano` ```.|	`At the command prompt, type <code>nano</code> .`	| At the command prompt, type <code>nano</code> . | More cells | More and more cells. |
 
-<!-- TOC --><a name="notes-11"></a>
-### **NOTES**
-+ For any row (except for first row and second row), if the number of `|` in the row is less than that in first row. Then rest of cell will be null.
-+ For any row (except for first row and second row), if the number of `|` in the row is less than that in first row. Then extraneous cell will be ignored. (See above exmaple `Example 4`)
+> [!NOTE]
+> + For any row (except for first row and second row), if the number of `|` in the row is less than that in first row. Then rest of cell will be null.
+> + For any row (except for first row and second row), if the number of `|` in the row is less than that in first row. Then extraneous cell will be
+>  ignored. (See above exmaple `Example 4`)
 
-<!-- TOC --><a name="images"></a>
+
++ Example 5:
+
+```
+| Markdown | HTML | Rendered Output |
+| -------- | ---- | --------------- |
+| Heading level 1 <br> ===============	| `<h1>Heading level 1</h1>` | <h1>Heading level 1</h1> |
+| Heading level 2 <br> ---------------	| `<h2>Heading level 2</h2>` | <h2>Heading level 2</h2> |
+```
+
+will output
+
+| Markdown | HTML | Rendered Output |
+| -------- | ---- | --------------- |
+| Heading level 1 <br> ===============	| `<h1>Heading level 1</h1>` | <h1>Heading level 1</h1> |
+| Heading level 2 <br> ---------------	| `<h2>Heading level 2</h2>` | <h2>Heading level 2</h2> |
+
++ Example 6:
+
+```
+| Markdown | HTML | Rendered Output |
+| -------- | ---- | --------------- |
+| I really like using Markdown. <br> <br> I think I'll use it to format all of my documents from now on.	| `<p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>` | <p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>
+```
+
+will output
+
+| Markdown | HTML | Rendered Output |
+| -------- | ---- | --------------- |
+| I really like using Markdown. <br> <br> I think I'll use it to format all of my documents from now on.	| `<p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>` | <p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>
+
+### [Checkbox in table](https://stackoverflow.com/questions/47344571/how-to-draw-checkbox-or-tick-mark-in-github-markdown-table/47344640#47344640)
+
++ Example 1:
+
+```
+| Selection |        |
+| --------- | ------ |
+| <li>- [ ] </li> |  |
+
+| Selection |        |
+| --------- | ------ |
+| <li>- [x] </li> |  |
+```
+
+will output
+
+| Selection |        |
+| --------- | ------ |
+| <li>- [ ] </li> |  |
+
+| Selection |        |
+| --------- | ------ |
+| <li>- [x] </li> |  |
+
+
++ Example 2:
+
+```
+|checked|unchecked|crossed|
+|---|---|---|
+|&check;|_|&cross;|
+|&#x2611;|&#x2610;|&#x2612;|
+```
+
+will output
+
+|checked|unchecked|crossed|
+|---|---|---|
+|&check;|_|&cross;|
+|&#x2611;|&#x2610;|&#x2612;|
+
++ Example 3:
+
+```
+| demo                                              | demo |
+| ------------------------------------------------- | ---- |
+| <input type="checkbox" disabled checked /> works  |      |
+| <input type="checkbox" disabled /> works here too |      |
+```
+
+will output
+
+| demo                                              | demo |
+| ------------------------------------------------- | ---- |
+| <input type="checkbox" disabled checked /> works  |      |
+| <input type="checkbox" disabled /> works here too |      |
+
++ Example 4:
+
+```
+| demo                                              | demo |
+| ------------------------------------------------- | ---- |
+|  :white_large_square: This is not checked.         |      |
+| :white_check_mark: This is checked.                |      |
+```
+
+will output
+
+| demo                                              | demo |
+| ------------------------------------------------- | ---- |
+|  :white_large_square: This is not checked.         |      |
+| :white_check_mark: This is checked.                |      |
+
++ Example 5:
+
+```
+| Unchecked | Checked |
+| --------- | ------- |
+| &#9744;   | &#9745; |
+```
+
+will output
+
+| Unchecked | Checked |
+| --------- | ------- |
+| &#9744;   | &#9745; |
+
 ## Images
-<!-- TOC --><a name="images-whose-alternative-is-just-a-text"></a>
 ### Images whose alternative is just a text
 
 The syntax is that add `!` symbol before `[` symbol. See following examples.
@@ -785,7 +1325,6 @@ will render output looks like this:
 
 ![CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
 
-<!-- TOC --><a name="images-whose-alternative-is-a-link-shown-as-a-text"></a>
 ### [Images whose alternative is a link shown as a text](https://www.markdownguide.org/basic-syntax/#reference-style-links)
 
 To add a link to an image, enclose the markdown for the image in brackets, and then add the link in parentheses.
@@ -798,27 +1337,22 @@ The rendered output looks like this:
 
 [![An old rock in the desert](/assets/images/shiprock.jpg "Shiprock, New Mexico by Beau Rogers")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)
 
-<!-- TOC --><a name="images-that-specifies-the-width-or-height-etc"></a>
 ### [Images that specifies the width or height etc](https://stackoverflow.com/questions/14675913/changing-image-size-in-markdown)
 
 See [syntax in Obsidian (My notes at Github)](https://github.com/40843245/markdown-tutorial/blob/main/Obsidian/full%20guide.md)
 
 
-<!-- TOC --><a name="escaping-characters"></a>
 ## [Escaping Characters](https://www.markdownguide.org/basic-syntax/#escaping-characters)
 To escape characters (i.e. display a literal character that would otherwise be used to format text in a Markdown document), add a backslash (\) in front of the character. 
 
-<!-- TOC --><a name="characters-you-can-escape"></a>
 ### [Characters You Can Escape](https://www.markdownguide.org/basic-syntax/#characters-you-can-escape)
 See [table in Characters You Can Escape](https://www.markdownguide.org/basic-syntax/#characters-you-can-escape)
 
-<!-- TOC --><a name="html"></a>
 ## [HTML](https://www.markdownguide.org/basic-syntax/#html)
 Many Markdown applications allow you to use HTML tags in Markdown-formatted text.
 
 For more details, see [HTML](https://www.markdownguide.org/basic-syntax/#html)
 
-<!-- TOC --><a name="comment"></a>
 ## Comment 
 Like html tag, may use ```<!-- This content will not appear in the rendered Markdown -->```
 
@@ -831,10 +1365,10 @@ This paragraph will not be shown.
 <!-- This content will not appear in the rendered Markdown -->
 
 
-<!-- TOC --><a name="toc"></a>
 ## TOC
 
 ```
+<!-- TOC --><a name="table-of-contents"></a>
 # Table of Contents
 1. [Example](#example)
 2. [Example2](#example2)
@@ -842,20 +1376,24 @@ This paragraph will not be shown.
 4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
 
 
+<!-- TOC --><a name="example"></a>
 ## Example
 a let me see all of your raw Natural
 Body okay then let's
 dig who are you the strange guy that
 lives in a high school girl's house
+<!-- TOC --><a name="example2"></a>
 ## Example2
 I'm just a run of the- Mill demon and
 I'm evaluating human to decide on want
 to consume bir this all looks too scny
 that one looks over red if I just
+<!-- TOC --><a name="third-example"></a>
 ## Third Example
 stomach ache isn't there a soul that is
 worthy to be my
 meal h Huh I'm so glad to this last
+<!-- TOC --><a name="fourth-example"></a>
 ## [Fourth Example](http://www.fourthexample.com) 
 From the transcript of YT video ["I'm going to eat you" Strange guy sneaks into a girl's house #anime #manga (Magical Girls of Amazing Rainbow【Anime】)](https://www.youtube.com/watch?v=zxwZHosp-0w)
 
@@ -863,7 +1401,6 @@ From the transcript of YT video ["I'm going to eat you" Strange guy sneaks into 
 
 The rendered output looks like the content in [example of TOC at Github](https://github.com/40843245/markdown-tutorial/blob/main/example/TOC.md).
 
-<!-- TOC --><a name="footenotes"></a>
 ## Footenotes
 Footnotes aren't part of the core Markdown spec, but they supported by [GFM](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#footnotes) and thus is available at Github.
 
@@ -892,7 +1429,6 @@ The rendered output looks like this:
     Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
     This footnote also has been made with a different syntax using 4 spaces for new lines.
 
-<!-- TOC --><a name="alerts-on-github"></a>
 ## [Alerts on Github](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#footnotes)
 
 Five kinds of alerts are available at Github.
@@ -931,26 +1467,55 @@ The rendered output looks like this:
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
 
+## [Color](https://stackoverflow.com/questions/35465557/how-to-apply-color-on-text-in-markdown) (availables at Github)
+Since May 2022, Github supports LaTex, thus one can use Latex to show different color of texts.
 
-<!-- TOC --><a name="username-mentions"></a>
++ Example 1:
+
+| Code | Appearing |
+| --- | --- |
+| `$${\color{red}Red}$$` | $${\\color{red}Red}$$ |
+| `$${\color{green}Green}$$` | $${\\color{green}Green}$$ |
+| `$${\color{lightgreen}Light \space Green}$$` | $${\\color{lightgreen}Light \\space Green}$$ |
+| `$${\color{blue}Blue}$$` | $${\\color{blue}Blue}$$ |
+| `$${\color{lightblue}Light \space Blue}$$` | $${\\color{lightblue}Light \\space Blue}$$ |
+| `$${\color{black}Black}$$` | $${\\color{black}Black}$$ |
+| `$${\color{white}White}$$` | $${\\color{white}White}$$ |
+
++ Example 2:
+  
+```
+$${\color{red}Welcome \space \color{lightblue}To \space \color{orange}Stackoverflow}$$
+```
+
+will be rendered output like this
+
+$${\color{red}Welcome \space \color{lightblue}To \space \color{orange}Stackoverflow}$$
+
++ Example 3:
+
+Please use the below syntax to get the BOLD & Font Color as Red.
+
+```
+__`A`__
+```
+
+will be rendered output like this:
+
+__`A`__
+
 ## [Username @mentions](https://learn-markdown.github.io/)
 Typing a hash tag (i.e. an `@` symbol), followed by a username, will notify that person to come and view the comment. 
 
 Like in YT.
 
-<!-- TOC --><a name="emoji"></a>
 ## Emoji
 
-GitHub support Emoji.
 
-[List of emoji in Github](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md).
-
-<!-- TOC --><a name="mathematical-expressions"></a>
 ## [mathematical expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 
 You can add math expressions to your notes using [`MathJax`](https://docs.mathjax.org/en/latest/basic/mathjax.html) and the [`LaTeX`](https://www.latex-project.org/) notation.
 
-<!-- TOC --><a name="way-1-inline-expression"></a>
 ### Way 1: inline expression
 
 ```
@@ -977,7 +1542,6 @@ The rendered output looks like this:
 
 This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
 
-<!-- TOC --><a name="way-2-block"></a>
 ### Way 2: block
 
 To add a math expression as a block, either 
@@ -1013,16 +1577,15 @@ The syntax of content in math expression is similar to that in `Microsoft Word`,
 > + For more information about the syntax, refer to [MathJax basic tutorial and quick reference](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
 > + For a list of supported MathJax packages, refer to [TeX/LaTeX Extension List](https://docs.mathjax.org/en/latest/input/tex/extensions/index.html).
 
-<!-- TOC --><a name="diagram-available-at-github"></a>
+> + For more information about [What thing Github supports MathTex](https://github.blog/news-insights/product-news/math-support-in-markdown/)
+
 ## Diagram (available at Github)
-<!-- TOC --><a name="mermaid-diagram"></a>
 ### [Mermaid Diagram](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams)
 
 To create a Mermaid diagram, add Mermaid syntax inside a code block ` ``` ` with the mermaid language identifier (i.e. ` ```mermaid ``` `). Then adding the graph we want in the code block (` ```mermaid ``` `)
 
 I will refer the website about [mermaid](https://mermaid.js.org/intro/) and use a few example to illustrate which graph can be display in the code block (` ```mermaid ``` `).
 
-<!-- TOC --><a name="flow-chart"></a>
 #### [Flow chart](https://mermaid.js.org/syntax/flowchart.html?id=flowcharts-basic-syntax)
 
 + Example 1:
@@ -1048,11 +1611,9 @@ graph TD;
     C-->D;
 ```
 
-**NOTES**
+> [!NOTE]
+> You may observe errors if you run a third-party Mermaid plugin when using Mermaid syntax on GitHub
 
-You may observe errors if you run a third-party Mermaid plugin when using Mermaid syntax on GitHub
-
-<!-- TOC --><a name="sequence-diagram"></a>
 #### [Sequence diagram](https://mermaid.js.org/syntax/sequenceDiagram.html)
 
 + Example 1:
@@ -1083,7 +1644,6 @@ sequenceDiagram
 > [!NOTE]
 > Internal links from diagrams don't show up in the Graph view.
 
-<!-- TOC --><a name="gannt-chart"></a>
 #### [Gannt chart](https://mermaid.js.org/syntax/gantt.html)
 
 + Example 1:
@@ -1118,7 +1678,6 @@ Future task               :         des3, after des2, 5d
 Future task2               :         des4, after des3, 5d
 ```
 
-<!-- TOC --><a name="class-diagram"></a>
 #### [Class diagram](https://mermaid.js.org/syntax/classDiagram.html)
 
 + Example 1:
@@ -1161,7 +1720,6 @@ Class01 : int gorilla
 Class08 <--> C2: Cool label
 ```
 
-<!-- TOC --><a name="git-graph"></a>
 #### [Git graph](https://mermaid.js.org/syntax/gitgraph.html)
 
 + Example 1:
@@ -1196,7 +1754,6 @@ will be rendered like this:
        commit
 ```
 
-<!-- TOC --><a name="entity-relationship-diagram"></a>
 #### [Entity relationship diagram](https://mermaid.js.org/syntax/entityRelationshipDiagram.html)
 
 > [!CAUTION]
@@ -1222,7 +1779,6 @@ erDiagram
     CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
 ```
 
-<!-- TOC --><a name="user-journey-diagram"></a>
 #### [User Journey Diagram](https://mermaid.js.org/syntax/userJourney.html)
 
 + Example 1:
@@ -1256,7 +1812,6 @@ journey
 
 ```
 
-<!-- TOC --><a name="quadrant-chart"></a>
 #### [Quadrant Chart](https://mermaid.js.org/syntax/quadrantChart.html)
 
 + Example 1:
@@ -1299,7 +1854,6 @@ quadrantChart
     Campaign F: [0.35, 0.78]
 ```
 
-<!-- TOC --><a name="xy-chart"></a>
 #### [XY Chart](https://mermaid.js.org/syntax/xyChart.html)
 
 ```
@@ -1324,9 +1878,7 @@ xychart-beta
     line [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
 ```
 
-<!-- TOC --><a name="mermaid-diagram-with-internal-link"></a>
 ### Mermaid diagram with internal link
-<!-- TOC --><a name="simple-case"></a>
 #### Simple case
 
 + Example 1:
@@ -1351,7 +1903,6 @@ Biology --> Chemistry
 class Biology,Chemistry internal-link;
 ```
 
-<!-- TOC --><a name="case-about-the-alias-a-class"></a>
 #### Case about the alias a class
 
 + Example 1:
@@ -1389,13 +1940,10 @@ class A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z internal-link;
 > Or, A["⨳ special character"].
 
 
-<!-- TOC --><a name="diagram-breaking"></a>
 ## [Diagram breaking](https://mermaid.js.org/intro/syntax-reference.html#diagram-breaking)
 See [Diagram breaking](https://mermaid.js.org/intro/syntax-reference.html#diagram-breaking)
 
-<!-- TOC --><a name="configuration-about-diagram"></a>
 ## Configuration about diagram
-<!-- TOC --><a name="theme-configuration"></a>
 ### [Theme configuration](https://mermaid.js.org/config/theming.html)
 
 Available Themes:
@@ -1405,7 +1953,6 @@ Available Themes:
 + forest: This theme contains shades of green. Like color of forest.
 + base: This is the only theme that can be modified. Use this theme as the base for customizations.
 
-<!-- TOC --><a name="specify-themes-configuration-in-diagram"></a>
 #### [Specify themes configuration in diagram](https://mermaid.js.org/config/theming.html#diagram-specific-themes)
 
 Use directives (see diagram breaking) and `init` keyword. See following example.
@@ -1429,10 +1976,26 @@ will be rendered output like this:
 
 For more information, see [Theme Configuration](https://mermaid.js.org/config/theming.html)
 
-<!-- TOC --><a name="data-with-special-type"></a>
 ## Data with special type
-<!-- TOC --><a name="json"></a>
 ### Json 
+####  [JSON block](https://stackoverflow.com/questions/14901245/how-to-style-a-json-block-in-github-wiki)
+
++ Example 1:
+
+```
+\`\`\`yaml
+{
+   "this-json": "looks awesome..."
+}
+\`\`\`
+```
+
+will be rendered as follows.
+
+```yaml
+{
+   "this-json": "looks awesome..."
+}
 <!-- TOC --><a name="geojson-available-at-github"></a>
 #### GeoJson (available at Github)
 In Github, one can create a map by specifying coordinates in data with GeoJson type through the code block and consecutive `geojson` (i.e.` ```geojson `).
@@ -1657,18 +2220,57 @@ solid cube_corner
 endsolid
 ```
 
+<!-- TOC --><a name="syntax-highlight-code"></a>
+## [Syntax highlight code](https://www.w3schools.io/file/markdown-code-fence-blocks/)
+For code block with these programming language as identifier in the table under [this website](https://www.w3schools.io/file/markdown-code-fence-blocks/), its syntax will be highlighted.
+
+<!-- TOC --><a name="programming-language"></a>
+### Programming language
+<!-- TOC --><a name="csharp"></a>
+#### CSharp
+
++ Example 1:
+
+```
+\`\`\` cs
+Console.WriteLine("Markdown fenced code example");
+\`\`\`
+```
+
+will be rendered output like this:
+
+
+``` cs
+Console.WriteLine("Markdown fenced code example");
+```
+
+<!-- TOC --><a name="javascript"></a>
+### Javascript
+
++ Example 1:
+
+```
+\`\`\` js
+console.log("Markdown fenced code example")
+\`\`\`
+```
+
+will be rendered output like this:
+
+``` js
+console.log("Markdown fenced code example")
+```
 
 <!-- TOC --><a name="appreciation"></a>
 ## Appreciation
 
-![image](https://github.com/user-attachments/assets/ca04cec5-1987-491f-8a0a-5a2752391cab)
-
-
 (Magical Girls of Amazing Rainbow【Anime】)[https://www.youtube.com/watch?v=swkJz-DhuDw]
 
-will provides some element as example. I take some of transcript in this video, [(Ridiculous people on the subway!! #anime #manga)](https://www.youtube.com/watch?v=swkJz-DhuDw) as elements for examples.
+![image](https://github.com/user-attachments/assets/ca04cec5-1987-491f-8a0a-5a2752391cab)
 
-<!-- TOC --><a name="ref"></a>
+It provides some element as example. I take some of transcript in this video, [(Ridiculous people on the subway!! #anime #manga)](https://www.youtube.com/watch?v=swkJz-DhuDw) as elements for examples.
+
+<!-- TOC --><a name="ref-1"></a>
 ### Ref
 + For basic syntax in most section, see
 
