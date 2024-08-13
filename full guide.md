@@ -1388,9 +1388,6 @@ Like in YT.
 
 ## Emoji
 
-GitHub support Emoji.
-
-[List of emoji in Github](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md).
 
 ## [mathematical expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 
@@ -1858,6 +1855,24 @@ For more information, see [Theme Configuration](https://mermaid.js.org/config/th
 
 ## Data with special type
 ### Json 
+####  [JSON block](https://stackoverflow.com/questions/14901245/how-to-style-a-json-block-in-github-wiki)
+
++ Example 1:
+
+```
+\`\`\`yaml
+{
+   "this-json": "looks awesome..."
+}
+\`\`\`
+```
+
+will be rendered as follows.
+
+```yaml
+{
+   "this-json": "looks awesome..."
+}
 #### GeoJson (available at Github)
 In Github, one can create a map by specifying coordinates in data with GeoJson type through the code block and consecutive `geojson` (i.e.` ```geojson `).
 
