@@ -350,9 +350,32 @@ This is last line.
 > [!CAUTION]
 > The label (such as`[label]`) may NOT be rendered in Github or other platform. Be careful to use it. For this reason, I did NOT use labels in markdown file but footnotes, and I highly recommend to use footnotes instead labels.
 
+> [!CAUTION]
+> Footnotes aren't part of the core Markdown spec, but they supported by [GFM](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#footnotes) and thus is available at Github.
+>
+> See a simple example.
+>
+> ```
+> Here is a simple footnote[^1].
+> A footnote can also have multiple lines[^2].
+> You can also use wo
+> rds, to fit your writing style more closely[^note].
+> [^1]: My reference.[^2]: Every new line should be prefixed with 2 spaces.
+> This allows you to have a footnote with multiple lines.
+> [^note]:Named footnotes will still render with numbers instead of the text but allow easier identification and linking.
+> This footnote also has been made with a different syntax using 4 spaces for new lines.
+> ```
+
+The rendered output looks like this:
+
+[^1]: My reference.
+[^2]: Every new line should be prefixed with 2 spaces.  
+  This allows you to have a footnote with multiple lines.
+[^note]:
+    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
+    This footnote also has been made with a different syntax using 4 spaces for new lines.
 
 ### Add labels or footnotes
-
 I found the funny facts at Github.
 
 > [!IMPORTANT]
@@ -456,36 +479,43 @@ The syntax will look like this:
 
 + Example 1:
 
-To create a label with id `1`. Type
+To create a label with id `3`. Type
 
 ```
-[^1]
+[^3]
 ```
 
-To use label whose id is `1` and it has a url `https://www.r-project.org/` displayed as `R official website`. Type
+To use label whose id is `3` and it has a url `https://www.r-project.org/` displayed as `R official website`. Type
 
 ```
-[^1]: [R official website](https://www.r-project.org/)
+[^3]: [R official website](https://www.r-project.org/)
 ```
 
 The full example will look like this:
 
 ```
-See get started of R official website[^1]
+See get started of R official website[^3]
 
-[^1]: [R official website](https://www.r-project.org/)
+[^3]: [R official website](https://www.r-project.org/)
 ```
 
 which will be rendered as following:
 
-See get started of R official website[^1]
+See get started of R official website[^3]
 
-[^1]: [R official website](https://www.r-project.org/)
+[^3]: [R official website](https://www.r-project.org/)
 
 + Example 2:
 
-[^2]: [The text will NOT be displayed since it is NOT used](https://stackoverflow.com/questions/77038957/add-commons-math3-dependency-to-xtext-maven-project)
+```
+[^4]: [The text will NOT be displayed since it is NOT used](https://stackoverflow.com/questions/77038957/add-commons-math3-dependency-to-xtext-maven-project)
+```
 
+which will be rendered as following:
+
+[^4]: [The text will NOT be displayed since it is NOT used](https://stackoverflow.com/questions/77038957/add-commons-math3-dependency-to-xtext-maven-project)
+
+which `[^4]: [The text will NOT be displayed since it is NOT used]` will NOT be displayed since `[^4]` is NOT used.
 #### Ref
 
 Thanks to [Mahozad's answer on stackoverflow](https://stackoverflow.com/questions/6695439/how-to-link-to-a-named-anchor-in-multimarkdown/15843220#15843220).
@@ -1371,34 +1401,6 @@ From the transcript of YT video ["I'm going to eat you" Strange guy sneaks into 
 
 The rendered output looks like the content in [example of TOC at Github](https://github.com/40843245/markdown-tutorial/blob/main/example/TOC.md).
 
-## Footenotes
-Footnotes aren't part of the core Markdown spec, but they supported by [GFM](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#footnotes) and thus is available at Github.
-
-
-```
-Here is a simple footnote[^1].
-
-A footnote can also have multiple lines[^2].  
-
-You can also use words, to fit your writing style more closely[^note].
-
-[^1]: My reference.
-[^2]: Every new line should be prefixed with 2 spaces.  
-  This allows you to have a footnote with multiple lines.
-[^note]:
-    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
-    This footnote also has been made with a different syntax using 4 spaces for new lines.
-```
-
-The rendered output looks like this:
-
-[^1]: My reference.
-[^2]: Every new line should be prefixed with 2 spaces.  
-  This allows you to have a footnote with multiple lines.
-[^note]:
-    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
-    This footnote also has been made with a different syntax using 4 spaces for new lines.
-
 ## [Alerts on Github](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#footnotes)
 
 Five kinds of alerts are available at Github.
@@ -1492,9 +1494,6 @@ will be rendered output like this.
 Typing a hash tag (i.e. an `@` symbol), followed by a username, will notify that person to come and view the comment. 
 
 Like in YT.
-
-## Emoji
-
 
 ## [mathematical expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 
