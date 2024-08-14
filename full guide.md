@@ -1088,6 +1088,21 @@ will output
 | -------- | ---- | --------------- |
 | I really like using Markdown. <br> <br> I think I'll use it to format all of my documents from now on.	| `<p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>` | <p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>
 
++ Example 7:
+
+```
+|
+|1<td rowspan="2">3</td>
+|2 
+|4|5|
+```
+
+will be rendered output like this:
+
+|
+|1<td rowspan="2">3</td>
+|2 
+|4|5|
 ### [Checkbox in table](https://stackoverflow.com/questions/47344571/how-to-draw-checkbox-or-tick-mark-in-github-markdown-table/47344640#47344640)
 
 + Example 1:
@@ -1380,6 +1395,20 @@ __`A`__
 will be rendered output like this:
 
 __`A`__
+
++ Example 4:
+
+```
+- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) `#c5f015`
+- ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `#1589F0`
+```
+
+will be rendered output like this.
+
+- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) `#c5f015`
+- ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `#1589F0`
 
 ## [Username @mentions](https://learn-markdown.github.io/)
 Typing a hash tag (i.e. an `@` symbol), followed by a username, will notify that person to come and view the comment. 
