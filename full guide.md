@@ -1851,6 +1851,32 @@ will be rendered output like this:
     a --> b
 ```
 
++ Example 2:
+
+```
+\`\`\`{.mermaid theme=forest}
+graph TD
+A[Christmas] -->|Get money| B(Go shopping)
+B --> C{Let me think}
+C -->|One| D[Laptop]
+C -->|Two| E[iPhone]
+C -->|Three| F[fa:fa-car Car]
+\`\`\`
+```
+
+will be rendered output like this.
+
+```{.mermaid theme=forest}
+graph TD
+A[Christmas] -->|Get money| B(Go shopping)
+B --> C{Let me think}
+C -->|One| D[Laptop]
+C -->|Two| E[iPhone]
+C -->|Three| F[fa:fa-car Car]
+```
+
+From the [FK82's answer on stackoverflow](https://stackoverflow.com/questions/49535327/change-mermaid-theme-in-markdown)
+
 For more information, see [Theme Configuration](https://mermaid.js.org/config/theming.html)
 
 ## Data with special type
@@ -2091,6 +2117,7 @@ solid cube_corner
   endfacet
 endsolid
 ```
+
 
 ## [Syntax highlight code](https://www.w3schools.io/file/markdown-code-fence-blocks/)
 For code block with these programming language as identifier in the table under [this website](https://www.w3schools.io/file/markdown-code-fence-blocks/), its syntax will be highlighted.
