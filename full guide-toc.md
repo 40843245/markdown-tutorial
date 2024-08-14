@@ -14,10 +14,7 @@
       + [Subscript](#subscript)
       + [Superscript](#superscript)
       + [Underline](#underline)
-      + [a long "-" in markdown, i.e. the character "–"](#a-long-in-markdown-ie-the-character-)
-         - [Use Unicode Characters](#use-unicode-characters)
-         - [Use HTML Entities](#use-html-entities)
-         - [Use Smartypants](#use-smartypants)
+      + [a long `-` in markdown, i.e. the character `--`[^10]](#a-long-in-markdown-ie-the-character-10)
       + [Keyboard input icon (kbd)](#keyboard-input-icon-kbd)
    * [Checkbox](#checkbox)
    * [Emoji](#emoji)
@@ -48,6 +45,7 @@
       + [Link to local device](#link-to-local-device)
       + [URLs and Email Addresses](#urls-and-email-addresses)
       + [Formatting Links](#formatting-links)
+   * [Table Styling in Markdown](#table-styling-in-markdown)
 - [Table of Contents](#table-of-contents)
    * [Example](#example)
    * [Example2](#example2)
@@ -211,14 +209,9 @@ Thus, we may use the html tag to achieve this (or may not in some markdown langu
 
 This artcile on [stackoveflow](https://stackoverflow.com/questions/3003476/get-underlined-text-with-markdown) covers a lot of way to underline texts with html tag.
 
-<!-- TOC --><a name="a-long-in-markdown-ie-the-character-"></a>
-### [a long "-" in markdown, i.e. the character "–"](https://stackoverflow.com/questions/52371734/how-to-make-a-long-in-markdown-i-e-the-character)
-<!-- TOC --><a name="use-unicode-characters"></a>
-#### Use Unicode Characters
-<!-- TOC --><a name="use-html-entities"></a>
-#### Use HTML Entities
-<!-- TOC --><a name="use-smartypants"></a>
-#### Use Smartypants
+<!-- TOC --><a name="a-long-in-markdown-ie-the-character-10"></a>
+### a long `-` in markdown, i.e. the character `--`[^10]
+See a long `-` in markdown, i.e. the character `--`[^10]
 
 <!-- TOC --><a name="keyboard-input-icon-kbd"></a>
 ### Keyboard input icon (kbd)
@@ -446,9 +439,47 @@ This is last line.
 > [!CAUTION]
 > The label (such as`[label]`) may NOT be rendered in Github or other platform. Be careful to use it. For this reason, I did NOT use labels in markdown file but footnotes, and I highly recommend to use footnotes instead labels.
 
+> [!CAUTION]
+> Footnotes aren't part of the core Markdown spec, but they supported by [GFM](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#footnotes) and thus is available at Github.
+>
+> See a simple example.
+>
+> ```
+> Here is a simple footnote[^1].
+> A footnote can also have multiple lines[^2].
+> You can also use wo
+> rds, to fit your writing style more closely[^note].
+> [^1]: My reference.[^2]: Every new line should be prefixed with 2 spaces.
+> This allows you to have a footnote with multiple lines.
+> [^note]:Named footnotes will still render with numbers instead of the text but allow easier identification and linking.
+> This footnote also has been made with a different syntax using 4 spaces for new lines.
+> ```
+
+The rendered output looks like this:
+
+[^1]: My reference.
+[^2]: Every new line should be prefixed with 2 spaces.  
+  This allows you to have a footnote with multiple lines.
+[^note]:
+    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
+    This footnote also has been made with a different syntax using 4 spaces for new lines.
 
 <!-- TOC --><a name="add-labels-or-footnotes"></a>
 ### Add labels or footnotes
+I found the funny facts at Github.
+
+> [!IMPORTANT]
+> For creating a new footnote in Github, the position does **NOT** matter, the declaration of footnote will always be placed into the end of the document.
+>
+> But, for readibility and maintenability, I highly recommend to create a new footnote at the end of the document or just after the first ocurrence of use of the footnote.
+
+> [!IMPORTANT]
+> The declaration of a footnote will be displayed **iff** the footnote is used.
+>
+> For example, if one create `[^1000]` with text `[^1000]: Hello World!` but `[^100]` is NOT used, then `[^1000]: Hello World!` will NOT be displayed in the document.
+>
+> See example 2 under `footnote` subsection.
+
 To add a footnote, create a label through `[]` followed by `:` symbol (i.e. `[`, your name or combination of `^` and your id,`]`,`:`)
 
 The [re](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expressions) (i.e. regular expression) of a label will be
@@ -537,35 +568,45 @@ The syntax will look like this:
   [^1]: #the-anchor-name-or-id "Optional title for mouse hover"
 ```
 
-+ Example 2:
++ Example 1:
 
-To create a label with id `1`. Type
-
-```
-[^1]
-```
-
-To use label whose id is `1` and it has a url `https://www.r-project.org/` displayed as `R official website`. Type
+To create a label with id `3`. Type
 
 ```
-[^1]: [R official website](https://www.r-project.org/)
+[^3]
+```
+
+To use label whose id is `3` and it has a url `https://www.r-project.org/` displayed as `R official website`. Type
+
+```
+[^3]: [R official website](https://www.r-project.org/)
 ```
 
 The full example will look like this:
 
 ```
-See get started of R official website[^1]
+See get started of R official website[^3]
 
-[^1]: [R official website](https://www.r-project.org/)
+[^3]: [R official website](https://www.r-project.org/)
 ```
 
 which will be rendered as following:
 
-See get started of R official website[^1]
+See get started of R official website[^3]
 
-[^1]: [R official website](https://www.r-project.org/)
+[^3]: [R official website](https://www.r-project.org/)
 
++ Example 2:
 
+```
+[^4]: [The text will NOT be displayed since it is NOT used](https://stackoverflow.com/questions/77038957/add-commons-math3-dependency-to-xtext-maven-project)
+```
+
+which will be rendered as following:
+
+[^4]: [The text will NOT be displayed since it is NOT used](https://stackoverflow.com/questions/77038957/add-commons-math3-dependency-to-xtext-maven-project)
+
+which `[^4]: [The text will NOT be displayed since it is NOT used]` will NOT be displayed since `[^4]` is NOT used.
 <!-- TOC --><a name="ref"></a>
 #### Ref
 
@@ -1206,6 +1247,85 @@ will output
 | -------- | ---- | --------------- |
 | I really like using Markdown. <br> <br> I think I'll use it to format all of my documents from now on.	| `<p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>` | <p>I really like using Markdown.</p> <p>I think I'll use it to format all of my documents from now on.</p>
 
++ Example 7:
+
+```
+|
+|1<td rowspan="2">3</td>
+|2 
+|4|5|
+```
+
+will be rendered output like this:
+
+|
+|1<td rowspan="2">3</td>
+|2 
+|4|5|
+
+### Style in table
+
++ Example 1:
+
+```
+<!-- TOC --><a name="table-styling-in-markdown"></a>
+## Table Styling in Markdown
+
+<style>
+    .heatMap {
+        width: 70%;
+        text-align: center;
+    }
+    .heatMap th {
+        background: grey;
+        word-wrap: break-word;
+        text-align: center;
+    }
+    .heatMap tr:nth-child(1) { background: red; }
+    .heatMap tr:nth-child(2) { background: orange; }
+    .heatMap tr:nth-child(3) { background: green; }
+</style>
+
+<div class="heatMap">
+
+| Everything | in this table | is Centered | and the table will only take up 70% of the screen width | 
+| -- | -- | -- | -- |
+| This | is | a | Red Row |
+| This | is | an | Orange Row |
+| This | is | a | Green Row |
+
+</div>
+```
+
+will be rendered output like this:
+
+## Table Styling in Markdown
+
+<style>
+    .heatMap {
+        width: 70%;
+        text-align: center;
+    }
+    .heatMap th {
+        background: grey;
+        word-wrap: break-word;
+        text-align: center;
+    }
+    .heatMap tr:nth-child(1) { background: red; }
+    .heatMap tr:nth-child(2) { background: orange; }
+    .heatMap tr:nth-child(3) { background: green; }
+</style>
+
+<div class="heatMap">
+
+| Everything | in this table | is Centered | and the table will only take up 70% of the screen width | 
+| -- | -- | -- | -- |
+| This | is | a | Red Row |
+| This | is | an | Orange Row |
+| This | is | a | Green Row |
+
+</div>
+
 ### [Checkbox in table](https://stackoverflow.com/questions/47344571/how-to-draw-checkbox-or-tick-mark-in-github-markdown-table/47344640#47344640)
 
 + Example 1:
@@ -1338,7 +1458,6 @@ The rendered output looks like this:
 [![An old rock in the desert](/assets/images/shiprock.jpg "Shiprock, New Mexico by Beau Rogers")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)
 
 ### [Images that specifies the width or height etc](https://stackoverflow.com/questions/14675913/changing-image-size-in-markdown)
-
 See [syntax in Obsidian (My notes at Github)](https://github.com/40843245/markdown-tutorial/blob/main/Obsidian/full%20guide.md)
 
 
@@ -1400,34 +1519,6 @@ From the transcript of YT video ["I'm going to eat you" Strange guy sneaks into 
 ```
 
 The rendered output looks like the content in [example of TOC at Github](https://github.com/40843245/markdown-tutorial/blob/main/example/TOC.md).
-
-## Footenotes
-Footnotes aren't part of the core Markdown spec, but they supported by [GFM](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#footnotes) and thus is available at Github.
-
-
-```
-Here is a simple footnote[^1].
-
-A footnote can also have multiple lines[^2].  
-
-You can also use words, to fit your writing style more closely[^note].
-
-[^1]: My reference.
-[^2]: Every new line should be prefixed with 2 spaces.  
-  This allows you to have a footnote with multiple lines.
-[^note]:
-    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
-    This footnote also has been made with a different syntax using 4 spaces for new lines.
-```
-
-The rendered output looks like this:
-
-[^1]: My reference.
-[^2]: Every new line should be prefixed with 2 spaces.  
-  This allows you to have a footnote with multiple lines.
-[^note]:
-    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
-    This footnote also has been made with a different syntax using 4 spaces for new lines.
 
 ## [Alerts on Github](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#footnotes)
 
@@ -1504,13 +1595,24 @@ will be rendered output like this:
 
 __`A`__
 
++ Example 4:
+
+```
+- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) `#c5f015`
+- ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `#1589F0`
+```
+
+will be rendered output like this.
+
+- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) `#c5f015`
+- ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `#1589F0`
+
 ## [Username @mentions](https://learn-markdown.github.io/)
 Typing a hash tag (i.e. an `@` symbol), followed by a username, will notify that person to come and view the comment. 
 
 Like in YT.
-
-## Emoji
-
 
 ## [mathematical expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 
@@ -1974,6 +2076,32 @@ will be rendered output like this:
     a --> b
 ```
 
++ Example 2:
+
+```
+\`\`\`{.mermaid theme=forest}
+graph TD
+A[Christmas] -->|Get money| B(Go shopping)
+B --> C{Let me think}
+C -->|One| D[Laptop]
+C -->|Two| E[iPhone]
+C -->|Three| F[fa:fa-car Car]
+\`\`\`
+```
+
+will be rendered output like this.
+
+```{.mermaid theme=forest}
+graph TD
+A[Christmas] -->|Get money| B(Go shopping)
+B --> C{Let me think}
+C -->|One| D[Laptop]
+C -->|Two| E[iPhone]
+C -->|Three| F[fa:fa-car Car]
+```
+
+From the [FK82's answer on stackoverflow](https://stackoverflow.com/questions/49535327/change-mermaid-theme-in-markdown)
+
 For more information, see [Theme Configuration](https://mermaid.js.org/config/theming.html)
 
 ## Data with special type
@@ -2220,6 +2348,7 @@ solid cube_corner
 endsolid
 ```
 
+
 <!-- TOC --><a name="syntax-highlight-code"></a>
 ## [Syntax highlight code](https://www.w3schools.io/file/markdown-code-fence-blocks/)
 For code block with these programming language as identifier in the table under [this website](https://www.w3schools.io/file/markdown-code-fence-blocks/), its syntax will be highlighted.
@@ -2294,3 +2423,5 @@ It provides some element as example. I take some of transcript in this video, [(
 <!-- TOC --><a name="furthur-reference"></a>
 ### Furthur reference
 [mathjax](https://www.mathjax.org/)
+
+[^10]: [a long `-` in markdown, i.e. the character `--`](https://stackoverflow.com/questions/52371734/how-to-make-a-long-in-markdown-i-e-the-character)
