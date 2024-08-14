@@ -127,10 +127,8 @@ Thus, we may use the html tag to achieve this (or may not in some markdown langu
 
 This artcile on [stackoveflow](https://stackoverflow.com/questions/3003476/get-underlined-text-with-markdown) covers a lot of way to underline texts with html tag.
 
-### [a long "-" in markdown, i.e. the character "–"](https://stackoverflow.com/questions/52371734/how-to-make-a-long-in-markdown-i-e-the-character)
-#### Use Unicode Characters
-#### Use HTML Entities
-#### Use Smartypants
+### a long `-` in markdown, i.e. the character `--`[^10]
+See a long `-` in markdown, i.e. the character `--`[^10]
 
 ### Keyboard input icon (kbd)
 
@@ -354,6 +352,21 @@ This is last line.
 
 
 ### Add labels or footnotes
+
+I found the funny facts at Github.
+
+> [!IMPORTANT]
+> For creating a new footnote in Github, the position does **NOT** matter, the declaration of footnote will always be placed into the end of the document.
+>
+> But, for readibility and maintenability, I highly recommend to create a new footnote at the end of the document or just after the first ocurrence of use of the footnote.
+
+> [!IMPORTANT]
+> The declaration of a footnote will be displayed **iff** the footnote is used.
+>
+> For example, if one create `[^1000]` with text `[^1000]: Hello World!` but `[^100]` is NOT used, then `[^1000]: Hello World!` will NOT be displayed in the document.
+>
+> See example 2 under `footnote` subsection.
+
 To add a footnote, create a label through `[]` followed by `:` symbol (i.e. `[`, your name or combination of `^` and your id,`]`,`:`)
 
 The [re](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expressions) (i.e. regular expression) of a label will be
@@ -441,7 +454,7 @@ The syntax will look like this:
   [^1]: #the-anchor-name-or-id "Optional title for mouse hover"
 ```
 
-+ Example 2:
++ Example 1:
 
 To create a label with id `1`. Type
 
@@ -469,6 +482,9 @@ See get started of R official website[^1]
 
 [^1]: [R official website](https://www.r-project.org/)
 
++ Example 2:
+
+[^2]: [The text will NOT be displayed since it is NOT used](https://stackoverflow.com/questions/77038957/add-commons-math3-dependency-to-xtext-maven-project)
 
 #### Ref
 
@@ -1298,7 +1314,6 @@ The rendered output looks like this:
 [![An old rock in the desert](/assets/images/shiprock.jpg "Shiprock, New Mexico by Beau Rogers")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)
 
 ### [Images that specifies the width or height etc](https://stackoverflow.com/questions/14675913/changing-image-size-in-markdown)
-
 See [syntax in Obsidian (My notes at Github)](https://github.com/40843245/markdown-tutorial/blob/main/Obsidian/full%20guide.md)
 
 
@@ -2278,3 +2293,5 @@ It provides some element as example. I take some of transcript in this video, [(
 
 ### Furthur reference
 [mathjax](https://www.mathjax.org/)
+
+[^10]: [a long `-` in markdown, i.e. the character `--`](https://stackoverflow.com/questions/52371734/how-to-make-a-long-in-markdown-i-e-the-character)
