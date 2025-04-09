@@ -935,6 +935,32 @@ The rendered output looks like this
 [link](/relativeToProject.md)     # relative to opened project
 ```
 
+### [Link with relative path (for GitHub link)](https://stackoverflow.com/questions/7653483/github-relative-link-in-markdown-file) 
+
+About GitHub relative path, see answer's with top rate on this article -- [GitHub relative link in Markdown file](https://stackoverflow.com/questions/7653483/github-relative-link-in-markdown-file).
+
+From VonC's answer,
+
+<img width="563" alt="image" src="https://github.com/user-attachments/assets/5883d92e-dfc3-4a80-a445-e4754065cab9" />
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/f5db515f-99dc-410a-bbf3-328171d398f7" />
+
+<img width="951" alt="image" src="https://github.com/user-attachments/assets/a8182ca2-8974-4257-a16c-82ec094d9536" />
+
+From mathsyouth's answer,
+
+<img width="733" alt="image" src="https://github.com/user-attachments/assets/cb735dd0-5d18-432d-bc5b-8879ffeec0f7" />
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/0f166fbe-b5e8-42f0-8cb9-7bb84a8c3147" />
+
+You can also write a Json data into a file and then write a code snippets with the Gitdown npm package in JS. 
+
+See following figure.
+
+<img width="660" alt="image" src="https://github.com/user-attachments/assets/3e89b047-5021-4648-a780-2a9f9cd85d64" />
+
+Gitdown is available at [GitHub repo](https://github.com/gajus/gitdown)
+
 ### [URLs and Email Addresses](https://www.markdownguide.org/basic-syntax/#urls-and-email-addresses)
 
 There are a faster way to turn a URL or email address into a link, enclose it in angle brackets.
