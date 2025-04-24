@@ -43,6 +43,7 @@
    * [Links](#links)
       + [Normal Links](#normal-links)
       + [Link to local device](#link-to-local-device)
+      + [Link with relative path (for GitHub link) ](#link-with-relative-path-for-github-link)
       + [URLs and Email Addresses](#urls-and-email-addresses)
       + [Formatting Links](#formatting-links)
    * [Table Styling in Markdown](#table-styling-in-markdown)
@@ -1046,6 +1047,33 @@ The rendered output looks like this
 [link](/relativeToProject.md)     # relative to opened project
 ```
 
+<!-- TOC --><a name="link-with-relative-path-for-github-link"></a>
+### [Link with relative path (for GitHub link)](https://stackoverflow.com/questions/7653483/github-relative-link-in-markdown-file) 
+
+About GitHub relative path, see answer's with top rate on this article -- [GitHub relative link in Markdown file](https://stackoverflow.com/questions/7653483/github-relative-link-in-markdown-file).
+
+From VonC's answer,
+
+<img width="563" alt="image" src="https://github.com/user-attachments/assets/5883d92e-dfc3-4a80-a445-e4754065cab9" />
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/f5db515f-99dc-410a-bbf3-328171d398f7" />
+
+<img width="951" alt="image" src="https://github.com/user-attachments/assets/a8182ca2-8974-4257-a16c-82ec094d9536" />
+
+From mathsyouth's answer,
+
+<img width="733" alt="image" src="https://github.com/user-attachments/assets/cb735dd0-5d18-432d-bc5b-8879ffeec0f7" />
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/0f166fbe-b5e8-42f0-8cb9-7bb84a8c3147" />
+
+You can also write a Json data into a file and then write a code snippets with the Gitdown npm package in JS. 
+
+See following figure.
+
+<img width="660" alt="image" src="https://github.com/user-attachments/assets/3e89b047-5021-4648-a780-2a9f9cd85d64" />
+
+Gitdown is available at [GitHub repo](https://github.com/gajus/gitdown)
+
 <!-- TOC --><a name="urls-and-email-addresses"></a>
 ### [URLs and Email Addresses](https://www.markdownguide.org/basic-syntax/#urls-and-email-addresses)
 
@@ -1412,6 +1440,123 @@ will output
 | Unchecked | Checked |
 | --------- | ------- |
 | &#9744;   | &#9745; |
+
+### code block in a table
+In Github (which supports GFM) and stackoverflow, it supports HTML tag, 
+
+therefore, we can use `<pre>`,`</pre>` tag to simulate the code block in a table, 
+
+or using more complex approach -- using html tag `<table>` to create a table,
+
+then inside a cell (between `<td>` and `</td>`), use markdown syntax.
+
+> [!IMPORTANT]
+> when using markdown syntax inside a cell (between `<td>` and `</td>`),
+>
+> please add an extra line after the `<td>` tag and before the `</td>` tag.
+>
+> See example 2 for more fully understanding.
+
+
++ Example 1:
+  
+```
+| Name | Signature Code                 |
+|------|--------------------------------|
+| Minhas Kamal | <pre>main(m,k){<br>  for(<br>    ;<br>    m%k--?:(k=m++);<br>    k^1?:printf("%i\|",m)<br>  );<br>}</pre> |
+```
+
+will be rendered as
+
+| Name | Signature Code                 |
+|------|--------------------------------|
+| Minhas Kamal | <pre>main(m,k){<br>  for(<br>    ;<br>    m%k--?:(k=m++);<br>    k^1?:printf("%i\|",m)<br>  );<br>}</pre> |
+
++ Example 2:
+
+```
+<table>
+<tr>
+<td> Status </td> <td> Response </td>
+</tr>
+<tr>
+<td> 200 </td>
+<td>
+
+↑ Blank line!
+```json
+json
+{
+    "id": 10,
+    "username": "alanpartridge",
+    "email": "alan@alan.com",
+    "password_hash": "$2a$10$uhUIUmVWVnrBWx9rrDWhS.CPCWCZsyqqa8./whhfzBZydX7yvahHS",
+    "password_salt": "$2a$10$uhUIUmVWVnrBWx9rrDWhS.",
+    "created_at": "2015-02-14T20:45:26.433Z",
+    "updated_at": "2015-02-14T20:45:26.540Z"
+}
+```
+↓ Blank line!
+
+</td>
+</tr>
+<tr>
+<td> 400 </td>
+<td>
+
+**Markdown** _here_. (↕︎ Blank lines above and below!)
+
+</td>
+</tr>
+</table>
+```
+
+will be rendered as
+
+<table>
+<tr>
+<td> Status </td> <td> Response </td>
+</tr>
+<tr>
+<td> 200 </td>
+<td>
+
+↑ Blank line!
+```json
+json
+{
+    "id": 10,
+    "username": "alanpartridge",
+    "email": "alan@alan.com",
+    "password_hash": "$2a$10$uhUIUmVWVnrBWx9rrDWhS.CPCWCZsyqqa8./whhfzBZydX7yvahHS",
+    "password_salt": "$2a$10$uhUIUmVWVnrBWx9rrDWhS.",
+    "created_at": "2015-02-14T20:45:26.433Z",
+    "updated_at": "2015-02-14T20:45:26.540Z"
+}
+```
+↓ Blank line!
+
+</td>
+</tr>
+<tr>
+<td> 400 </td>
+<td>
+
+**Markdown** _here_. (↕︎ Blank lines above and below!)
+
+</td>
+</tr>
+</table>
+
+
+reference:
++ palotasb's answer on this article -- [code block inside table row in Markdown](https://stackoverflow.com/questions/28508141/code-block-inside-table-row-in-markdown)
+
+<img width="697" alt="image" src="https://github.com/user-attachments/assets/e98b6db8-d7c7-470c-88e9-8695fa4f395c" />
+
++ Minhas Kamal's answer on this article -- [code block inside table row in Markdown](https://stackoverflow.com/questions/28508141/code-block-inside-table-row-in-markdown)
+
+<img width="697" alt="image" src="https://github.com/user-attachments/assets/6ce6a9ad-6bef-40c1-a4fb-5a8e4bfd29b5" />
 
 ## Images
 ### Images whose alternative is just a text
