@@ -1361,27 +1361,16 @@ will be rendered as
 ```
 <table>
 <tr>
-<th>
-Status
-</th>
-<th>
-Response
-</th>
+<td> Status </td> <td> Response </td>
 </tr>
-
 <tr>
-
-<td>
-<pre>
-<br/><br/><br/>200<br/><br/><br/><br/><br/>400<br/>
-</pre>
-</td>
-
+<td> 200 </td>
 <td>
 
-<pre>
+↑ Blank line!
+```json
 json
-  {
+{
     "id": 10,
     "username": "alanpartridge",
     "email": "alan@alan.com",
@@ -1390,10 +1379,18 @@ json
     "created_at": "2015-02-14T20:45:26.433Z",
     "updated_at": "2015-02-14T20:45:26.540Z"
 }
-</pre>
+```
+↓ Blank line!
 
 </td>
+</tr>
+<tr>
+<td> 400 </td>
+<td>
 
+**Markdown** _here_. (↕︎ Blank lines above and below!)
+
+</td>
 </tr>
 </table>
 ```
@@ -1402,27 +1399,16 @@ will be rendered as
 
 <table>
 <tr>
-<th>
-Status
-</th>
-<th>
-Response
-</th>
+<td> Status </td> <td> Response </td>
 </tr>
-
 <tr>
-
-<td>
-<pre>
-<br/><br/><br/>200<br/><br/><br/><br/><br/>400<br/>
-</pre>
-</td>
-
+<td> 200 </td>
 <td>
 
-<pre>
+↑ Blank line!
+```json
 json
-  {
+{
     "id": 10,
     "username": "alanpartridge",
     "email": "alan@alan.com",
@@ -1431,12 +1417,21 @@ json
     "created_at": "2015-02-14T20:45:26.433Z",
     "updated_at": "2015-02-14T20:45:26.540Z"
 }
-</pre>
+```
+↓ Blank line!
 
 </td>
+</tr>
+<tr>
+<td> 400 </td>
+<td>
 
+**Markdown** _here_. (↕︎ Blank lines above and below!)
+
+</td>
 </tr>
 </table>
+
 
 reference:
 + palotasb's answer on this article -- [code block inside table row in Markdown](https://stackoverflow.com/questions/28508141/code-block-inside-table-row-in-markdown)
