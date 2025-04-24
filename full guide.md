@@ -1378,6 +1378,7 @@ Response
 </td>
 
 <td>
+
 <pre>
 json
   {
@@ -1390,6 +1391,7 @@ json
     "updated_at": "2015-02-14T20:45:26.540Z"
 }
 </pre>
+
 </td>
 
 </tr>
