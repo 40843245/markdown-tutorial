@@ -1325,6 +1325,126 @@ will output
 | --------- | ------- |
 | &#9744;   | &#9745; |
 
+### code block in a table
+In Github (which supports GFM) and stackoverflow, it supports HTML tag, 
+
+therefore, we can use `<pre>`,`</pre>` tag to simulate the code block in a table, 
+
+or using more complex approach -- using html tag `<table>` to create a table,
+
+then inside a cell (between `<td>` and `</td>`), use markdown syntax.
+
+> [!IMPORTANT]
+> when using markdown syntax inside a cell (between `<td>` and `</td>`),
+>
+> please add an extra line after the `<td>` tag and before the `</td>` tag.
+>
+> See example 2 for more fully understanding.
+
+
++ Example 1:
+  
+```
+| Name | Signature Code                 |
+|------|--------------------------------|
+| Minhas Kamal | <pre>main(m,k){<br>  for(<br>    ;<br>    m%k--?:(k=m++);<br>    k^1?:printf("%i\|",m)<br>  );<br>}</pre> |
+```
+
+will be rendered as
+
+| Name | Signature Code                 |
+|------|--------------------------------|
+| Minhas Kamal | <pre>main(m,k){<br>  for(<br>    ;<br>    m%k--?:(k=m++);<br>    k^1?:printf("%i\|",m)<br>  );<br>}</pre> |
+
++ Example 2:
+
+```
+<table>
+<tr>
+<th>
+Status
+</th>
+<th>
+Response
+</th>
+</tr>
+
+<tr>
+
+<td>
+<pre>
+<br/><br/><br/>200<br/><br/><br/><br/><br/>400<br/>
+</pre>
+</td>
+
+<td>
+<pre>
+json
+  {
+    "id": 10,
+    "username": "alanpartridge",
+    "email": "alan@alan.com",
+    "password_hash": "$2a$10$uhUIUmVWVnrBWx9rrDWhS.CPCWCZsyqqa8./whhfzBZydX7yvahHS",
+    "password_salt": "$2a$10$uhUIUmVWVnrBWx9rrDWhS.",
+    "created_at": "2015-02-14T20:45:26.433Z",
+    "updated_at": "2015-02-14T20:45:26.540Z"
+}
+</pre>
+</td>
+
+</tr>
+</table>
+```
+
+will be rendered as
+
+<table>
+<tr>
+<th>
+Status
+</th>
+<th>
+Response
+</th>
+</tr>
+
+<tr>
+
+<td>
+<pre>
+<br/><br/><br/>200<br/><br/><br/><br/><br/>400<br/>
+</pre>
+</td>
+
+<td>
+
+<pre>
+json
+  {
+    "id": 10,
+    "username": "alanpartridge",
+    "email": "alan@alan.com",
+    "password_hash": "$2a$10$uhUIUmVWVnrBWx9rrDWhS.CPCWCZsyqqa8./whhfzBZydX7yvahHS",
+    "password_salt": "$2a$10$uhUIUmVWVnrBWx9rrDWhS.",
+    "created_at": "2015-02-14T20:45:26.433Z",
+    "updated_at": "2015-02-14T20:45:26.540Z"
+}
+</pre>
+
+</td>
+
+</tr>
+</table>
+
+reference:
++ palotasb's answer on this article -- [code block inside table row in Markdown](https://stackoverflow.com/questions/28508141/code-block-inside-table-row-in-markdown)
+
+<img width="697" alt="image" src="https://github.com/user-attachments/assets/e98b6db8-d7c7-470c-88e9-8695fa4f395c" />
+
++ Minhas Kamal's answer on this article -- [code block inside table row in Markdown](https://stackoverflow.com/questions/28508141/code-block-inside-table-row-in-markdown)
+
+<img width="697" alt="image" src="https://github.com/user-attachments/assets/6ce6a9ad-6bef-40c1-a4fb-5a8e4bfd29b5" />
+
 ## Images
 ### Images whose alternative is just a text
 
